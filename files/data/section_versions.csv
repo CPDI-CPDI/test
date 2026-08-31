@@ -1,0 +1,151 @@
+﻿section_uid,catalog_version,page_name,section_name_en,section_name_fr,display_order,point_type,mitigation_phase,max_raw_points,max_mitigation_points,match_method,match_score
+1,0.3,project-details,Project Details,Détails du projet,1,none,,0,0,new_section,1.0
+2,0.3,business-drivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,2,none,,0,0,new_section,1.0
+3,0.3,system,About The System,À propos du système,3,none,,0,0,new_section,1.0
+4,0.3,decision-sector,About The Decision,À propos de la décision,4,raw,,6,0,new_section,1.0
+5,0.3,impact,Impact Assessment,Évaluation de l'incidence,5,none,,0,0,new_section,1.0
+6,0.3,data,About The Data,À propos des données,6,none,,0,0,new_section,1.0
+7,0.3,risk-mitigation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,7,none,,0,0,new_section,1.0
+8,0.3,risk-mitigation2,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,8,none,,0,0,new_section,1.0
+1,0.4,project-details,Project Details,Détails du projet,1,none,,0,0,page_name,1.0
+2,0.4,business-drivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,2,none,,0,0,page_name,1.0
+3,0.4,system,About The System,À propos du système,3,none,,0,0,page_name,1.0
+4,0.4,decision-sector,About The Decision,À propos de la décision,4,raw,,6,0,page_name,1.0
+5,0.4,impact,Impact Assessment,Évaluation de l'incidence,5,raw,,4,0,page_name,1.0
+6,0.4,data,About The Data,À propos des données,6,raw,,6,0,page_name,1.0
+7,0.4,risk-mitigation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,7,none,,0,0,page_name,1.0
+8,0.4,risk-mitigation2,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,8,none,,0,0,page_name,1.0
+1,0.5,project-details,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,0.5,business-drivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,3,none,,0,0,page_name,1.0
+9,0.5,risk-profile,Risk Profile,Profil de risque,4,raw,,13,0,new_section,1.0
+10,0.5,project-authority,Project Authority,Autorité de projet,5,raw,,2,0,new_section,1.0
+11,0.5,about-system,About The System,À propos du système,6,none,,0,0,new_section,1.0
+12,0.5,about-algorithm,About the Algorithm,À propos de l'algorithme,7,raw,,6,0,new_section,1.0
+4,0.5,decision-sector,About The Decision,À propos de la décision,8,raw,,6,0,page_name,1.0
+5,0.5,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,8,0,page_name,1.0
+6,0.5,data,About The Data,À propos des données,10,raw,,6,0,page_name,1.0
+13,0.5,rm-consultation-design,Consultations,,11,mitigation,design,0,2,new_section,1.0
+14,0.5,rm-consultation-implementation,Consultations,,12,mitigation,implementation,0,2,new_section,1.0
+15,0.5,rm-data-quality-design,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,13,none,,0,0,new_section,1.0
+16,0.5,rm-data-quality-implementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,14,none,,0,0,new_section,1.0
+17,0.5,rm-fairness-design,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,15,none,,0,0,new_section,1.0
+18,0.5,rm-fairness-implementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,16,none,,0,0,new_section,1.0
+1,0.6,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,0.6,businessDrivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,3,none,,0,0,page_name,1.0
+9,0.6,riskProfile,Risk Profile,Profil de risque,4,raw,,13,0,page_name,1.0
+10,0.6,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,0.6,aboutSystem,About The System,À propos du système,6,none,,0,0,page_name,1.0
+12,0.6,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,6,0,page_name,1.0
+4,0.6,decisionSector,About The Decision,À propos de la décision,8,raw,,6,0,page_name,1.0
+5,0.6,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,34,0,page_name,1.0
+19,0.6,aboutData,About The Data,À propos des données,10,raw,,37,0,new_section,1.0
+20,0.6,consultationDesign,Consultations,,11,mitigation,design,0,2,new_section,1.0
+21,0.6,consultationImplementation,Consultations,,12,mitigation,implementation,0,2,new_section,1.0
+22,0.6,dataQualityDesign,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,13,mitigation,design,0,9,new_section,1.0
+23,0.6,dataQualityImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,14,mitigation,implementation,0,10,new_section,1.0
+24,0.6,fairnessDesign,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,15,mitigation,design,0,18,new_section,1.0
+25,0.6,fairnessImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,16,mitigation,implementation,0,18,new_section,1.0
+26,0.6,privacyDesign,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,17,mitigation,design,0,2,new_section,1.0
+27,0.6,privacyImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,18,mitigation,implementation,0,2,new_section,1.0
+1,0.8a1,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,0.8a1,businessDrivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,3,none,,0,0,page_name,1.0
+9,0.8a1,riskProfile,Risk Profile,Profil de risque,4,raw,,13,0,page_name,1.0
+10,0.8a1,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,0.8a1,aboutSystem,About The System,À propos du système,6,none,,0,0,page_name,1.0
+12,0.8a1,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,6,0,page_name,1.0
+4,0.8a1,decisionSector,About The Decision,À propos de la décision,8,raw,,6,0,page_name,1.0
+5,0.8a1,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,34,0,page_name,1.0
+19,0.8a1,aboutData,About The Data,À propos des données,10,raw,,37,0,page_name,1.0
+20,0.8a1,consultationDesign,Consultations,,11,mitigation,design,0,2,page_name,1.0
+21,0.8a1,consultationImplementation,Consultations,,12,mitigation,implementation,0,2,page_name,1.0
+22,0.8a1,dataQualityDesign,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,13,mitigation,design,0,14,page_name,1.0
+23,0.8a1,dataQualityImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,14,mitigation,implementation,0,14,page_name,1.0
+24,0.8a1,fairnessDesign,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,15,mitigation,design,0,25,page_name,1.0
+25,0.8a1,fairnessImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,16,mitigation,implementation,0,25,page_name,1.0
+26,0.8a1,privacyDesign,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,17,mitigation,design,0,2,page_name,1.0
+27,0.8a1,privacyImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,18,mitigation,implementation,0,2,page_name,1.0
+1,0.9,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,0.9,businessDrivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,3,none,,0,0,page_name,1.0
+9,0.9,riskProfile,Risk Profile,Profil de risque,4,raw,,13,0,page_name,1.0
+10,0.9,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,0.9,aboutSystem,About The System,À propos du système,6,none,,0,0,page_name,1.0
+12,0.9,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,6,0,page_name,1.0
+4,0.9,decisionSector,About The Decision,À propos de la décision,8,raw,,6,0,page_name,1.0
+5,0.9,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,36,0,page_name,1.0
+19,0.9,aboutData,About The Data,À propos des données,10,raw,,44,0,page_name,1.0
+20,0.9,consultationDesign,Consultations,,11,mitigation,design,0,2,page_name,1.0
+21,0.9,consultationImplementation,Consultations,,12,mitigation,implementation,0,2,page_name,1.0
+22,0.9,dataQualityDesign,De-Risking And Mitigation Measures,Élimination des risques et mesures d'atténuation,13,mitigation,design,0,14,page_name,1.0
+23,0.9,dataQualityImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesures d'atténuation,14,mitigation,implementation,0,14,page_name,1.0
+24,0.9,fairnessDesign,De-Risking And Mitigation Measures,Élimination des risques et mesures d'atténuation,15,mitigation,design,0,25,page_name,1.0
+25,0.9,fairnessImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesures d'atténuation,16,mitigation,implementation,0,25,page_name,1.0
+26,0.9,privacyDesign,De-Risking And Mitigation Measures,Élimination des risques et mesures d'atténuation,17,mitigation,design,0,4,page_name,1.0
+27,0.9,privacyImplementation,De-Risking And Mitigation Measures,Élimination des risques et mesures d'atténuation,18,mitigation,implementation,0,4,page_name,1.0
+1,0.9.1,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,0.9.1,businessDrivers,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,3,none,,0,0,page_name,1.0
+9,0.9.1,riskProfile,Risk Profile,Profil de risque,4,raw,,13,0,page_name,1.0
+10,0.9.1,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,0.9.1,aboutSystem,About The System,À propos du système,6,none,,0,0,page_name,1.0
+12,0.9.1,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,6,0,page_name,1.0
+4,0.9.1,decisionSector,About the Decision,À propos de la décision,8,raw,,6,0,page_name,1.0
+5,0.9.1,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,36,0,page_name,1.0
+19,0.9.1,aboutData,About the Data,À propos des données,10,raw,,44,0,page_name,1.0
+20,0.9.1,consultationDesign,Consultations,,11,mitigation,design,0,2,page_name,1.0
+21,0.9.1,consultationImplementation,Consultations,,12,mitigation,implementation,0,2,page_name,1.0
+22,0.9.1,dataQualityDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,13,mitigation,design,0,14,page_name,1.0
+23,0.9.1,dataQualityImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,14,mitigation,implementation,0,14,page_name,1.0
+24,0.9.1,fairnessDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,15,mitigation,design,0,25,page_name,1.0
+25,0.9.1,fairnessImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,16,mitigation,implementation,0,25,page_name,1.0
+26,0.9.1,privacyDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,17,mitigation,design,0,4,page_name,1.0
+27,0.9.1,privacyImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,18,mitigation,implementation,0,4,page_name,1.0
+1,0.10.0,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,0.10.0,businessDrivers,Reasons for Automation,Raisons de l'automatisation,3,raw,,8,0,page_name,1.0
+9,0.10.0,riskProfile,Risk Profile,Profil de risque,4,raw,,17,0,page_name,1.0
+10,0.10.0,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,0.10.0,aboutSystem,About The System,À propos du système,6,none,,0,0,page_name,1.0
+12,0.10.0,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,6,0,page_name,1.0
+4,0.10.0,decisionSector,About the Decision,À propos de la décision,8,raw,,7,0,page_name,1.0
+5,0.10.0,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,42,0,page_name,1.0
+19,0.10.0,aboutData,About the Data,À propos des données,10,raw,,44,0,page_name,1.0
+20,0.10.0,consultationDesign,Consultations,,11,mitigation,design,0,2,page_name,1.0
+21,0.10.0,consultationImplementation,Consultations,,12,mitigation,implementation,0,2,page_name,1.0
+22,0.10.0,dataQualityDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,13,mitigation,design,0,14,page_name,1.0
+23,0.10.0,dataQualityImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,14,mitigation,implementation,0,14,page_name,1.0
+24,0.10.0,fairnessDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,15,mitigation,design,0,25,page_name,1.0
+25,0.10.0,fairnessImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,16,mitigation,implementation,0,25,page_name,1.0
+26,0.10.0,privacyDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,17,mitigation,design,0,5,page_name,1.0
+27,0.10.0,privacyImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,18,mitigation,implementation,0,5,page_name,1.0
+1,1.0.0,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,1.0.0,businessDrivers,Reasons for Automation,Raisons de l'automatisation,3,raw,,5,0,page_name,1.0
+9,1.0.0,riskProfile,Risk Profile,Profil de risque,4,raw,,15,0,page_name,1.0
+10,1.0.0,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,1.0.0,aboutSystem,About The System,À propos du système,6,raw,,17,0,page_name,1.0
+12,1.0.0,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,15,0,page_name,1.0
+4,1.0.0,decisionSector,About the Decision,À propos de la décision,8,raw,,8,0,page_name,1.0
+5,1.0.0,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,52,0,page_name,1.0
+19,1.0.0,aboutData,About the Data,À propos des données,10,raw,,53,0,page_name,1.0
+20,1.0.0,consultationDesign,Consultations,,11,mitigation,design,0,10,page_name,1.0
+21,1.0.0,consultationImplementation,Consultations,,12,mitigation,implementation,0,10,page_name,1.0
+22,1.0.0,dataQualityDesign,De-risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,13,mitigation,design,0,14,page_name,1.0
+23,1.0.0,dataQualityImplementation,De-risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,14,mitigation,implementation,0,14,page_name,1.0
+24,1.0.0,fairnessDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,15,mitigation,design,0,44,page_name,1.0
+25,1.0.0,fairnessImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,16,mitigation,implementation,0,44,page_name,1.0
+26,1.0.0,privacyDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,17,mitigation,design,0,9,page_name,1.0
+27,1.0.0,privacyImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,18,mitigation,implementation,0,9,page_name,1.0
+1,1.0.1,projectDetails,Project Details,Détails du projet,2,none,,0,0,page_name,1.0
+2,1.0.1,businessDrivers,Reasons for Automation,Raisons de l'automatisation,3,raw,,5,0,page_name,1.0
+9,1.0.1,riskProfile,Risk Profile,Profil de risque,4,raw,,15,0,page_name,1.0
+10,1.0.1,projectAuthority,Project Authority,Autorité de projet,5,raw,,2,0,page_name,1.0
+11,1.0.1,aboutSystem,About The System,À propos du système,6,raw,,17,0,page_name,1.0
+12,1.0.1,aboutAlgorithm,About the Algorithm,À propos de l'algorithme,7,raw,,15,0,page_name,1.0
+4,1.0.1,decisionSector,About the Decision,À propos de la décision,8,raw,,8,0,page_name,1.0
+5,1.0.1,impact,Impact Assessment,Évaluation de l'incidence,9,raw,,52,0,page_name,1.0
+19,1.0.1,aboutData,About the Data,À propos des données,10,raw,,53,0,page_name,1.0
+20,1.0.1,consultationDesign,Consultations,,11,mitigation,design,0,10,page_name,1.0
+21,1.0.1,consultationImplementation,Consultations,,12,mitigation,implementation,0,10,page_name,1.0
+22,1.0.1,dataQualityDesign,De-risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,13,mitigation,design,0,14,page_name,1.0
+23,1.0.1,dataQualityImplementation,De-risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,14,mitigation,implementation,0,14,page_name,1.0
+24,1.0.1,fairnessDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,15,mitigation,design,0,44,page_name,1.0
+25,1.0.1,fairnessImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,16,mitigation,implementation,0,44,page_name,1.0
+26,1.0.1,privacyDesign,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,17,mitigation,design,0,9,page_name,1.0
+27,1.0.1,privacyImplementation,De-Risking and Mitigation Measures,Élimination des risques et mesures d'atténuation,18,mitigation,implementation,0,9,page_name,1.0

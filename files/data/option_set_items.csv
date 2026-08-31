@@ -1,0 +1,334 @@
+﻿option_set_id,option_index,text_en,text_fr
+1,0,Yes,Oui
+1,1,No,Non
+2,0,None,Aucun
+2,1,Protected A,Protégé A
+2,2,Classified / Confidential,Classifié/confidentiel
+2,3,Protected B / Protected C,Protégé B/Protégé C
+2,4,Secret / Top Secret,Secret/Très Secret
+3,0,Open Data Source,Source de données ouvertes
+3,1,Federal government,Gouvernement fédéral
+3,2,Other Canadian Government (prov/municipal),Autre gouvernement canadien (provincial/municipal)
+3,3,Private Sector / NGO,Secteur privé / ONG
+4,0,Your institution,Votre institution
+4,1,Another federal institution,Une autre institution fédérale
+4,2,Another level of government,Autre niveau de gouvernement
+4,3,A foreign government or non-government third party,Un gouvernement étranger ou un tiers non gouvernemental
+5,0,Audio and text files,Fichiers audio et textuels
+5,1,Images and videos,Images et vidéos
+6,0,"Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.","Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+6,1,"Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging","Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+6,2,Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions,"Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises."
+6,3,"Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts","Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+6,4,"Process optimization and workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows","Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de données pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+6,5,Other (please specify),Autre (veuillez préciser)
+7,0,Existing backlog of work or cases,Arriéré de travail ou de cas existant
+7,1,Improve overall quality of decisions,Amélioration de la qualité générale des décisions
+7,2,Lower transaction costs of an existing program,Réduction des coûts de transaction d'un programme existant
+7,3,The system is performing tasks that humans could not accomplish in a reasonable period of time,Le système exécute des tâches que les humains ne sont pas en mesure d'accomplir dans un délai raisonnable
+7,4,Use innovative approaches,Utilisation d'approches novatrices
+7,5,Other (please specify),Autre (veuillez préciser)
+8,0,Service cannot be delivered at all,La prestation du service est impossible
+8,1,Service cannot be delivered in a timely or efficient manner,La prestation du service ne peut pas être effectuée en temps voulu ou de manière efficace
+8,2,Service costs are too high,Les coûts du service sont trop élevés
+8,3,Service quality is not as high,La qualité du service n’est pas aussi élevée
+8,4,Service delivery cannot achieve performance targets,La prestation du service ne parvient pas à atteindre les objectifs de rendement
+8,5,Other (please specify),Autre (veuillez préciser)
+9,0,Slightly effective,Légèrement efficace
+9,1,Moderately effective,Modérément efficace
+9,2,Very effective,Très efficace
+10,0,Strategic Policy and Planning,Politique et planification stratégique
+10,1,Data Governance,Gouvernance des données
+10,2,Program Policy,Politique du programme
+10,3,Legal Services,Services légaux
+10,4,Access to Information and Privacy Office,Bureau de l'accès à l'information et de la protection des renseignements personnels
+10,5,Communications services,Services des communications
+10,6,Client Experience / Client Relationship Management,Expérience client / Gestion de la relation client
+10,7,Digital Policy,Politique sur le numérique
+10,8,Human Resources,Ressources humaines
+10,9,TBS Office of the Chief Human Resources Officer,Bureau de la dirigeante principale des ressources humaines du SCT
+10,10,TBS Office of the Chief Information Officer,Bureau de la dirigeante principale de l’information du SCT
+10,11,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada
+10,12,Networks for Equity-seeking Employees,Réseaux pour les employés visés par l’équité
+10,13,Accessibility Working Groups,Groupes de travail sur l’accessibilité
+10,14,2SLGBTQI+ Secretariat,Secrétariat 2ELGBTQI+
+10,15,Other (describe),Autre (décrire)
+11,0,Civil Society,Société civile
+11,1,Academia,Milieu universitaire
+11,2,Industry,Industrie
+11,3,Bargaining Agents,Agents négociateurs
+11,4,Governments in other Jurisdictions,Gouvernements d’autres administrations
+11,5,International Organizations,Organisations internationales
+11,6,Clients or their Representatives,Clients ou leurs représentants
+11,7,Indigenous Groups,Groupes autochtones
+11,8,Other (describe),Autre (décrire)
+12,0,Strategic Policy and Planning,Politique et planification stratégiques
+12,1,Data Governance,Gouvernance des données
+12,2,Program Policy,Politique du programme
+12,3,Legal Services,Services légaux
+12,4,Access to Information and Privacy Office,Bureau de l'accès à l'information et de la protection des renseignements personnels
+12,5,Communications services,Services des communications
+12,6,Client Experience / Client Relationship Management,Expérience client / Gestion de la relation client
+12,7,Digital Policy,Politique sur le numérique
+12,8,Human Resources,Ressources humaines
+12,9,TBS Office of the Chief Human Resources Officer,Bureau de la dirigeante principale des ressources humaines du SCT
+12,10,TBS Office of the Chief Information Officer,Bureau de la dirigeante principale de l’information du SCT
+12,11,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada
+12,12,Networks for Equity-seeking Employees,Réseaux pour les employés visés par l’équité
+12,13,Accessibility Working Groups,Groupes de travail sur l’accessibilité
+12,14,2SLGBTQI+ Secretariat,Secrétariat 2ELGBTQI+
+12,15,Other (describe),Autre (décrire)
+13,0,Health related services,Services liés à la santé
+13,1,"Economic interests (grants and contributions, tax benefits, debt collection)","Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+13,2,"Social assistance (employment insurance, disability claims)","Aide sociales (assurance-emploi, demandes de prestations d'invalidité)"
+13,3,"Access and mobility (security clearances, border crossings)","Accès et mobilité (habitations de sécurité, passages frontaliers)"
+13,4,Licensing and issuance of permits,Accréditation et délivrance de permis
+13,5,"Employment (recruitment, hiring, promotion, performance evaluation, monitoring, security clearance)","Emploi (recrutement, embauche, promotion, évaluation de rendement, surveillance, habilitation de sécurité)"
+13,6,Other (please specify),Autre (veuillez préciser)
+14,0,Little to no impact,Incidence faible ou nulle
+14,1,Moderate impact,Incidence modérée
+14,2,High impact,Incidence élevée
+14,3,Very high impact,Incidence très élevée
+15,0,Full automation (the system will make an administrative decision),Automatisation complète (le système prendra une décision administrative)
+15,1,"Partial automation (the system will contribute to administrative decision-making by supporting an officer through assessments, recommendations, intermediate decisions, or other outputs)","Automatisation partielle (le système facilitera la prise de décisions administratives en appuyant un agent au moyen d’évaluations, de recommandations, de décisions provisoires ou d’autres résultats)"
+16,0,Reversible,Réversible
+16,1,Likely reversible,Probablement réversible
+16,2,Difficult to reverse,Difficile à inverser
+16,3,Irreversible,Irréversible
+17,0,Impacts are most likely to be brief,Les incidences risquent fort probablement d’être brèves
+17,1,"Some impacts may last a matter of months, but some lingering impacts may last longer",Certaines incidences peuvent durer quelques mois ou plus longtemps.
+17,2,Impacts can last years,Les incidences peuvent durer des années.
+17,3,Most impacts are perpetual,La plupart des incidences sont sans limite dans le temps.
+18,0,Design,Conception
+18,1,Implementation,Mise en oeuvre
+19,0,Health related services,Services liés à la santé
+19,1,"Economic interests (grants and contributions, tax benefits, debt collection)","Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+19,2,"Social assistance (ei, disability claims, etc)","Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
+19,3,"Access and mobility ( security clearences, border crossings)","Accès et mobilité (habitations de sécurité, passages frontaliers)"
+19,4,Licensing and issuance of permits,Accréditation et délivrance de permis
+19,5,Other (please specify),Autre (veuillez préciser)
+20,0,Little to no impact,Incidence faible ou nulle
+20,1,Moderate impact,Incidence modérée
+20,2,High impact,Incidence élevée
+20,3,Very high impact,Incidence très élevée
+21,0,Impacts are most likely to be brief,Les incidences risquent fort probablement d’être brèves
+21,1,"Some impacts may last a matter of months, but some lingering impacts may last longer",Certaines incidences peuvent durer quelques mois ou plus longtemps.
+21,2,"Impacts can last over a year, with some longer",Les incidences peuvent durer plus d’un an et plus.
+21,3,Most impacts are perpetual,La plupart des incidences sont sans limite dans le temps.
+22,0,Audio and text files,Fichiers audio et textuels
+22,1,Images and videos,Images et vidéos
+23,0,Yes,
+23,1,No,
+24,0,Existing backlog of work or cases,Arriéré de travail ou de cas existant
+24,1,Improve overall quality of decisions,Amélioration de la qualité générale des décisions
+24,2,Lower transaction costs of an existing program,Réduction des coûts de transaction d'un programme existant
+24,3,The system is performing tasks that humans cound not accomplish in a reasonable period of time,Le système exécute des taĉhes que les humans ne sont pas en mesure d'accomplir dans us délai raisonnable
+24,4,Use innovative approaches,Utilisation d'approches novatrices
+24,5,Other (please specify),Autre (veuillez préciser)
+25,0,"Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.","Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+25,1,"Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging","Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+25,2,Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions,"Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises."
+25,3,"Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts","Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+25,4,"Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows","Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+25,5,Other (please specify),Autre (veuillez préciser)
+26,0,"Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.","Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+26,1,"Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging","Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+26,2,Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions,"Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises."
+26,3,"Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts","Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+26,4,"Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows","Optimisation des processus et automatisation des flux de travail:    Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+26,5,Other (please specify),Autre (veuillez préciser)
+27,0,Existing backlog of work or cases,Arriéré de travail ou de cas existant
+27,1,Improve overall quality of decisions,Amélioration de la qualité générale des décisions
+27,2,Lower transaction costs of an existing program,Réduction des coûts de transaction d'un programme existant
+27,3,The system is performing tasks that humans could not accomplish in a reasonable period of time,Le système exécute des taĉhes que les humans ne sont pas en mesure d'accomplir dans un délai raisonnable
+27,4,Use innovative approaches,Utilisation d'approches novatrices
+27,5,Other (please specify),Autre (veuillez préciser)
+28,0,Strategic Policy and Planning,Politique et planification stratégiques
+28,1,Data Governance,Gouvernance des données
+28,2,Program Policy,Politique du programme
+28,3,Legal Services,Services légaux
+28,4,Access To Information Policy,Politique sur l'accès à l'information
+28,5,Communications,
+28,6,Client Experience / Client Relationship Management,Expérience client / Gestion de la relation client
+29,0,Civil Society,Société civile
+29,1,Academia,Milieu universitaire
+29,2,Industry,Industrie
+30,0,Design,
+30,1,Implementation,Implémentation
+31,0,Health related services,Services liés à la santé
+31,1,"Economic interests (grants and contributions, tax benefits, debt collection)","Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+31,2,"Social assistance (ei, disability claims, etc)","Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
+31,3,"Access and mobility (security clearances, border crossings)","Accès et mobilité (habitations de sécurité, passages frontaliers)"
+31,4,Licensing and issuance of permits,Accréditation et délivrance de permis
+31,5,Other (please specify),Autre (veuillez préciser)
+32,0,Strategic Policy and Planning,Politique et planification stratégique
+32,1,Data Governance,Gouvernance des données
+32,2,Program Policy,Politique du programme
+32,3,Legal Services,Services légaux
+32,4,Access to Information and Privacy Office,Bureau de l'accès à l'information et de la protection des renseignements personnels
+32,5,Communications,
+32,6,Client Experience / Client Relationship Management,Expérience client / Gestion de la relation client
+32,7,Other (describe),Autre (décrire)
+33,0,Civil Society,Société civile
+33,1,Academia,Milieu universitaire
+33,2,Industry,Industrie
+33,3,Office of the Privacy Commissioner,Commissariat à la protection de la vie privée
+33,4,Other (describe),Autre (décrire)
+34,0,Strategic Policy and Planning,Politique et planification stratégiques
+34,1,Data Governance,Gouvernance des données
+34,2,Program Policy,Politique du programme
+34,3,Legal Services,Services légaux
+34,4,Access to Information and Privacy Office,Bureau de l'accès à l'information et de la protection des renseignements personnels
+34,5,Communications,
+34,6,Client Experience / Client Relationship Management,Expérience client / Gestion de la relation client
+34,7,Other (describe),Autre (décrire)
+35,0,Design,Conception
+35,1,Implementation,Implémentation
+36,0,"Based on rules developed from laws and policy and/or using human expertise (for example, if/then statements)","fondé sur des règles établies en fonction des lois et des politiques ou à l'aide de l'expertise humaine (par exemple, des énoncés de type «si» ou «alors»)"
+36,1,"Based on patterns in data identified by the AI model (for example, neural network, deep learning)","fondé sur des modèles de données déterminés par le modèle d'IA (par exemple, réseau neuronal et apprentissage profond)"
+37,0,Deterministic (follow precise rules and generate single outcome),déterministe (suit des règles précises et produit un résultat unique)
+37,1,Probabilistic (infer several models to explain data),probabiliste (explique les données en appliquant plusieurs modèles)
+38,0,"Discriminative (for example, regression analyses, decision trees)","discriminatif (par exemple, analyses de régression et arbres de décision)"
+38,1,"Generative (for example, linear discriminant analysis, naïve Bayes)","génératif (par exemple, analyse discriminante linéaire et classification naïve bayésienne)"
+39,0,No sharing,Non
+39,1,Within your department,"Oui, au sein de votre organisation"
+39,2,With another federal department,"Oui, à une autre organisation fédérale"
+39,3,With a government from another jurisdiction,"Oui, à une autre administration publique"
+39,4,With a third party (private sector/NGO),"Oui, à un tiers (secteur privé/ONG)"
+39,5,Other,Autre
+40,0,Yes,Oui
+40,1,No,Non
+40,2,Unsure,Indéterminé
+41,0,Yes,Oui
+41,1,No,Non
+41,2,Not applicable,Sans objet
+42,0,None,Aucun
+42,1,Protected A,Protégé A
+42,2,Protected B,Protégé B
+42,3,Protected C,Protégé C
+42,4,Confidential,Confidentiel
+42,5,Secret,Secret
+42,6,Top Secret,Très Secret
+42,7,Other,Autre
+43,0,Federal Government,Le gouvernement fédéral
+43,1,Other Canadian Government (province/territorial/municipal),Une autre administration publique canadienne (provinciale/territoriale/municipale)
+43,2,Private sector / NGO / academia,"Le secteur privé, une ONG ou un organisme universitaire"
+44,0,"Image and object recognition: Analyzing large data sets to automate the recognition, classification, and context associated with an image or object","Reconnaissance d'images et d'objets : Analyse de vastes jeux de données pour l'automatisation de la reconnaissance, de la classification et du contexte associés à une image ou à un objet"
+44,1,"Text and speech analysis: Analyzing large data sets to recognize, process, and categorize text, speech and voice, and make recommendations based on the categorization","Analyse du texte et de la parole : Analyse de vastes jeux de données pour la reconnaissance, le traitement et la catégorisation de textes, de la parole et de la voix, ainsi que la formulation de recommandations fondées sur la catégorisation"
+44,2,Risk assessment: Analyzing large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions,"Évaluation des risques : Analyse de vastes jeux de données pour la détermination des tendances, la recommandation de plans d'action et, dans certains cas, la prise de mesures précises"
+44,3,"Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts","Génération de contenu : Analyse de vastes jeux de données pour l'établissement de catégories, le traitement, le triage, la personnalisation et la présentation de contenus adaptés à des contextes particuliers"
+44,4,"Process optimization and workflow automation: Analyzing large data sets to identify any anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows","Optimisation des processus et automatisation des flux de travail : Analyse de vastes jeux de données pour le recensement d'anomalies ou de modèles de grappes, la prévision des résultats ou de méthodes d'optimisation et l'automatisation de flux de travail particuliers"
+44,5,Other (Specify),Autre (veuillez préciser)
+45,0,Little to no impact,"faible, voire nulle"
+45,1,Moderate impact,modérée
+45,2,High impact,élevée
+45,3,Very high impact,très élevée
+46,0,Your institution,Votre organisation
+46,1,Another federal institution,Une autre organisation fédérale
+46,2,Another government,Une autre administration publique
+46,3,A non-government third party,Un organisme tiers non gouvernemental
+47,0,Open source,à code source ouvert
+47,1,Custom built,conçu sur mesure
+47,2,Commercial off the shelf (COTS),disponible sur le marché (COTS)
+48,0,Reduce existing backlog of work or cases,Arriéré de travail ou de cas existant
+48,1,Improve overall quality of decisions,Amélioration de la qualité générale des décisions
+48,2,Lower transaction costs of an existing program,Réduction des coûts de transaction d'un programme existant
+48,3,Perform tasks that humans could not accomplish in a reasonable period of time,Exécution par le système de tâches qu'une personne n'est pas en mesure d'accomplir dans un délai raisonnable
+48,4,Use innovative approaches,Utilisation d'approches novatrices
+48,5,Other (specify),Autre (veuillez préciser)
+49,0,Service cannot be delivered at all,La prestation du service serait impossible
+49,1,Service cannot be delivered in a timely or efficient manner,La prestation du service ne pourrait pas être effectuée en temps voulu ou de manière efficace
+49,2,Service costs are too high,Les coûts du service seraient trop élevés
+49,3,Service quality is not as high,La qualité du service ne serait pas aussi élevée
+49,4,Service delivery cannot achieve performance targets,Les objectifs de rendement liés à la prestation du service ne pourraient pas être atteints
+49,5,Other (specify),Autre (veuillez préciser)
+50,0,Strategic Policy and Planning,Politique et planification stratégique
+50,1,Data Governance,Gouvernance des données
+50,2,Program Policy,Politique du programme
+50,3,Legal Services,Services juridiques
+50,4,Access to Information and Privacy,Bureau de l'accès à l'information et de la protection des renseignements personnels
+50,5,Communications services,Services des communications
+50,6,Client Experience / Client Relationship Management,Expérience de la clientèle et gestion de la relation avec celle-ci
+50,7,Digital Policy,Politique sur le numérique
+50,8,Human Resources,Ressources humaines
+50,9,TBS Office of the Chief Human Resources Officer,Bureau de la dirigeante principale des ressources humaines du SCT
+50,10,TBS Office of the Chief Information Officer,Bureau du dirigeant principal de l'information du SCT
+50,11,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada
+50,12,Networks for Equity-seeking Employees,Réseaux pour les employés visés par l'équité
+50,13,Accessibility Working Groups,Groupes de travail sur l'accessibilité
+50,14,2SLGBTQI+ Secretariat,Secrétariat 2ELGBTQI+
+50,15,Other (describe),Autre (décrire)
+51,0,General Public,Grand public
+51,1,Academia,Milieu universitaire
+51,2,Industry,Industrie
+51,3,Bargaining Agents,Agents négociateurs
+51,4,Governments in other Jurisdictions,Gouvernements d'autres administrations
+51,5,International Organizations,Organisations internationales
+51,6,Clients or their Representatives,Clientèle ou les personnes qui la représentent
+51,7,"Indigenous organizations, Elders, and leadership","Organisations, aînés et leadership autochtones"
+51,8,Non-governmental organizations,Organisations non gouvernementales
+51,9,Professional associations,Associations professionnelles
+51,10,Other (describe),Autre (décrire)
+52,0,Yes,Oui
+52,1,No,Non
+52,2,Unsure,Je ne sais pas
+53,0,Fairness of outputs,Équité des résultats
+53,1,Transparency of the system,Transparence du système
+53,2,Barriers to access,Obstacles à l'accès
+53,3,Surveillance,Surveillance.
+53,4,Protection of personal information and/or other privacy concerns,Protection des renseignements personnels ou autres préoccupations en la matière
+53,5,Human rights,Droits de la personne
+53,6,Accessibility,Accessibilité
+53,7,Accuracy,Exactitude
+53,8,Other,Autres
+54,0,Strategic Policy and Planning,Politique et planification stratégiques
+54,1,Data Governance,Gouvernance des données
+54,2,Program Policy,Politique du programme
+54,3,Legal Services,Services juridiques
+54,4,Access to Information and Privacy,Bureau de l'accès à l'information et de la protection des renseignements personnels
+54,5,Communications services,Services des communications
+54,6,Client Experience / Client Relationship Management,Expérience de la clientèle et gestion de la relation avec celle-ci
+54,7,Digital Policy,Politique sur le numérique
+54,8,Human Resources,Ressources humaines
+54,9,TBS Office of the Chief Human Resources Officer,Bureau de la dirigeante principale des ressources humaines du SCT
+54,10,TBS Office of the Chief Information Officer,Bureau du dirigeant principal de l'information du SCT
+54,11,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada
+54,12,Networks for Equity-seeking Employees,Réseaux pour les employés visés par l'équité
+54,13,Accessibility Working Groups,Groupes de travail sur l'accessibilité
+54,14,2SLGBTQI+ Secretariat,Secrétariat 2ELGBTQI+
+54,15,Other (describe),Autre (décrire)
+55,0,"Health-related services (environmental and workplace health, product and food safety, drug regulation)","Services liés à la santé (santé de l'environnement et du milieu de travail, sécurité des produits et des aliments et réglementation des médicaments)"
+55,1,"Economic interests (grants and contributions, tax benefits, debt collection)","Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+55,2,"Social assistance (employment insurance, disability or housing benefits, children or seniors programs)","Aide sociale (prestations d'assurance-emploi, d'invalidité ou pour le logement et programmes pour les enfants ou les aînés)"
+55,3,"Access and mobility (security clearances, border management, immigration)","Accès et mobilité (habitations de sécurité, gestion des frontières, immigration)"
+55,4,"Licensing and issuance of permits (possession and acquisition licence, export permits, commercial fishing licence)","Accréditation et délivrance de permis (permis de possession et d'acquisition, d'exportation et de pêche commerciale)"
+55,5,"Employment (recruitment, hiring, promotion, performance evaluation, monitoring, security clearance)","Emploi (recrutement, embauche, promotion, évaluation de rendement, surveillance, habilitation de sécurité)"
+55,6,Public safety and law enforcement (investigating criminal acts),Sécurité publique et application de la loi (enquêtes sur les actes criminels)
+55,7,Other (specify),Autre (veuillez préciser)
+56,0,Clear time frame or service standards for timeliness,Des délais clairs ou des normes de service en matière de rapidité d'exécution ont été établis
+56,1,Clients are provided with adequate information about the decision-making process and have the opportunity to meaningfully participate,La clientèle reçoit toute l'information dont elle a besoin sur le processus décisionnel et a la possibilité d'y participer activement
+56,2,Clients are provided with all documents and information in which the administrative decision was based,La clientèle reçoit tous les documents et l'information sur lesquels reposent les décisions administratives
+56,3,Mechanism for assessing and responding to client feedback,Un mécanisme permettant l'analyse et la prise en compte des commentaires de la clientèle a été mis en place
+56,4,Other,Autre
+57,0,No assessment has been conducted,Aucune évaluation n’a été effectuée.
+57,1,Assessment conducted; no performance differences identified.,Une évaluation a été effectuée et aucune différence de rendement n’a été relevée.
+57,2,Assessment conducted; performance differences identified and are justified. Downstream impacts of performance difference have not been considered or addressed.,Une évaluation a été effectuée et les différences de rendement ont été relevées et sont justifiées. Les répercussions en aval de ces différences n’ont pas été prises en compte ou traitées.
+57,3,Assessment conducted; performance differences identified which are not justified. Downstream impacts of the performance difference considered and addressed.,Une évaluation a été effectuée et les différences de rendement ont été relevées et sont injustifiées. Les répercussions en aval de ces différences ont été prises en compte et traitées.
+57,4,Assessment conducted; performance differences identified and are justified. Downstream impacts have been considered and addressed.,Une évaluation a été effectuée et les différences de rendement ont été relevées et sont justifiées. Les répercussions en aval de ces différences ont été prises en compte et traitées.
+57,5,Assessment conducted; performance differences are identified and are not justified. Downstream impacts of the performance differences not considered or addressed.,Une évaluation a été effectuée et les différences de rendement ont été relevées et sont injustifiées. Les répercussions en aval de ces différences n’ont pas été prises en compte ou traitées.
+58,0,0 to 25%,0 à 25 %
+58,1,26 to 50%,26 % à 50 %
+58,2,51 to 75%,51 % à 75 %
+58,3,76 to 99%,76 % à 99 %
+58,4,100%,100 %
+58,5,Unknown,Inconnue
+59,0,Full automation (the system will make an administrative decision),Automatisation complète (le système prendra une décision administrative)
+59,1,"Partial automation (the system will contribute to administrative decision-making by supporting an officer with assessments, recommendations, intermediate decisions, or other outputs)","Automatisation partielle (le système contribuera à la prise de décision administrative en fournissant aux fonctionnaires des évaluations, des recommandations, des décisions intermédiaires ou d'autres extrants)"
+60,0,Impacts are most likely to be brief,Les incidences risquent fort probablement d'être brèves
+60,1,"Some impacts may last a matter of months, but some lingering impacts may last longer",Certaines incidences peuvent durer quelques mois ou plus longtemps.
+60,2,Impacts can last years,Les incidences peuvent durer des années.
+60,3,Most impacts are perpetual,La plupart des incidences sont sans limite dans le temps.
+61,0,"Assessment has been conducted, and no barriers were identified.",Une évaluation a été effectuée et aucune difficulté n’a été cernée.
+61,1,"Assessment has been conducted, barriers were identified, and measures are in place or planned to remove or prevent them.","Une évaluation a été effectuée, des difficultés ont été cernées et des mesures sont en place ou prévues pour les éliminer ou les prévenir."
+61,2,"Assessment was conducted, barriers were identified, and no measures were put in place or planned to remove or prevent them.","Une évaluation a été effectuée, des difficultés ont été cernées et aucune mesure n’a été mise en place ou n’est prévue pour les éliminer ou les prévenir."
+61,3,No assessment has been conducted.,Aucune évaluation n’a été effectuée.

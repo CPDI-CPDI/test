@@ -1,0 +1,11 @@
+﻿catalog_version,git_ref,question_count,scored_question_count,section_count,max_raw,max_mitigation,max_mitigation_design,max_mitigation_implementation,max_mitigation_if_summed,mitigation_threshold,unclassified_questions,source_url
+1.0.0,v1.0.0,295,282,17,167,77,77,77,154,61.6,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v1.0.0/src/survey-enfr.json
+0.10.0,v0.10.0,153,142,17,126,46,46,46,92,36.8,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v0.10.0/src/survey-enfr.json
+0.9.1,v0.9.1,125,112,17,107,45,45,45,90,36.0,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v0.9.1/src/survey-enfr.json
+0.9,v0.9,125,112,17,107,45,45,45,90,36.0,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v0.9/src/survey-enfr.json
+0.8a1,v.0.8a1,114,101,17,98,43,43,43,86,34.4,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v.0.8a1/src/survey-enfr.json
+0.6,v.0.6,104,91,17,98,32,31,32,63,25.6,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v.0.6/src/survey-enfr.json
+0.5,v.0.5,100,77,15,41,2,2,2,4,1.6,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v.0.5/src/survey-enfr.json
+0.4,v.0.4,54,44,8,16,0,0,0,0,0.0,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v.0.4/src/survey-enfr.json
+0.3,v.0.3,54,44,8,6,0,0,0,0,0.0,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/v.0.3/src/survey-enfr.json
+1.0.1,master,295,282,17,167,77,77,77,154,61.6,0,https://raw.githubusercontent.com/canada-ca/aia-eia-js/master/src/survey-enfr.json

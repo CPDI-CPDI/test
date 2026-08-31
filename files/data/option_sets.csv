@@ -1,0 +1,62 @@
+﻿option_set_id,option_count,labels
+1,2,Yes / No
+2,5,None / Protected A / Classified / Confidential / Protected B / Protected C / Secret / Top Secret
+3,4,Open Data Source / Federal government / Other Canadian Government (prov/municipal) / Private Sector / NGO
+4,4,Your institution / Another federal institution / Another level of government / A foreign government or non-government th
+5,2,Audio and text files / Images and videos
+6,6,"Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context as"
+7,6,Existing backlog of work or cases / Improve overall quality of decisions / Lower transaction costs of an existing progra
+8,6,Service cannot be delivered at all / Service cannot be delivered in a timely or efficient manner / Service costs are too
+9,3,Slightly effective / Moderately effective / Very effective
+10,16,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access to Information and Privacy Of
+11,9,Civil Society / Academia / Industry / Bargaining Agents / Governments in other Jurisdictions / International Organizatio
+12,16,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access to Information and Privacy Of
+13,7,"Health related services / Economic interests (grants and contributions, tax benefits, debt collection) / Social assistan"
+14,4,Little to no impact / Moderate impact / High impact / Very high impact
+15,2,Full automation (the system will make an administrative decision) / Partial automation (the system will contribute to ad
+16,4,Reversible / Likely reversible / Difficult to reverse / Irreversible
+17,4,"Impacts are most likely to be brief / Some impacts may last a matter of months, but some lingering impacts may last long"
+18,2,Design / Implementation
+19,6,"Health related services / Economic interests (grants and contributions, tax benefits, debt collection) / Social assistan"
+20,4,Little to no impact / Moderate impact / High impact / Very high impact
+21,4,"Impacts are most likely to be brief / Some impacts may last a matter of months, but some lingering impacts may last long"
+22,2,Audio and text files / Images and videos
+23,2,Yes / No
+24,6,Existing backlog of work or cases / Improve overall quality of decisions / Lower transaction costs of an existing progra
+25,6,"Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context as"
+26,6,"Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context as"
+27,6,Existing backlog of work or cases / Improve overall quality of decisions / Lower transaction costs of an existing progra
+28,7,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access To Information Policy / Commu
+29,3,Civil Society / Academia / Industry
+30,2,Design / Implementation
+31,6,"Health related services / Economic interests (grants and contributions, tax benefits, debt collection) / Social assistan"
+32,8,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access to Information and Privacy Of
+33,5,Civil Society / Academia / Industry / Office of the Privacy Commissioner / Other (describe)
+34,8,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access to Information and Privacy Of
+35,2,Design / Implementation
+36,2,"Based on rules developed from laws and policy and/or using human expertise (for example, if/then statements) / Based on "
+37,2,Deterministic (follow precise rules and generate single outcome) / Probabilistic (infer several models to explain data)
+38,2,"Discriminative (for example, regression analyses, decision trees) / Generative (for example, linear discriminant analysi"
+39,6,No sharing / Within your department / With another federal department / With a government from another jurisdiction / Wi
+40,3,Yes / No / Unsure
+41,3,Yes / No / Not applicable
+42,8,None / Protected A / Protected B / Protected C / Confidential / Secret / Top Secret / Other
+43,3,Federal Government / Other Canadian Government (province/territorial/municipal) / Private sector / NGO / academia
+44,6,"Image and object recognition: Analyzing large data sets to automate the recognition, classification, and context associa"
+45,4,Little to no impact / Moderate impact / High impact / Very high impact
+46,4,Your institution / Another federal institution / Another government / A non-government third party
+47,3,Open source / Custom built / Commercial off the shelf (COTS)
+48,6,Reduce existing backlog of work or cases / Improve overall quality of decisions / Lower transaction costs of an existing
+49,6,Service cannot be delivered at all / Service cannot be delivered in a timely or efficient manner / Service costs are too
+50,16,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access to Information and Privacy / 
+51,11,General Public / Academia / Industry / Bargaining Agents / Governments in other Jurisdictions / International Organizati
+52,3,Yes / No / Unsure
+53,9,Fairness of outputs / Transparency of the system / Barriers to access / Surveillance / Protection of personal informatio
+54,16,Strategic Policy and Planning / Data Governance / Program Policy / Legal Services / Access to Information and Privacy / 
+55,8,"Health-related services (environmental and workplace health, product and food safety, drug regulation) / Economic intere"
+56,5,Clear time frame or service standards for timeliness / Clients are provided with adequate information about the decision
+57,6,No assessment has been conducted / Assessment conducted; no performance differences identified. / Assessment conducted; 
+58,6,0 to 25% / 26 to 50% / 51 to 75% / 76 to 99% / 100% / Unknown
+59,2,Full automation (the system will make an administrative decision) / Partial automation (the system will contribute to ad
+60,4,"Impacts are most likely to be brief / Some impacts may last a matter of months, but some lingering impacts may last long"
+61,4,"Assessment has been conducted, and no barriers were identified. / Assessment has been conducted, barriers were identifie"
