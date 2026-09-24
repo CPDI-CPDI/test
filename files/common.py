@@ -232,7 +232,12 @@ def current_score(raw: float, mitigation: float, max_mitigation: float | None):
 def write_csv(name: str, rows: list[dict], fieldnames: list[str] | None = None):
     path = DATA_DIR / name
     if not rows and not fieldnames:
-        log(f"  (skipped {name}: no rows)")
+        # Write nothing but leave no stale file behind. Skipping the write let a
+        # file from a previous run survive, so a review list that should have
+        # been empty still showed the earlier failures.
+        if path.exists():
+            path.unlink()
+            log(f"  removed stale {name} (nothing to report)")
         return path
     if fieldnames is None:
         seen, fieldnames = set(), []

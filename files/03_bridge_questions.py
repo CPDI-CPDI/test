@@ -92,6 +92,24 @@ def page_key(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", str(name or "").lower())
 
 
+# The questionnaire gives the three de-risking areas the same title, so twelve
+# distinct sections all read "De-Risking and Mitigation Measures". Reporting by
+# section needs them told apart, and the page name is what carries the
+# difference. This turns the page name into something readable.
+AREA_WORDS = {"dataquality": "Data Quality", "fairness": "Procedural Fairness",
+              "privacy": "Privacy", "consultation": "Consultations",
+              "consultations": "Consultations"}
+
+
+def display_name(page_name: str, title: str, phase: str) -> str:
+    key = re.sub(r"[^a-z]+", "", str(page_name or "").lower())
+    for stem, label in AREA_WORDS.items():
+        if key.startswith(stem):
+            base = f"{title} \u2014 {label}" if label not in title else title
+            return f"{base} ({phase.title()})" if phase else base
+    return f"{title} ({phase.title()})" if phase else title
+
+
 def bridge_sections(sections):
     by_ver = defaultdict(list)
     for s in sections:
@@ -131,6 +149,8 @@ def bridge_sections(sections):
                 sec_uid = uid
                 canon.append({
                     "section_uid": uid,
+                    "display_name_en": display_name(s.get("page_name"), s["section_name_en"],
+                                                    s.get("mitigation_phase", "")),
                     "name_en": s["section_name_en"],
                     "name_fr": s["section_name_fr"],
                     "page_name": s.get("page_name", ""),

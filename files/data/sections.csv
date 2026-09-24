@@ -1,28 +1,28 @@
-﻿section_uid,name_en,name_fr,page_name,display_order,point_type,mitigation_phase,first_seen_version,last_seen_version,bridged_with_fuzzy_match
-1,Project Details,Détails du projet,project-details,1,none,,0.3,1.0.1,N
-2,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,business-drivers,2,none,,0.3,1.0.1,N
-3,About The System,À propos du système,system,3,none,,0.3,0.4,N
-4,About The Decision,À propos de la décision,decision-sector,4,raw,,0.3,1.0.1,N
-5,Impact Assessment,Évaluation de l'incidence,impact,5,none,,0.3,1.0.1,N
-6,About The Data,À propos des données,data,6,none,,0.3,0.5,N
-7,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,risk-mitigation,7,none,,0.3,0.4,N
-8,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,risk-mitigation2,8,none,,0.3,0.4,N
-9,Risk Profile,Profil de risque,risk-profile,4,raw,,0.5,1.0.1,N
-10,Project Authority,Autorité de projet,project-authority,5,raw,,0.5,1.0.1,N
-11,About The System,À propos du système,about-system,6,none,,0.5,1.0.1,N
-12,About the Algorithm,À propos de l'algorithme,about-algorithm,7,raw,,0.5,1.0.1,N
-13,Consultations,,rm-consultation-design,11,mitigation,design,0.5,0.5,N
-14,Consultations,,rm-consultation-implementation,12,mitigation,implementation,0.5,0.5,N
-15,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-data-quality-design,13,none,,0.5,0.5,N
-16,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-data-quality-implementation,14,none,,0.5,0.5,N
-17,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-fairness-design,15,none,,0.5,0.5,N
-18,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-fairness-implementation,16,none,,0.5,0.5,N
-19,About The Data,À propos des données,aboutData,10,raw,,0.6,1.0.1,N
-20,Consultations,,consultationDesign,11,mitigation,design,0.6,1.0.1,N
-21,Consultations,,consultationImplementation,12,mitigation,implementation,0.6,1.0.1,N
-22,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,dataQualityDesign,13,mitigation,design,0.6,1.0.1,N
-23,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,dataQualityImplementation,14,mitigation,implementation,0.6,1.0.1,N
-24,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,fairnessDesign,15,mitigation,design,0.6,1.0.1,N
-25,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,fairnessImplementation,16,mitigation,implementation,0.6,1.0.1,N
-26,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,privacyDesign,17,mitigation,design,0.6,1.0.1,N
-27,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,privacyImplementation,18,mitigation,implementation,0.6,1.0.1,N
+﻿section_uid,display_name_en,name_en,name_fr,page_name,display_order,point_type,mitigation_phase,first_seen_version,last_seen_version,bridged_with_fuzzy_match
+1,Project Details,Project Details,Détails du projet,project-details,1,none,,0.3,1.0.1,N
+2,Business Driver / Positive Impact,Business Driver / Positive Impact,Facteur opérationnel / Incidence positive,business-drivers,2,none,,0.3,1.0.1,N
+3,About The System,About The System,À propos du système,system,3,none,,0.3,0.4,N
+4,About The Decision,About The Decision,À propos de la décision,decision-sector,4,raw,,0.3,1.0.1,N
+5,Impact Assessment,Impact Assessment,Évaluation de l'incidence,impact,5,none,,0.3,1.0.1,N
+6,About The Data,About The Data,À propos des données,data,6,none,,0.3,0.5,N
+7,De-Risking And Mitigation Measures,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,risk-mitigation,7,none,,0.3,0.4,N
+8,De-Risking And Mitigation Measures,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,risk-mitigation2,8,none,,0.3,0.4,N
+9,Risk Profile,Risk Profile,Profil de risque,risk-profile,4,raw,,0.5,1.0.1,N
+10,Project Authority,Project Authority,Autorité de projet,project-authority,5,raw,,0.5,1.0.1,N
+11,About The System,About The System,À propos du système,about-system,6,none,,0.5,1.0.1,N
+12,About the Algorithm,About the Algorithm,À propos de l'algorithme,about-algorithm,7,raw,,0.5,1.0.1,N
+13,Consultations (Design),Consultations,,rm-consultation-design,11,mitigation,design,0.5,0.5,N
+14,Consultations (Implementation),Consultations,,rm-consultation-implementation,12,mitigation,implementation,0.5,0.5,N
+15,De-Risking And Mitigation Measures,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-data-quality-design,13,none,,0.5,0.5,N
+16,De-Risking And Mitigation Measures,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-data-quality-implementation,14,none,,0.5,0.5,N
+17,De-Risking And Mitigation Measures,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-fairness-design,15,none,,0.5,0.5,N
+18,De-Risking And Mitigation Measures,De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,rm-fairness-implementation,16,none,,0.5,0.5,N
+19,About The Data,About The Data,À propos des données,aboutData,10,raw,,0.6,1.0.1,N
+20,Consultations (Design),Consultations,,consultationDesign,11,mitigation,design,0.6,1.0.1,N
+21,Consultations (Implementation),Consultations,,consultationImplementation,12,mitigation,implementation,0.6,1.0.1,N
+22,De-Risking And Mitigation Measures — Data Quality (Design),De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,dataQualityDesign,13,mitigation,design,0.6,1.0.1,N
+23,De-Risking And Mitigation Measures — Data Quality (Implementation),De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,dataQualityImplementation,14,mitigation,implementation,0.6,1.0.1,N
+24,De-Risking And Mitigation Measures — Procedural Fairness (Design),De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,fairnessDesign,15,mitigation,design,0.6,1.0.1,N
+25,De-Risking And Mitigation Measures — Procedural Fairness (Implementation),De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,fairnessImplementation,16,mitigation,implementation,0.6,1.0.1,N
+26,De-Risking And Mitigation Measures — Privacy (Design),De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,privacyDesign,17,mitigation,design,0.6,1.0.1,N
+27,De-Risking And Mitigation Measures — Privacy (Implementation),De-Risking And Mitigation Measures,Élimination des risques et mesure d'atténuation,privacyImplementation,18,mitigation,implementation,0.6,1.0.1,N

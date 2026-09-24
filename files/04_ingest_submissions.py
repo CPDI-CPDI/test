@@ -183,16 +183,20 @@ def main():
         m = re.search(r"(19|20)\d{2}", p["submission_label"])
         return (m.group(0) if m else "0000", p["submission_label"])
 
+    # The Open Government record identifier is the key. It is one-to-one with a
+    # system by definition — a record is a system — and it never moves. The
+    # short number kept alongside it is assigned by row order, so it shifts
+    # whenever a record is added or withdrawn; it is for reading, not joining.
     systems, submissions, answers = [], [], []
-    for sid, (rid, group) in enumerate(sorted(by_record.items()), start=1):
+    for ordinal, (rid, group) in enumerate(sorted(by_record.items()), start=1):
         group.sort(key=sort_key)
         rec = records.get(rid, {})
         latest = group[-1]
         for seq, p in enumerate(group, start=1):
-            sub_id = f"{sid}-{seq}"
+            sub_id = f"{rid}-{seq}"
             submissions.append({
-                "submission_id": sub_id, "system_id": sid, "sequence_no": seq,
-                "og_record_id": rid, "submission_label": p["submission_label"],
+                "submission_id": sub_id, "og_record_id": rid, "sequence_no": seq,
+                "system_ref": ordinal, "submission_label": p["submission_label"],
                 "catalog_version": p["catalog_version"],
                 "stated_version": p["stated_version"],
                 "version_source": p["version_source"],
@@ -212,11 +216,11 @@ def main():
                 "is_current": "Y" if p is latest else "N",
             })
             for r in p["rows"]:
-                answers.append({"submission_id": sub_id, "system_id": sid,
+                answers.append({"submission_id": sub_id, "og_record_id": rid,
                                 "catalog_version": p["catalog_version"], **r})
 
         systems.append({
-            "system_id": sid, "og_record_id": rid,
+            "og_record_id": rid, "system_ref": ordinal,
             "system_name_en": latest["title"] or rec.get("title_en", ""),
             "system_name_fr": latest["title_fr"] or rec.get("title_fr", ""),
             "department_en": rec.get("department_en", ""),
@@ -227,7 +231,7 @@ def main():
             "submission_count": len(group),
             "first_submission_label": group[0]["submission_label"],
             "latest_submission_label": latest["submission_label"],
-            "current_submission_id": f"{sid}-{len(group)}",
+            "current_submission_id": f"{rid}-{len(group)}",
             "current_impact_level": latest["impact_level"],
             "current_score_pct": latest["current_score_pct"],
             "portal_url_en": rec.get("portal_url_en", ""),

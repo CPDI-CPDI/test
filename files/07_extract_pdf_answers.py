@@ -43,7 +43,7 @@ from collections import defaultdict
 from pathlib import Path
 from common import (RAW_DIR, read_csv, write_csv, fetch, absolute_url, norm,
                     similarity, impact_level, current_score, clean_version,
-                    version_key, log, header)
+                    version_key, load_option_lookup, log, header)
 
 # ---------------------------------------------------------------- patterns
 RE_VERSION = re.compile(r"^\s*Version\s*:\s*v?\s*([0-9][0-9A-Za-z.]*)", re.M)
@@ -250,6 +250,86 @@ def parse_answers(body: str, point_type: str, title: str = "") -> list[dict]:
     return out
 
 
+RE_REF = re.compile(r"\{([^}]+)\}")
+
+
+def satisfies(condition: str, answers_by_field: dict) -> bool:
+    """
+    Whether a branching condition is met, given the answers found in the
+    document. An unreadable condition counts as met, so a question is never
+    dropped on a rule we could not interpret.
+    """
+    if not condition:
+        return True
+
+    def atom(expr):
+        expr = expr.strip()
+        m = re.match(r"^\{([^}]+)\}\s*(=|<>|!=)\s*'([^']*)'$", expr)
+        if m:
+            got = answers_by_field.get(m.group(1).split(".")[0].strip())
+            if got is None:
+                return None
+            hit = m.group(3) in got
+            return hit if m.group(2) == "=" else not hit
+        m = re.match(r"^\{([^}]+)\}\s+(not\s*)?contains\s+'([^']*)'$", expr, re.I)
+        if m:
+            got = answers_by_field.get(m.group(1).split(".")[0].strip())
+            if got is None:
+                return None
+            hit = m.group(3) in got
+            return (not hit) if m.group(2) else hit
+        m = re.match(r"^\{([^}]+)\}\s+(not)?empty$", expr, re.I)
+        if m:
+            got = answers_by_field.get(m.group(1).split(".")[0].strip())
+            empty = not got
+            return (not empty) if m.group(2) else empty
+        return None
+
+    for part in re.split(r"\s+or\s+", condition.replace("(", " ").replace(")", " "), flags=re.I):
+        results = [atom(a) for a in re.split(r"\s+and\s+", part, flags=re.I)]
+        if any(r is None for r in results):
+            return True                      # unreadable: keep the question
+        if all(results):
+            return True
+    return False
+
+
+def apply_branching(rows, version, fields_by_name, options):
+    """
+    Drop answers to questions that were never asked.
+
+    A department can answer a follow-up, then change the earlier answer that
+    made it appear. The follow-up is hidden but its answer stays in the file,
+    and the results document still prints it. The tool does not score it, so
+    neither should we — otherwise a recomputed score comes out higher than the
+    one that was published.
+    """
+    # what value each answered question holds, in the form conditions use
+    held = {}
+    for r in rows:
+        fname = r.get("field_name")
+        if not fname:
+            continue
+        opts = options.get((version, fname), [])
+        text = norm(r.get("answer_text", ""))
+        vals = [o["option_value"] for o in opts
+                if o.get("text_en") and norm(o["text_en"]) and norm(o["text_en"]) in text]
+        held.setdefault(fname, set()).update(vals)
+
+    dropped = 0
+    for r in rows:
+        fname = r.get("field_name")
+        cond = fields_by_name.get(fname, {}).get("visible_if", "") if fname else ""
+        r["shown"] = "Y"
+        if cond and not satisfies(cond, held):
+            r["shown"] = "N"
+            r["hidden_by"] = cond
+            if r["points"]:
+                dropped += r["points"]
+            r["points"] = 0
+    return dropped
+
+
 def main():
     header("STEP 7 — Extracting answers from AIA result PDFs")
 
@@ -262,20 +342,31 @@ def main():
         maxima = {}
 
     qmap = defaultdict(list)
+    fields_by_name = defaultdict(dict)
     try:
         for r in read_csv("question_map.csv"):
             qmap[r["catalog_version"]].append(r)
+            fields_by_name[r["catalog_version"]][r["field_name"]] = r
     except SystemExit:
         log("  (question_map.csv not found — answers will not be linked to question_uid)")
+    try:
+        options = load_option_lookup()
+    except SystemExit:
+        options = {}
+        log("  (option tables not found — branching cannot be applied)")
 
     has_json = {r["og_record_id"] for r in resources
                 if r["format"] == "JSON" and r["is_assessment_artifact"] == "Y"}
     candidates = [r for r in resources
                   if r["format"] == "PDF" and r["is_assessment_artifact"] == "Y"
-                  and r["language"] in ("en", "unknown")
+                  and r["language"] in ("en", "bilingual", "unknown")
                   and r["og_record_id"] not in has_json]
+    # One PDF per record and submission. English is preferred, then bilingual,
+    # and an unlabelled file only as a last resort: reading a French assessment
+    # with English patterns produces a confident-looking wrong result.
+    _rank = {"en": 0, "bilingual": 1, "unknown": 2}
     targets, seen = [], set()
-    for r in sorted(candidates, key=lambda x: (x["og_record_id"], x["language"] != "en")):
+    for r in sorted(candidates, key=lambda x: (x["og_record_id"], _rank.get(x["language"], 3))):
         key = (r["og_record_id"], r["submission_label"])
         if key not in seen:
             seen.add(key)
@@ -314,6 +405,21 @@ def main():
             rows.extend(parse_answers(body, ptype, ptitle))
         unknown_parts = [t for pt, t, _ in parts if pt == "unknown"]
 
+        # link answers to the catalog first, then drop the ones never asked
+        pool_pre = qmap.get(head["stated_version"] or "", [])
+        for r in rows:
+            best, score = None, 0.0
+            for q in pool_pre:
+                sim = similarity(q["text_en"], r["question_text"])
+                if sim > score:
+                    best, score = q, sim
+            r["field_name"] = best["field_name"] if (best and score >= 0.80) else ""
+        dropped = apply_branching(rows, head["stated_version"] or "",
+                                  fields_by_name.get(head["stated_version"] or "", {}),
+                                  options)
+        if dropped:
+            log(f"    {dropped} point(s) excluded: answers to questions that were not asked")
+
         computed_raw = sum(r["points"] for r in rows if r["point_type"] == "raw")
         computed_mit = sum(r["points"] for r in rows if r["point_type"] == "mitigation")
 
@@ -339,7 +445,6 @@ def main():
                 if s > score:
                     best, score = q, s
             r["question_uid"] = best["question_uid"] if (best and score >= 0.80) else ""
-            r["field_name"] = best["field_name"] if (best and score >= 0.80) else ""
             r["match_score"] = round(score, 3)
 
         submissions.append({

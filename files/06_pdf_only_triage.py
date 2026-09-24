@@ -128,15 +128,15 @@ def main():
     has_json = {r["og_record_id"] for r in resources
                 if r["format"] == "JSON" and r["is_assessment_artifact"] == "Y"}
     candidates = [r for r in resources
-                  if r["format"] == "PDF"
-                  and r["is_assessment_artifact"] == "Y"
-                  and r["language"] in ("en", "unknown")
+                  if r["format"] == "PDF" and r["is_assessment_artifact"] == "Y"
+                  and r["language"] in ("en", "bilingual", "unknown")
                   and r["og_record_id"] not in has_json]
-    # One PDF per record and submission is enough; records often carry the same
-    # assessment more than once, and an English and an unknown-language copy of
-    # the same file would otherwise both be triaged.
+    # One PDF per record and submission. English is preferred, then bilingual,
+    # and an unlabelled file only as a last resort: reading a French assessment
+    # with English patterns produces a confident-looking wrong result.
+    _rank = {"en": 0, "bilingual": 1, "unknown": 2}
     targets, seen_keys = [], set()
-    for r in sorted(candidates, key=lambda x: (x["og_record_id"], x["language"] != "en")):
+    for r in sorted(candidates, key=lambda x: (x["og_record_id"], _rank.get(x["language"], 3))):
         key = (r["og_record_id"], r["submission_label"])
         if key in seen_keys:
             continue

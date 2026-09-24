@@ -42,15 +42,43 @@ UPDATE_RE = re.compile(
 
 
 def classify_language(name: str, res: dict) -> str:
-    lang_field = " ".join(res.get("language") or []) if isinstance(res.get("language"), list) else str(res.get("language") or "")
-    blob = f"{name} {lang_field}".lower()
-    has_fr = any(h in blob for h in FRENCH_HINTS) or "fra" in lang_field.lower()
-    has_en = any(h in blob for h in ENGLISH_HINTS) or "eng" in lang_field.lower()
-    if has_fr and has_en:
+    """
+    The portal states the language of each file explicitly, so that is used
+    first and the file name is only a fallback.
+
+    The field holds ISO codes: ["en"], ["fr"], or both for a bilingual file.
+    An earlier version of this only looked for "eng"/"fra" or patterns in the
+    file name, so a resource CKAN had already labelled came back "unknown".
+    That mattered more than it sounds: the French assessments were being
+    reported as missing when the portal knew about them all along, and a
+    record whose files were both "unknown" could have its French copy picked
+    for English extraction.
+    """
+    field = res.get("language")
+    codes = set()
+    if isinstance(field, list):
+        codes = {str(c).strip().lower() for c in field if c}
+    elif field:
+        codes = {c.strip().lower() for c in str(field).replace(",", " ").split()}
+
+    has_en = bool(codes & {"en", "eng", "english", "en-ca"})
+    has_fr = bool(codes & {"fr", "fra", "fre", "french", "fr-ca"})
+    if has_en and has_fr:
         return "bilingual"
     if has_fr:
         return "fr"
     if has_en:
+        return "en"
+
+    # No usable field: fall back to the file name.
+    blob = str(name or "").lower()
+    name_fr = any(h in blob for h in FRENCH_HINTS)
+    name_en = any(h in blob for h in ENGLISH_HINTS)
+    if name_fr and name_en:
+        return "bilingual"
+    if name_fr:
+        return "fr"
+    if name_en:
         return "en"
     return "unknown"
 

@@ -575,6 +575,114 @@ check("the parent chain sits on the same row",
       _vendor["parent_field_name"] == "aiUsed" and _vendor["chain_depth"] == 1)
 check("questions is a roll-up of it", len(_cq) == 2 and len(_qm2) == 2)
 
+print("\n=== the portal states the language; trust it ===")
+# CKAN labels every resource ["en"], ["fr"] or both. An earlier version only
+# recognised "eng"/"fra" or patterns in the file name, so labelled files came
+# back "unknown" — which reported the French assessments as missing and could
+# hand a French PDF to the English extractor.
+enum = importlib.import_module("01_enumerate_portal")
+for _n, _res, _want in [("CBSA TCI AIA", {"language": ["en"]}, "en"),
+                        ("Indicateur de conformite", {"language": ["fr"]}, "fr"),
+                        ("AIA NCLL Dataset", {"language": ["en", "fr"]}, "bilingual"),
+                        ("aia-fr-acessible", {"language": []}, "fr"),
+                        ("AIA Results (English)", {"language": None}, "en"),
+                        ("unlabelled", {"language": []}, "unknown")]:
+    check(f"language of {_n[:26]} reads as {_want}",
+          enum.classify_language(_n, _res) == _want, enum.classify_language(_n, _res))
+
+print("\n=== a French PDF is never read as English ===")
+_res = [
+  {"og_record_id": "r1", "format": "PDF", "is_assessment_artifact": "Y",
+   "language": "fr", "submission_label": "Original", "resource_name": "FR copy"},
+  {"og_record_id": "r1", "format": "PDF", "is_assessment_artifact": "Y",
+   "language": "en", "submission_label": "Original", "resource_name": "EN copy"},
+]
+_rank = {"en": 0, "bilingual": 1, "unknown": 2}
+_cand = [r for r in _res if r["language"] in ("en", "bilingual", "unknown")]
+_picked = sorted(_cand, key=lambda x: (x["og_record_id"], _rank.get(x["language"], 3)))[0]
+check("the English copy is chosen for extraction",
+      _picked["resource_name"] == "EN copy", _picked["resource_name"])
+check("the French copy is excluded outright",
+      all(r["language"] != "fr" for r in _cand))
+
+print("\n=== answers to questions that were never asked do not score ===")
+# A department can answer a follow-up, then change the earlier answer that made
+# it appear. The follow-up is hidden but the answer stays in the file, and the
+# results document still prints it. The tool does not score it. Found in the
+# CBSA Traveller Compliance Indicator assessment, where a recomputed raw score
+# of 47 disagreed with the printed 45 by exactly one such answer.
+_rows = [
+  {"field_name": "src1", "question_text": "Will the system use personal information?",
+   "answer_text": "No", "points": 4, "point_type": "raw"},
+  {"field_name": "src1A", "question_text": "Have you verified that its use is limited?",
+   "answer_text": "Yes", "points": 2, "point_type": "raw"},
+  {"field_name": "src2", "question_text": "Who controls the data?",
+   "answer_text": "Federal government", "points": 1, "point_type": "raw"},
+]
+_fields = {"src1": {"visible_if": ""},
+           "src1A": {"visible_if": "{src1} = 'item1-4'"},
+           "src2": {"visible_if": ""}}
+_opts = {("0.10.0", "src1"): [{"option_value": "item1-4", "text_en": "Yes"},
+                              {"option_value": "item2-0", "text_en": "No"}],
+         ("0.10.0", "src1A"): [{"option_value": "item1-2", "text_en": "Yes"}],
+         ("0.10.0", "src2"): [{"option_value": "item1-1", "text_en": "Federal government"}]}
+_dropped = pdf.apply_branching(_rows, "0.10.0", _fields, _opts)
+check("the hidden follow-up stops scoring", _dropped == 2, str(_dropped))
+check("its answer is kept, marked as not shown",
+      _rows[1]["shown"] == "N" and _rows[1]["answer_text"] == "Yes")
+check("the questions that were asked are untouched",
+      sum(r["points"] for r in _rows) == 5, str(sum(r["points"] for r in _rows)))
+
+_r2 = [{"field_name": "x", "question_text": "q", "answer_text": "Yes",
+        "points": 3, "point_type": "raw"}]
+pdf.apply_branching(_r2, "0.10.0", {"x": {"visible_if": "{other} weirdOp 'z'"}}, {})
+check("a condition we cannot read keeps the question", _r2[0]["points"] == 3)
+
+_r3 = [{"field_name": "p", "question_text": "parent", "answer_text": "Yes",
+        "points": 4, "point_type": "raw"},
+       {"field_name": "c", "question_text": "child", "answer_text": "Yes",
+        "points": 2, "point_type": "raw"}]
+_o3 = {("0.10.0", "p"): [{"option_value": "item1-4", "text_en": "Yes"},
+                         {"option_value": "item2-0", "text_en": "No"}]}
+check("a follow-up that was asked keeps its points",
+      pdf.apply_branching(_r3, "0.10.0",
+                          {"p": {"visible_if": ""}, "c": {"visible_if": "{p} = 'item1-4'"}},
+                          _o3) == 0)
+
+print("\n=== keys survive a record being added ===")
+# Keys are built from the Open Government record identifier, which is one to one
+# with a system and never moves. The short number alongside it is assigned by
+# row order, so it shifts when a record is added — which is exactly why it is a
+# reference for reading rather than something to join on.
+def _build(records):
+    out = []
+    for ordinal, rid in enumerate(sorted(records), start=1):
+        out.append({"og_record_id": rid, "system_ref": ordinal,
+                    "submission_id": f"{rid}-1"})
+    return out
+
+_before = _build(["b-record", "c-record", "d-record"])
+_after = _build(["a-NEW-record", "b-record", "c-record", "d-record"])
+_sub_before = {r["og_record_id"]: r["submission_id"] for r in _before}
+_sub_after = {r["og_record_id"]: r["submission_id"] for r in _after}
+_ref_before = {r["og_record_id"]: r["system_ref"] for r in _before}
+_ref_after = {r["og_record_id"]: r["system_ref"] for r in _after}
+
+check("submission ids do not move when a record is added",
+      all(_sub_before[r] == _sub_after[r] for r in _sub_before))
+check("the display number does move, as expected",
+      any(_ref_before[r] != _ref_after[r] for r in _ref_before))
+check("a submission id is built from the record identifier",
+      _sub_before["b-record"] == "b-record-1", _sub_before["b-record"])
+
+from contracts import CONTRACTS as _C, SCHEMA_VERSION as _SV
+check("the schema version records the key change", _SV == "2.0", _SV)
+for _t in ("systems", "submissions", "answers", "system_services"):
+    check(f"{_t} leads with the record identifier",
+          "og_record_id" in _C[_t][:2], str(_C[_t][:2]))
+    check(f"{_t} no longer carries system_id", "system_id" not in _C[_t],
+          str([c for c in _C[_t] if c == "system_id"]))
+
 print("\n" + "=" * 60)
 if FAILURES:
     print(f"{len(FAILURES)} CHECK(S) FAILED: {', '.join(FAILURES)}")
