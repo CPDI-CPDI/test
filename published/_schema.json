@@ -1,0 +1,329 @@
+{
+  "schema_version": "2.0",
+  "generated_utc": "2026-09-25T15:14:20Z",
+  "encoding": "utf-8",
+  "byte_order_mark": false,
+  "line_terminator": "\\n",
+  "quoting": "minimal, with line breaks preserved inside quoted fields",
+  "stable_key_note": "og_record_id is the key. It is one to one with a system and does not move. system_ref is a short number for reading, assigned by row order, and shifts when a record is added or withdrawn.",
+  "tables": {
+    "answers": {
+      "columns": [
+        "submission_id",
+        "og_record_id",
+        "catalog_version",
+        "field_name",
+        "question_uid",
+        "point_type",
+        "points",
+        "answer_value_raw",
+        "option_index",
+        "answer_text_en",
+        "answer_text_fr",
+        "is_free_text",
+        "translation_source",
+        "mapped",
+        "shown"
+      ],
+      "row_count": 4035
+    },
+    "catalog_versions": {
+      "columns": [
+        "catalog_version",
+        "git_ref",
+        "question_count",
+        "scored_question_count",
+        "section_count",
+        "max_raw",
+        "max_mitigation",
+        "max_mitigation_design",
+        "max_mitigation_implementation",
+        "max_mitigation_if_summed",
+        "mitigation_threshold",
+        "unclassified_questions",
+        "source_url"
+      ],
+      "row_count": 10
+    },
+    "crosswalk_gaps": {
+      "columns": [
+        "gap_type",
+        "og_record_id",
+        "system_name_en",
+        "department_en",
+        "service_id",
+        "service_name_en",
+        "match_confidence",
+        "reason",
+        "candidate"
+      ],
+      "row_count": 0
+    },
+    "departments": {
+      "columns": [
+        "department_code",
+        "name_en",
+        "name_fr",
+        "first_seen_version"
+      ],
+      "row_count": 102
+    },
+    "og_records": {
+      "columns": [
+        "og_record_id",
+        "title_en",
+        "title_fr",
+        "department_en",
+        "department_fr",
+        "department_code",
+        "record_released",
+        "record_modified",
+        "date_published",
+        "keywords",
+        "homepage",
+        "portal_url_en",
+        "portal_url_fr",
+        "resource_count",
+        "submission_count_estimate",
+        "has_json"
+      ],
+      "row_count": 39
+    },
+    "og_resources": {
+      "columns": [
+        "resource_id",
+        "og_record_id",
+        "resource_name",
+        "format",
+        "language",
+        "resource_type",
+        "submission_label",
+        "is_assessment_artifact",
+        "download_url",
+        "size_bytes",
+        "last_modified"
+      ],
+      "row_count": 165
+    },
+    "option_point_items": {
+      "columns": [
+        "point_profile_id",
+        "option_set_id",
+        "option_index",
+        "option_value",
+        "points"
+      ],
+      "row_count": 409
+    },
+    "option_points": {
+      "columns": [
+        "point_profile_id",
+        "option_set_id",
+        "points_pattern"
+      ],
+      "row_count": 86
+    },
+    "option_set_items": {
+      "columns": [
+        "option_set_id",
+        "option_index",
+        "text_en",
+        "text_fr"
+      ],
+      "row_count": 333
+    },
+    "option_sets": {
+      "columns": [
+        "option_set_id",
+        "option_count",
+        "labels"
+      ],
+      "row_count": 61
+    },
+    "question_map": {
+      "columns": [
+        "field_id",
+        "catalog_version",
+        "field_name",
+        "page_name",
+        "section_name_en",
+        "section_name_fr",
+        "section_order",
+        "panel_name",
+        "panel_suffix",
+        "point_type",
+        "mitigation_phase",
+        "answer_type",
+        "is_mandatory",
+        "visible_if",
+        "option_count",
+        "max_points",
+        "text_en",
+        "text_fr",
+        "guidance_en",
+        "guidance_fr",
+        "question_uid",
+        "parent_field_name",
+        "root_field_name",
+        "chain_depth",
+        "section_uid",
+        "match_method",
+        "match_score",
+        "needs_review",
+        "parent_question_uid",
+        "root_question_uid"
+      ],
+      "row_count": 1419
+    },
+    "question_options": {
+      "columns": [
+        "catalog_version",
+        "field_name",
+        "field_id",
+        "option_set_id",
+        "point_profile_id",
+        "option_count",
+        "max_points"
+      ],
+      "row_count": 996
+    },
+    "questions": {
+      "columns": [
+        "question_uid",
+        "canonical_text_en",
+        "canonical_text_fr",
+        "section_uid",
+        "point_type",
+        "answer_type",
+        "first_seen_version",
+        "last_seen_version",
+        "version_count",
+        "field_names",
+        "reworded",
+        "status",
+        "parent_question_uid",
+        "is_follow_up"
+      ],
+      "row_count": 206
+    },
+    "section_versions": {
+      "columns": [
+        "section_uid",
+        "catalog_version",
+        "page_name",
+        "section_name_en",
+        "section_name_fr",
+        "display_order",
+        "point_type",
+        "mitigation_phase",
+        "max_raw_points",
+        "max_mitigation_points",
+        "match_method",
+        "match_score"
+      ],
+      "row_count": 150
+    },
+    "sections": {
+      "columns": [
+        "section_uid",
+        "display_name_en",
+        "name_en",
+        "name_fr",
+        "page_name",
+        "display_order",
+        "point_type",
+        "mitigation_phase",
+        "first_seen_version",
+        "last_seen_version",
+        "bridged_with_fuzzy_match"
+      ],
+      "row_count": 27
+    },
+    "services": {
+      "columns": [
+        "service_id",
+        "fiscal_year",
+        "service_name_en",
+        "owner_org_code",
+        "owner_org_en",
+        "owner_org_fr",
+        "program_id",
+        "program_name_en",
+        "service_description_en",
+        "declares_automation",
+        "automation_description_en",
+        "service_uri_en"
+      ],
+      "row_count": 0
+    },
+    "submissions": {
+      "columns": [
+        "submission_id",
+        "og_record_id",
+        "sequence_no",
+        "system_ref",
+        "submission_label",
+        "catalog_version",
+        "stated_version",
+        "version_source",
+        "publication_date",
+        "raw_impact_score",
+        "mitigation_score",
+        "current_score",
+        "reduction_applied",
+        "current_score_pct",
+        "mitigation_pct",
+        "impact_level",
+        "answer_count",
+        "unmapped_answers",
+        "source_format",
+        "source_file",
+        "extraction_method",
+        "is_current"
+      ],
+      "row_count": 40
+    },
+    "system_services": {
+      "columns": [
+        "og_record_id",
+        "system_ref",
+        "service_id",
+        "service_name_en",
+        "service_fiscal_year",
+        "match_confidence",
+        "match_rationale",
+        "source",
+        "review_notes",
+        "system_in_master",
+        "system_id_at_crosswalk_time"
+      ],
+      "row_count": 0
+    },
+    "systems": {
+      "columns": [
+        "og_record_id",
+        "system_ref",
+        "system_name_en",
+        "system_name_fr",
+        "department_en",
+        "department_fr",
+        "department_code",
+        "portal_department_code",
+        "branch",
+        "submission_count",
+        "first_submission_label",
+        "latest_submission_label",
+        "current_submission_id",
+        "current_impact_level",
+        "current_score_pct",
+        "portal_url_en",
+        "service_count",
+        "service_ids",
+        "service_names_en",
+        "service_match_confidence",
+        "crosswalk_status"
+      ],
+      "row_count": 38
+    }
+  }
+}

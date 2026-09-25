@@ -36,13 +36,27 @@ from __future__ import annotations
 import csv, json
 from datetime import datetime, timezone
 from pathlib import Path
-from common import BASE, DATA_DIR, log, header
+from common import DATA_DIR, PUBLISH_DIR, log, header, assemble_core_tables
 from contracts import CONTRACTS, SCHEMA_VERSION, PUBLIC, SOURCE
 
-OUT = BASE / "published"
+OUT = PUBLISH_DIR   # the repository root when run inside a clone
+
+
+# systems, submissions and answers are assembled — JSON, validated PDFs and
+# the crosswalk together — exactly as the workbook assembles them.
+_CORE: dict | None = None
+
+
+def core_tables() -> dict:
+    global _CORE
+    if _CORE is None:
+        _CORE = assemble_core_tables()
+    return _CORE
 
 
 def read_source(name: str):
+    if name in ("systems", "submissions", "answers"):
+        return core_tables().get(name)
     path = DATA_DIR / SOURCE.get(name, f"{name}.csv")
     if not path.exists():
         return None

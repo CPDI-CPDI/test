@@ -10,12 +10,11 @@ Outputs
 """
 from __future__ import annotations
 from pathlib import Path
-from collections import defaultdict
 import csv
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
-from common import DATA_DIR, BASE, read_csv, log, header
+from common import DATA_DIR, BASE, read_csv, log, header, assemble_core_tables
 
 OUT = BASE / "aia_master_table.xlsx"
 
@@ -118,200 +117,6 @@ def add_sheet(wb, name, rows, note=""):
     return ws, len(rows)
 
 
-def merge_crosswalk(systems):
-    """
-    Attach the service links to the systems table.
-
-    The crosswalk is joined on the Open Government record identifier rather than
-    on system_id: identifiers are assigned by row order when the tables are
-    built, so they move whenever a record is added, while the record identifier
-    does not. A crosswalk prepared against an earlier run still lines up.
-
-    The gaps are also re-resolved here, because systems added by the PDF merge
-    are not present when the crosswalk step runs.
-    """
-    def rd(name):
-        p = DATA_DIR / name
-        if not p.exists():
-            return []
-        with open(p, encoding="utf-8-sig") as f:
-            return list(csv.DictReader(f))
-
-    links = rd("system_services.csv")
-    if not links:
-        return systems, [], 0
-
-    by_record = defaultdict(list)
-    for l in links:
-        by_record[str(l.get("og_record_id", "")).strip()].append(l)
-
-    known = {str(s.get("og_record_id", "")).strip() for s in systems}
-    ref_of = {str(s.get("og_record_id", "")).strip(): s.get("system_ref") for s in systems}
-
-    matched = 0
-    for s in systems:
-        rec = str(s.get("og_record_id", "")).strip()
-        mine = by_record.get(rec, [])
-        if mine:
-            matched += 1
-        s["service_count"] = len(mine)
-        s["service_ids"] = "; ".join(l.get("service_id", "") for l in mine)
-        s["service_names_en"] = "; ".join(l.get("service_name_en", "") for l in mine)
-        s["service_match_confidence"] = "; ".join(
-            sorted({l.get("match_confidence", "") for l in mine if l.get("match_confidence")}))
-        s["crosswalk_status"] = ("linked to a service" if mine else "no service named")
-
-    # stamp the current system_id onto each link, and re-derive the gap list
-    for l in links:
-        l["system_ref"] = ref_of.get(str(l.get("og_record_id", "")).strip(), "")
-
-    gaps = [g for g in rd("crosswalk_gaps.csv")
-            if g.get("gap_type") != "assessment not yet reviewed"]
-    reviewed = {str(l.get("og_record_id", "")).strip() for l in links}
-    seen_in_crosswalk = reviewed | {str(g.get("og_record_id", "")).strip()
-                                    for g in gaps if g.get("og_record_id")}
-    for s in systems:
-        rec = str(s.get("og_record_id", "")).strip()
-        if rec and rec not in seen_in_crosswalk:
-            gaps.append({
-                "gap_type": "assessment not yet reviewed",
-                "og_record_id": rec,
-                "system_name_en": s.get("system_name_en", ""),
-                "department_en": s.get("department_en", ""),
-                "service_id": "", "service_name_en": "", "match_confidence": "",
-                "reason": "Added to the master table after the crosswalk was prepared.",
-                "candidate": "",
-            })
-
-    with open(DATA_DIR / "system_services.csv", "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=list(links[0].keys()))
-        w.writeheader(); w.writerows(links)
-    with open(DATA_DIR / "crosswalk_gaps.csv", "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=list(gaps[0].keys()))
-        w.writeheader(); w.writerows(gaps)
-
-    log(f"  crosswalk: {len(links)} service link(s) across {matched} system(s)")
-    unreviewed = sum(1 for g in gaps if g["gap_type"] == "assessment not yet reviewed")
-    if unreviewed:
-        log(f"  crosswalk: {unreviewed} assessment(s) added since it was prepared, not yet reviewed")
-    return systems, gaps, matched
-
-
-def merge_pdf_results(systems, submissions, answers):
-    """
-    Fold the validated PDF assessments into the same tables as the JSON ones.
-
-    They belong in `systems`, `submissions` and `answers` rather than in
-    separate sheets: a report should not have to union two tables to count the
-    portfolio. `source_format` distinguishes them where that matters.
-
-    Only rows whose recomputed scores reproduced the scores printed in the
-    document are merged. Anything that failed validation stays out.
-    """
-    pdf_subs_path = DATA_DIR / "pdf_submissions.csv"
-    if not pdf_subs_path.exists():
-        log("  (no pdf_submissions.csv — run 07_extract_pdf_answers.py to include "
-            "the PDF-only assessments)")
-        return systems, submissions, answers, 0
-
-    def rd(name):
-        p = DATA_DIR / name
-        if not p.exists():
-            return []
-        with open(p, encoding="utf-8-sig") as f:
-            return list(csv.DictReader(f))
-
-    pdf_subs = [r for r in rd("pdf_submissions.csv") if r.get("validated") == "Y"]
-    pdf_ans = [r for r in rd("pdf_answers.csv") if r.get("validated") == "Y"]
-    skipped = len(rd("pdf_submissions.csv")) - len(pdf_subs)
-    if skipped:
-        log(f"  {skipped} PDF assessment(s) failed validation and were not merged")
-    if not pdf_subs:
-        return systems, submissions, answers, 0
-
-    existing = {s["og_record_id"] for s in systems}
-    next_ref = max((int(s.get("system_ref") or 0) for s in systems
-                    if str(s.get("system_ref", "")).isdigit()), default=0) + 1
-
-    by_record = defaultdict(list)
-    for r in pdf_subs:
-        by_record[r["og_record_id"]].append(r)
-
-    ans_by_key = defaultdict(list)
-    for a in pdf_ans:
-        ans_by_key[(a["og_record_id"], a["submission_label"])].append(a)
-
-    added = 0
-    for rid, group in sorted(by_record.items()):
-        if rid in existing:
-            log(f"  (record {rid} already present from JSON — PDF copy skipped)")
-            continue
-        ref = next_ref
-        next_ref += 1
-        group.sort(key=lambda r: r.get("submission_label", ""))
-        latest = group[-1]
-
-        for seq, r in enumerate(group, start=1):
-            sub_id = f"{rid}-{seq}"
-            submissions.append({
-                "submission_id": sub_id, "og_record_id": rid, "sequence_no": seq,
-                "system_ref": ref, "submission_label": r.get("submission_label", ""),
-                "catalog_version": r.get("catalog_version", ""),
-                "stated_version": r.get("catalog_version", ""),
-                "version_source": r.get("version_source", ""),
-                "publication_date": r.get("publication_date", ""),
-                "raw_impact_score": r.get("computed_raw"),
-                "mitigation_score": r.get("computed_mitigation"),
-                "current_score": r.get("computed_current"),
-                "reduction_applied": r.get("reduction_applied", ""),
-                "current_score_pct": r.get("current_score_pct"),
-                "mitigation_pct": "",
-                "impact_level": r.get("computed_impact_level"),
-                "answer_count": r.get("answer_count"),
-                "unmapped_answers": (int(r.get("answer_count") or 0)
-                                     - int(r.get("linked_to_catalog") or 0)),
-                "source_format": "PDF",
-                "source_file": r.get("source_file", ""),
-                "extraction_method": r.get("extraction_method", "pdf_text"),
-                "is_current": "Y" if r is latest else "N",
-            })
-            for a in ans_by_key.get((rid, r.get("submission_label", "")), []):
-                answers.append({
-                    "submission_id": sub_id, "og_record_id": rid,
-                    "catalog_version": a.get("catalog_version", ""),
-                    "field_name": a.get("field_name", ""),
-                    "question_uid": a.get("question_uid", ""),
-                    "point_type": a.get("point_type", ""),
-                    "points": a.get("points"),
-                    "answer_value_raw": "",
-                    "option_index": "",
-                    "answer_text_en": a.get("answer_text", ""),
-                    "answer_text_fr": "",
-                    "translation_source": "french_pdf_not_yet_extracted",
-                    "is_free_text": a.get("is_free_text", ""),
-                    "mapped": "Y" if a.get("question_uid") else "N",
-                })
-            added += 1
-
-        systems.append({
-            "og_record_id": rid, "system_ref": ref,
-            "system_name_en": latest.get("title", ""),
-            "system_name_fr": "",
-            "department": latest.get("department", ""),
-            "department_code": "", "branch": "",
-            "submission_count": len(group),
-            "first_submission_label": group[0].get("submission_label", ""),
-            "latest_submission_label": latest.get("submission_label", ""),
-            "current_submission_id": f"{rid}-{len(group)}",
-            "current_impact_level": latest.get("computed_impact_level"),
-            "current_score_pct": latest.get("current_score_pct"),
-            "portal_url_en": f"https://open.canada.ca/data/en/dataset/{rid}",
-        })
-
-    log(f"  merged {added} validated PDF assessment(s) into systems/submissions/answers")
-    return systems, submissions, answers, added
-
-
 def main():
     header("STEP 5 — Building the master workbook")
     wb = Workbook()
@@ -327,15 +132,9 @@ def main():
         with open(p, encoding="utf-8-sig") as f:
             return list(csv.DictReader(f))
 
-    merged = {}
-    core = {"systems.csv": rd("systems.csv"),
-            "submissions.csv": rd("submissions.csv"),
-            "answers.csv": rd("answers.csv")}
-    if core["systems.csv"]:
-        s, sub, ans, n = merge_pdf_results(core["systems.csv"], core["submissions.csv"],
-                                           core["answers.csv"])
-        s, _gaps, _n = merge_crosswalk(s)
-        merged = {"systems.csv": s, "submissions.csv": sub, "answers.csv": ans}
+    # The same assembly step 10 publishes from, so the workbook and the
+    # published tables always hold the same systems.
+    merged = {f"{k}.csv": v for k, v in assemble_core_tables().items()}
 
     manifest = []
     for sheet, csvname, note in SHEETS:

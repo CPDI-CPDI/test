@@ -1,0 +1,103 @@
+department_code,name_en,name_fr,first_seen_version
+001,Agriculture and Agri-Food (Department of),Agriculture et de l'Agroalimentaire (Ministère de l'),0.10.0
+002,Office of the Auditor General,Bureau du vérificateur général,0.10.0
+004,Public Service Commission,Commission de la fonction publique,0.10.0
+005,"Foreign Affairs, Trade and Development (Department of)","Affaires étrangères, du Commerce et du Développement (Ministère des)",0.10.0
+006,Finance (Department of),Finances (Ministère des),0.10.0
+007,Environment (Department of the),Environnement (Ministère de l'),0.10.0
+008,Office of the Governor General's Secretary,Bureau du secrétaire du gouverneur général,0.10.0
+009,Senate,Sénat,0.10.0
+011,Office of the Superintendent of Financial Institutions,Bureau du surintendant des institutions financières,0.10.0
+012,Economic Development Agency of Canada for the Regions of Quebec,Agence de développement économique du Canada pour les régions du Québec,0.10.0
+013,Justice (Department of),Justice (Ministère de la),0.10.0
+014,Employment and Social Development (Department of),Emploi et du Développement social (Ministère de l'),0.10.0
+015,Office of the Chief Electoral Officer,Bureau du directeur général des élections,0.10.0
+016,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,0.10.0
+017,Library of Parliament,Bibliothèque du Parlement,0.10.0
+018,National Defence (Department of),Défense nationale (Ministère de la),0.10.0
+019,Office of the Director of Public Prosecutions,Bureau du directeur des poursuites pénales,0.10.0
+021,Veterans Affairs (Department of),Anciens Combattants (Ministère des),0.10.0
+022,Health (Department of),Santé (Ministère de la),0.10.0
+023,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,0.10.0
+024,International Joint Commission (Canadian Section),Commission mixte internationale (section canadienne),0.10.0
+025,Privy Council Office,Bureau du Conseil privé,0.10.0
+027,Natural Sciences and Engineering Research Council,Conseil de recherches en sciences naturelles et en génie,0.10.0
+030,Royal Canadian Mounted Police,Gendarmerie royale du Canada,0.10.0
+032,Immigration and Refugee Board,Commission de l'immigration et du statut de réfugié,0.10.0
+033,Industry (Department of),Industrie (Ministère de l'),0.10.0
+034,Transport (Department of),Transports (Ministère des),0.10.0
+035,National Research Council of Canada,Conseil national de recherches du Canada,0.10.0
+037,Telefilm Canada,Téléfilm Canada,0.10.0
+038,Canada Border Services Agency - (Administered Activities),Agence des services frontaliers du Canada - (activités administrées),0.10.0
+039,National Film Board,Office national du film,0.10.0
+040,Canadian Transportation Agency,Office des transports du Canada,0.10.0
+041,Natural Resources (Department of),Ressources naturelles (Ministère des),0.10.0
+042,Indian Affairs and Northern Development (Department of),Affaires indiennes et du Nord canadien (Ministère des),0.10.0
+043,Canadian Intergovernmental Conference Secretariat,Secrétariat des conférences intergouvernementales canadiennes,0.10.0
+044,Western Economic Diversification (Department of),Diversification de l'économie de l'Ouest canadien (Ministère de la),0.10.0
+046,Office of the Public Sector Integrity Commissioner,Commissariat à l'intégrité du secteur public,0.10.0
+047,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,0.10.0
+050,Citizenship and Immigration (Department of),Citoyenneté et de l'Immigration (Ministère de la),0.10.0
+051,Office of the Commissioner for Federal Judicial Affairs,Bureau du commissaire à la magistrature fédérale,0.10.0
+052,Canada School of Public Service,École de la fonction publique du Canada,0.10.0
+053,Correctional Service of Canada,Service correctionnel du Canada,0.10.0
+054,Statistics Canada,Statistique Canada,0.10.0
+055,Office of the Communications Security Establishment Commissioner,Bureau du commissaire du Centre de la sécurité des télécommunications,0.10.0
+056,Treasury Board Secretariat,Secrétariat du Conseil du Trésor,0.10.0
+057,Parole Board of Canada,Commission des libérations conditionnelles du Canada,0.10.0
+061,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,0.10.0
+062,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,0.10.0
+063,Social Sciences and Humanities Research Council,Conseil de recherches en sciences humaines,0.10.0
+066,Northern Pipeline Agency,Administration du pipe-line du Nord,0.10.0
+067,House of Commons,Chambre des communes,0.10.0
+074,National Energy Board,Office national de l'énergie,0.10.0
+075,Canadian Human Rights Commission,Commission canadienne des droits de la personne,0.10.0
+076,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,0.10.0
+078,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,0.10.0
+079,Payroll System General Ledger,Grand livre général du système de la paye,0.10.0
+080,Registrar of the Supreme Court of Canada,Registraire de la Cour suprême du Canada,0.10.0
+083,"Office of the Co-ordinator, Status of Women",Bureau de la coordonnatrice de la situation de la femme,0.10.0
+085,Canada Border Services Agency,Agence des services frontaliers du Canada,0.10.0
+086,Fisheries and Oceans (Department of),Pêches et des Océans (Ministère des),0.10.0
+087,Public Service Superannuation,Pension de retraite de la fonction publique,0.10.0
+088,Public Safety and Emergency Preparedness (Department of),Sécurité publique et de la Protection civile (Ministère de la),0.10.0
+091,Canada Mortgage and Housing Corporation (Crown Corporation),Société canadienne d'hypothèques et de logement (Société d'État),0.10.0
+095,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,0.10.0
+096,Offices of the Information and Privacy Commissioners of Canada,Commissariats à l'information et à la protection de la vie privée au Canada,0.10.0
+097,Receiver General,Receveur général,0.10.0
+100,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail,0.10.0
+101,Canadian Transportation Accident Investigation and Safety Board,Bureau canadien d'enquête sur les accidents de transport et de la sécurité des transports,0.10.0
+102,The National Battlefields Commission,Commission des champs de bataille nationaux,0.10.0
+103,Security Intelligence Review Committee,Comité de surveillance des activités de renseignement de sécurité,0.10.0
+109,Patented Medicine Prices Review Board,Conseil d'examen du prix des médicaments brevetés,0.10.0
+116,Copyright Board,Commission du droit d'auteur,0.10.0
+119,Canadian Space Agency,Agence spatiale canadienne,0.10.0
+122,Canada Revenue Agency - (Administered Activities),Agence du revenu du Canada - (activités administrées),0.10.0
+123,Export Development Canada (Crown Corporation),Exportation et développement Canada (Société d'État),0.10.0
+124,Parks Canada Agency,Agence Parcs Canada,0.10.0
+127,Public Works and Government Services (Department of),Travaux publics et des Services gouvernementaux (Ministère des),0.10.0
+130,Canada Revenue Agency,Agence du revenu du Canada,0.10.0
+133,Canadian Grain Commission,Commission canadienne des grains,0.10.0
+134,Canadian Dairy Commission,Commission canadienne du lait,0.10.0
+135,Canadian Heritage (Department of),Patrimoine canadien (Ministère du),0.10.0
+136,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,0.10.0
+137,Military Police Complaints Commission,Commission d'examen des plaintes concernant la police militaire,0.10.0
+138,Military Grievances External Review Committee,Comité externe d'examen des griefs militaires,0.10.0
+139,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,0.10.0
+141,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,0.10.0
+142,Office of Infrastructure of Canada,Bureau de l'infrastructure du Canada,0.10.0
+144,Courts Administration Service,Service administratif des tribunaux judiciaires,0.10.0
+145,Library and Archives of Canada,Bibliothèque et Archives du Canada,0.10.0
+147,Office of the Conflict of Interest and Ethics Commissioner,Commissariat aux conflits d'intérêts et à l'éthique,0.10.0
+148,Public Health Agency of Canada,Agence de la santé publique du Canada,0.10.0
+151,Office of the Senate Ethics Officer,Bureau du conseiller sénatorial en éthique,0.10.0
+154,Office of the Commissioner of Lobbying,Commissariat au lobbying,0.10.0
+163,Shared Services Canada,Services partagés Canada,0.10.0
+165,Communications Security Establishment,Centre de la sécurité des télécommunications,0.10.0
+170,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,0.10.0
+171,Canadian High Arctic Research Station,Station canadienne de recherche dans l'Extrême-Arctique,0.10.0
+176,Parliamentary Protective Service,Service de protection parlementaire,0.10.0
+180,Invest in Canada Hub,Investir au Canada,0.10.0
+183,Office of the Parliamentary Budget Officer,Bureau du directeur parlementaire du budget,0.10.0
+192,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,0.10.0
+193,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,1.0.1

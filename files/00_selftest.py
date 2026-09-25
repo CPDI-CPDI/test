@@ -649,6 +649,38 @@ check("a follow-up that was asked keeps its points",
                           {"p": {"visible_if": ""}, "c": {"visible_if": "{p} = 'item1-4'"}},
                           _o3) == 0)
 
+# The fixtures above quote with single quotes; the real catalogs use double
+# quotes in 331 of 332 conditions. Only single quotes were understood, so every
+# real condition read as unreadable, the question was kept, and CBSA Traveller
+# still recomputed 47 against a printed 45 while these tests passed.
+_rows_dq = [dict(r) for r in _rows]
+for _r in _rows_dq:
+    _r.pop("shown", None)
+_rows_dq[1]["points"] = 2
+_fields_dq = {"src1": {"visible_if": ""},
+              "src1A": {"visible_if": '{src1} = "item1-4"'},
+              "src2": {"visible_if": ""}}
+check("a double-quoted condition is read, and the hidden follow-up stops scoring",
+      pdf.apply_branching(_rows_dq, "0.10.0", _fields_dq, _opts) == 2)
+check("double-quoted 'contains' is read",
+      pdf.satisfies('{p} contains "item1-4"', {"p": {"item1-4"}}) is True
+      and pdf.satisfies('{p} contains "item1-4"', {"p": {"item2-0"}}) is False)
+check("double-quoted inequality is read",
+      pdf.satisfies('{p} <> "item1-4"', {"p": {"item2-0"}}) is True)
+
+# "Not known" contains "no". Matching labels by substring alone made the
+# parent hold both answers, which could satisfy a condition it should not.
+_r4 = [{"field_name": "p", "question_text": "parent", "answer_text": "Not known",
+        "points": 0, "point_type": "raw"},
+       {"field_name": "c", "question_text": "child", "answer_text": "Yes",
+        "points": 3, "point_type": "raw"}]
+_o4 = {("0.10.0", "p"): [{"option_value": "item1-2", "text_en": "No"},
+                         {"option_value": "item2-0", "text_en": "Not known"}]}
+check("an exact label is preferred over a label found inside it",
+      pdf.apply_branching(_r4, "0.10.0",
+                          {"p": {"visible_if": ""}, "c": {"visible_if": '{p} = "item1-2"'}},
+                          _o4) == 3)
+
 print("\n=== keys survive a record being added ===")
 # Keys are built from the Open Government record identifier, which is one to one
 # with a system and never moves. The short number alongside it is assigned by
@@ -682,6 +714,105 @@ for _t in ("systems", "submissions", "answers", "system_services"):
           "og_record_id" in _C[_t][:2], str(_C[_t][:2]))
     check(f"{_t} no longer carries system_id", "system_id" not in _C[_t],
           str([c for c in _C[_t] if c == "system_id"]))
+
+print("\n=== published tables land at the repository root ===")
+import tempfile, csv as _csv
+with tempfile.TemporaryDirectory() as _t:
+    _root = Path(_t)
+    (_root / "files").mkdir()
+    check("no repository above a plain folder", C.find_repo_root(_root / "files") is None)
+    (_root / ".git").mkdir()
+    check("scripts in files/ find the repository root",
+          C.find_repo_root(_root / "files") == _root)
+    check("scripts at the root find it too", C.find_repo_root(_root) == _root)
+_expected = (C.find_repo_root(C.BASE) or C.BASE) / "published"
+check("PUBLISH_DIR is the repository root when there is one",
+      C.PUBLISH_DIR == _expected, f"{C.PUBLISH_DIR}")
+print(f"        published tables will be written to: {C.PUBLISH_DIR}")
+
+print("\n=== workbook and published tables hold the same systems ===")
+# The PDF merge used to live in step 5 only, so the published tables left out
+# every PDF-only system. Both steps now read through assemble_core_tables().
+
+
+def _write(dirpath, name, rows):
+    with open(dirpath / name, "w", newline="", encoding="utf-8-sig") as f:
+        w = _csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader(); w.writerows(rows)
+
+
+_real_data = C.DATA_DIR
+with tempfile.TemporaryDirectory() as _t:
+    _d = Path(_t)
+    _write(_d, "systems.csv", [{"og_record_id": "json-rec", "system_ref": "1",
+                                "system_name_en": "From JSON", "department_en": "X"}])
+    _write(_d, "submissions.csv", [{"submission_id": "json-rec-1",
+                                    "og_record_id": "json-rec", "source_format": "JSON"}])
+    _write(_d, "answers.csv", [{"submission_id": "json-rec-1", "og_record_id": "json-rec",
+                                "field_name": "f1", "points": "2"}])
+    _write(_d, "og_records.csv", [
+        {"og_record_id": "pdf-ok", "title_en": "Good PDF", "title_fr": "Bon PDF",
+         "department_en": "Transport Canada", "department_fr": "Transports Canada",
+         "department_code": "tc"},
+        {"og_record_id": "pdf-bad", "title_en": "Bad PDF", "title_fr": "",
+         "department_en": "", "department_fr": "", "department_code": ""}])
+    _write(_d, "pdf_submissions.csv", [
+        {"og_record_id": "pdf-ok", "title": "Good PDF", "department": "",
+         "submission_label": "Original", "catalog_version": "0.10.0", "validated": "Y",
+         "computed_raw": "30", "computed_mitigation": "10", "computed_current": "30",
+         "computed_impact_level": "1", "current_score_pct": "20", "answer_count": "2",
+         "linked_to_catalog": "2", "source_file": "a.pdf"},
+        {"og_record_id": "pdf-bad", "title": "Bad PDF", "department": "",
+         "submission_label": "Original", "catalog_version": "1.0.1", "validated": "N",
+         "computed_raw": "0", "computed_mitigation": "0", "computed_current": "0",
+         "computed_impact_level": "1", "current_score_pct": "0", "answer_count": "0",
+         "linked_to_catalog": "0", "source_file": "b.pdf"}])
+    _write(_d, "pdf_answers.csv", [
+        {"og_record_id": "pdf-ok", "submission_label": "Original", "validated": "Y",
+         "catalog_version": "0.10.0", "field_name": "q1", "question_uid": "7",
+         "point_type": "raw", "points": "4", "answer_text": "Yes",
+         "is_free_text": "N", "shown": "Y"},
+        {"og_record_id": "pdf-ok", "submission_label": "Original", "validated": "Y",
+         "catalog_version": "0.10.0", "field_name": "q2", "question_uid": "8",
+         "point_type": "raw", "points": "0", "answer_text": "No",
+         "is_free_text": "N", "shown": "N"}])
+
+    C.DATA_DIR = _d
+    try:
+        _core = C.assemble_core_tables()
+        _again = C.assemble_core_tables()
+        pub = importlib.import_module("10_publish")
+        pub._CORE = None
+        _pub_sys = pub.read_source("systems")
+        _pub_sub = pub.read_source("submissions")
+    finally:
+        C.DATA_DIR = _real_data
+        if "pub" in dir():
+            pub._CORE = None
+
+    _ids = {s["og_record_id"] for s in _core["systems"]}
+    check("validated PDF system is merged", "pdf-ok" in _ids, str(_ids))
+    check("failed PDF system stays out", "pdf-bad" not in _ids, str(_ids))
+    check("JSON system is kept", "json-rec" in _ids)
+    check("step 10 publishes the same systems as the workbook",
+          {s["og_record_id"] for s in _pub_sys} == _ids,
+          str({s["og_record_id"] for s in _pub_sys}))
+    check("step 10 publishes the same submissions as the workbook",
+          len(_pub_sub) == len(_core["submissions"]) == 2, str(len(_pub_sub)))
+    check("assembly is repeatable", len(_again["systems"]) == len(_core["systems"]))
+    _p = next(s for s in _core["systems"] if s["og_record_id"] == "pdf-ok")
+    check("PDF system takes both departments from the portal record",
+          _p["department_en"] == "Transport Canada"
+          and _p["department_fr"] == "Transports Canada", str(_p))
+    check("PDF system uses department_en, not a stray 'department' column",
+          "department" not in _p, str(list(_p)))
+    check("PDF system carries the French record title", _p["system_name_fr"] == "Bon PDF")
+    check("PDF system id is stable", _p["current_submission_id"] == "pdf-ok-1")
+    _pa = [a for a in _core["answers"] if a["og_record_id"] == "pdf-ok"]
+    check("PDF answers carry whether the question was shown",
+          sorted(a["shown"] for a in _pa) == ["N", "Y"], str([a.get("shown") for a in _pa]))
+    _missing = [c for c in _C["systems"][:16] if c not in _p]
+    check("PDF system row fills every core systems column", not _missing, str(_missing))
 
 print("\n" + "=" * 60)
 if FAILURES:

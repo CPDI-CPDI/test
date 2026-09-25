@@ -262,21 +262,28 @@ def satisfies(condition: str, answers_by_field: dict) -> bool:
     if not condition:
         return True
 
+    # The published catalogs quote values with double quotes — 331 of the 332
+    # conditions across all versions. Matching single quotes only made every
+    # real condition unreadable, so branching never fired outside the tests.
+    lit = r"""(?:'([^']*)'|"([^"]*)")"""
+
     def atom(expr):
         expr = expr.strip()
-        m = re.match(r"^\{([^}]+)\}\s*(=|<>|!=)\s*'([^']*)'$", expr)
+        m = re.match(r"^\{([^}]+)\}\s*(=|<>|!=)\s*" + lit + "$", expr)
         if m:
             got = answers_by_field.get(m.group(1).split(".")[0].strip())
             if got is None:
                 return None
-            hit = m.group(3) in got
+            value = m.group(3) if m.group(3) is not None else m.group(4)
+            hit = value in got
             return hit if m.group(2) == "=" else not hit
-        m = re.match(r"^\{([^}]+)\}\s+(not\s*)?contains\s+'([^']*)'$", expr, re.I)
+        m = re.match(r"^\{([^}]+)\}\s+(not\s*)?contains\s+" + lit + "$", expr, re.I)
         if m:
             got = answers_by_field.get(m.group(1).split(".")[0].strip())
             if got is None:
                 return None
-            hit = m.group(3) in got
+            value = m.group(3) if m.group(3) is not None else m.group(4)
+            hit = value in got
             return (not hit) if m.group(2) else hit
         m = re.match(r"^\{([^}]+)\}\s+(not)?empty$", expr, re.I)
         if m:
@@ -312,8 +319,14 @@ def apply_branching(rows, version, fields_by_name, options):
             continue
         opts = options.get((version, fname), [])
         text = norm(r.get("answer_text", ""))
+        # An exact label match wins. Only when there is none — a checkbox
+        # answer lists several labels — fall back to finding labels inside the
+        # text, which would otherwise read "Not known" as also answering "No".
         vals = [o["option_value"] for o in opts
-                if o.get("text_en") and norm(o["text_en"]) and norm(o["text_en"]) in text]
+                if o.get("text_en") and norm(o["text_en"]) == text]
+        if not vals:
+            vals = [o["option_value"] for o in opts
+                    if o.get("text_en") and norm(o["text_en"]) and norm(o["text_en"]) in text]
         held.setdefault(fname, set()).update(vals)
 
     dropped = 0
