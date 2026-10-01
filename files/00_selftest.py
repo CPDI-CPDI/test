@@ -897,6 +897,43 @@ with tempfile.TemporaryDirectory() as _t:
     _missing = [c for c in _C["systems"][:16] if c not in _p]
     check("PDF system row fills every core systems column", not _missing, str(_missing))
 
+print("\n=== mitigation points per area add up to the mitigation score ===")
+with tempfile.TemporaryDirectory() as _t:
+    _d = Path(_t)
+    _write(_d, "question_map.csv", [
+        {"catalog_version": "0.10.0", "field_name": "dqI1", "point_type": "mitigation",
+         "mitigation_area": "Data quality", "mitigation_phase": "implementation"},
+        {"catalog_version": "0.10.0", "field_name": "dqD1", "point_type": "mitigation",
+         "mitigation_area": "Data quality", "mitigation_phase": "design"},
+        {"catalog_version": "0.10.0", "field_name": "prI1", "point_type": "mitigation",
+         "mitigation_area": "Privacy", "mitigation_phase": "implementation"}])
+    _write(_d, "section_versions.csv", [
+        {"catalog_version": "0.10.0", "mitigation_area": "Data quality",
+         "mitigation_phase": "implementation", "max_mitigation_points": "10"},
+        {"catalog_version": "0.10.0", "mitigation_area": "Data quality",
+         "mitigation_phase": "design", "max_mitigation_points": "8"},
+        {"catalog_version": "0.10.0", "mitigation_area": "Privacy",
+         "mitigation_phase": "implementation", "max_mitigation_points": "4"}])
+    C.DATA_DIR = _d
+    try:
+        _subs = [{"submission_id": "r-1", "og_record_id": "r", "catalog_version": "0.10.0"}]
+        _ans = [{"submission_id": "r-1", "catalog_version": "0.10.0", "field_name": "projectDetailsPhase",
+                 "answer_value_raw": "item2", "points": "0"},
+                {"submission_id": "r-1", "catalog_version": "0.10.0", "field_name": "dqI1", "points": "6"},
+                {"submission_id": "r-1", "catalog_version": "0.10.0", "field_name": "prI1", "points": "3"},
+                {"submission_id": "r-1", "catalog_version": "0.10.0", "field_name": "prI1",
+                 "points": "1", "shown": "N"}]
+        _areas = {r["mitigation_area"]: r for r in C.build_mitigation_areas(_subs, _ans)}
+    finally:
+        C.DATA_DIR = _real_data
+check("the phase is read from the project-phase answer",
+      {r["mitigation_phase"] for r in _areas.values()} == {"implementation"})
+check("only the submission's own phase is measured (design maximum ignored)",
+      _areas["Data quality"]["max_points"] == 10, str(_areas.get("Data quality")))
+check("share of the area maximum", _areas["Data quality"]["pct_of_max"] == 60.0)
+check("an answer to a question not shown does not count",
+      _areas["Privacy"]["points"] == 3, str(_areas["Privacy"]["points"]))
+
 print("\n" + "=" * 60)
 if FAILURES:
     print(f"{len(FAILURES)} CHECK(S) FAILED: {', '.join(FAILURES)}")

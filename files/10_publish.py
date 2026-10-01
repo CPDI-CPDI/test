@@ -55,7 +55,7 @@ def core_tables() -> dict:
 
 
 def read_source(name: str):
-    if name in ("systems", "submissions", "answers"):
+    if name in ("systems", "submissions", "answers", "submission_mitigation_areas"):
         return core_tables().get(name)
     path = DATA_DIR / SOURCE.get(name, f"{name}.csv")
     if not path.exists():

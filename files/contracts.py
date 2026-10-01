@@ -99,6 +99,10 @@ CONTRACTS = {
         "match_confidence", "match_rationale", "source", "review_notes", "system_in_master",
         "system_id_at_crosswalk_time"
     ],
+    "submission_mitigation_areas": [
+        "submission_id", "og_record_id", "catalog_version", "mitigation_phase",
+        "mitigation_area", "points", "max_points", "pct_of_max"
+    ],
     "crosswalk_gaps": [
         "gap_type", "og_record_id", "system_name_en", "department_en", "service_id",
         "service_name_en", "match_confidence", "reason", "candidate"
@@ -116,6 +120,7 @@ PUBLIC = {
     "option_point_items", "departments", "sections", "section_versions",
     "catalog_versions", "og_records", "og_resources",
     "services", "system_services", "crosswalk_gaps",
+    "submission_mitigation_areas",
 }
 
 # Where each published file is built from.

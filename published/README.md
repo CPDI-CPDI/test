@@ -22,6 +22,7 @@ with them. Anything reading them can rely on that.
 | `section_versions` | 150 | 13 |
 | `sections` | 21 | 12 |
 | `services` | 0 | 12 |
+| `submission_mitigation_areas` | 164 | 8 |
 | `submissions` | 41 | 22 |
 | `system_services` | 0 | 11 |
 | `systems` | 39 | 21 |

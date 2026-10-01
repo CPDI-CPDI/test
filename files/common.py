@@ -375,6 +375,15 @@ def merge_pdf_results(systems, submissions, answers, og_records=None):
     if og_records is None:
         og_records = _read_optional("og_records.csv")
     record = {r.get("og_record_id", ""): r for r in og_records}
+    max_mit = {r.get("catalog_version", ""): r.get("max_mitigation", "")
+               for r in _read_optional("catalog_versions.csv")}
+
+    def mitigation_pct(r):
+        try:
+            mx = float(max_mit.get(r.get("catalog_version", ""), "") or 0)
+            return round(float(r.get("computed_mitigation") or 0) / mx * 100, 1) if mx else ""
+        except ValueError:
+            return ""
 
     existing = {s["og_record_id"] for s in systems}
     next_ref = max((int(s.get("system_ref") or 0) for s in systems
@@ -413,7 +422,7 @@ def merge_pdf_results(systems, submissions, answers, og_records=None):
                 "current_score": r.get("computed_current"),
                 "reduction_applied": r.get("reduction_applied", ""),
                 "current_score_pct": r.get("current_score_pct"),
-                "mitigation_pct": "",
+                "mitigation_pct": mitigation_pct(r),   # was left blank for PDFs
                 "impact_level": r.get("computed_impact_level"),
                 "answer_count": r.get("answer_count"),
                 "unmapped_answers": (int(r.get("answer_count") or 0)
@@ -538,6 +547,90 @@ def merge_crosswalk(systems):
     return systems, gaps, matched
 
 
+PHASE_FROM_VALUE = {"item1": "design", "item2": "implementation"}
+
+
+def submission_phase(answers_for_submission, qmap) -> str:
+    """
+    Which mitigation pages a submission was shown: 'design' or 'implementation'.
+
+    The questionnaire decides this from the project-phase answer (item1 is
+    design, item2 implementation), so that is read first. PDFs carry the label
+    rather than the value, and older files may lack it; then the phase whose
+    mitigation pages hold more answers is used.
+    """
+    for a in answers_for_submission:
+        if a.get("field_name") == "projectDetailsPhase":
+            raw = str(a.get("answer_value_raw", "")).strip().lower()
+            if raw in PHASE_FROM_VALUE:
+                return PHASE_FROM_VALUE[raw]
+            text = str(a.get("answer_text_en", "")).lower()
+            for phase in ("implementation", "design"):
+                if phase in text:
+                    return phase
+    counts = defaultdict(int)
+    for a in answers_for_submission:
+        m = qmap.get((a.get("catalog_version", ""), a.get("field_name", "")))
+        if m and m.get("mitigation_phase"):
+            counts[m["mitigation_phase"]] += 1
+    return max(counts, key=counts.get) if counts else ""
+
+
+def build_mitigation_areas(submissions, answers) -> list[dict]:
+    """
+    Mitigation points earned in each of the four areas, against the most that
+    area could earn in that submission's version and phase.
+
+    The maxima come from section_versions and, per phase, add up to the
+    version's maximum mitigation score, so the four rows of a submission
+    account for its whole mitigation score. Answers to questions that were not
+    shown do not count, as in the scoring.
+    """
+    qmap = {(r["catalog_version"], r["field_name"]): r for r in _read_optional("question_map.csv")}
+    area_max = defaultdict(float)
+    for r in _read_optional("section_versions.csv"):
+        if r.get("mitigation_area") and r.get("mitigation_phase"):
+            key = (r["catalog_version"], r["mitigation_phase"], r["mitigation_area"])
+            area_max[key] += float(r.get("max_mitigation_points") or 0)
+    if not qmap or not area_max:
+        return []
+
+    by_sub = defaultdict(list)
+    for a in answers:
+        by_sub[a.get("submission_id", "")].append(a)
+
+    rows = []
+    for s in submissions:
+        sid, ver = s.get("submission_id", ""), s.get("catalog_version", "")
+        mine = by_sub.get(sid, [])
+        phase = submission_phase(mine, qmap)
+        earned = defaultdict(float)
+        for a in mine:
+            if a.get("shown") == "N":
+                continue
+            m = qmap.get((a.get("catalog_version", ""), a.get("field_name", "")))
+            if m and m.get("point_type") == "mitigation" and m.get("mitigation_area"):
+                try:
+                    earned[m["mitigation_area"]] += float(a.get("points") or 0)
+                except ValueError:
+                    pass
+        for (v, ph, area), mx in sorted(area_max.items()):
+            if v != ver or ph != phase or mx <= 0:
+                continue
+            pts = earned.get(area, 0.0)
+            rows.append({
+                "submission_id": sid,
+                "og_record_id": s.get("og_record_id", ""),
+                "catalog_version": ver,
+                "mitigation_phase": phase,
+                "mitigation_area": area,
+                "points": int(pts) if pts.is_integer() else pts,
+                "max_points": int(mx) if mx.is_integer() else mx,
+                "pct_of_max": round(min(pts / mx, 1.0) * 100, 1),
+            })
+    return rows
+
+
 def assemble_core_tables() -> dict[str, list[dict]]:
     """
     The one place the core tables are put together.
@@ -553,7 +646,8 @@ def assemble_core_tables() -> dict[str, list[dict]]:
     answers = _read_optional("answers.csv")
     systems, submissions, answers, _ = merge_pdf_results(systems, submissions, answers)
     systems, _, _ = merge_crosswalk(systems)
-    return {"systems": systems, "submissions": submissions, "answers": answers}
+    return {"systems": systems, "submissions": submissions, "answers": answers,
+            "submission_mitigation_areas": build_mitigation_areas(submissions, answers)}
 
 
 def log(msg=""):

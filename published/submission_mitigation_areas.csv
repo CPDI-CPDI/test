@@ -1,0 +1,165 @@
+submission_id,og_record_id,catalog_version,mitigation_phase,mitigation_area,points,max_points,pct_of_max
+01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,implementation,Consultation,2,2,100.0
+01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,implementation,Data quality,8,14,57.1
+01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,implementation,Privacy,1,5,20.0
+01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,implementation,Procedural fairness,24,25,96.0
+04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,implementation,Consultation,2,2,100.0
+04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,implementation,Data quality,8,14,57.1
+04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,implementation,Privacy,1,5,20.0
+04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,implementation,Procedural fairness,24,25,96.0
+061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,design,Consultation,2,2,100.0
+061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,design,Data quality,10,14,71.4
+061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,design,Privacy,3,5,60.0
+061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,design,Procedural fairness,22,25,88.0
+123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,implementation,Consultation,1,2,50.0
+123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,implementation,Data quality,2,14,14.3
+123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,implementation,Privacy,4,5,80.0
+123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,implementation,Procedural fairness,18,25,72.0
+1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,implementation,Consultation,1,2,50.0
+1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,implementation,Data quality,9,14,64.3
+1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,implementation,Privacy,4,5,80.0
+1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,implementation,Procedural fairness,22,25,88.0
+240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,implementation,Consultation,2,2,100.0
+240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,implementation,Data quality,7,14,50.0
+240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,implementation,Privacy,1,5,20.0
+240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,implementation,Procedural fairness,24,25,96.0
+24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,implementation,Consultation,1,2,50.0
+24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,implementation,Data quality,7,14,50.0
+24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,implementation,Privacy,4,4,100.0
+24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,implementation,Procedural fairness,15,25,60.0
+380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,implementation,Consultation,2,2,100.0
+380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,implementation,Data quality,5,14,35.7
+380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,implementation,Privacy,4,5,80.0
+380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,implementation,Procedural fairness,20,25,80.0
+452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,implementation,Consultation,10,10,100.0
+452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,implementation,Data quality,11,14,78.6
+452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,implementation,Privacy,7,9,77.8
+452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,implementation,Procedural fairness,41,44,93.2
+52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,implementation,Consultation,2,2,100.0
+52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,implementation,Data quality,7,14,50.0
+52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,implementation,Privacy,4,5,80.0
+52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,implementation,Procedural fairness,24,25,96.0
+6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,implementation,Consultation,1,2,50.0
+6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,implementation,Data quality,7,14,50.0
+6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,implementation,Privacy,5,5,100.0
+6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,implementation,Procedural fairness,16,25,64.0
+6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,implementation,Consultation,10,10,100.0
+6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,implementation,Data quality,8,14,57.1
+6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,implementation,Privacy,6,9,66.7
+6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,implementation,Procedural fairness,36,44,81.8
+6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,implementation,Consultation,2,2,100.0
+6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,implementation,Data quality,8,14,57.1
+6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,implementation,Privacy,2,4,50.0
+6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,implementation,Procedural fairness,24,25,96.0
+71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,implementation,Consultation,1,2,50.0
+71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,implementation,Data quality,4,14,28.6
+71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,implementation,Privacy,2,5,40.0
+71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,implementation,Procedural fairness,18,25,72.0
+92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,implementation,Consultation,1,2,50.0
+92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,implementation,Data quality,6,14,42.9
+92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,implementation,Privacy,3,5,60.0
+92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,implementation,Procedural fairness,15,25,60.0
+94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,implementation,Consultation,1,2,50.0
+94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,implementation,Data quality,8,14,57.1
+94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,implementation,Privacy,4,5,80.0
+94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,implementation,Procedural fairness,24,25,96.0
+9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Consultation,2,2,100.0
+9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Data quality,2,14,14.3
+9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Privacy,3,4,75.0
+9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Procedural fairness,20,25,80.0
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Consultation,2,2,100.0
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Data quality,2,14,14.3
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Privacy,3,4,75.0
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Procedural fairness,23,25,92.0
+ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Consultation,2,2,100.0
+ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Data quality,8,14,57.1
+ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Privacy,1,4,25.0
+ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Procedural fairness,24,25,96.0
+afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,implementation,Consultation,2,2,100.0
+afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,implementation,Data quality,3,14,21.4
+afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,implementation,Privacy,2,4,50.0
+afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,implementation,Procedural fairness,21,25,84.0
+b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,implementation,Consultation,1,2,50.0
+b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,implementation,Data quality,5,14,35.7
+b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,implementation,Privacy,1,5,20.0
+b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,implementation,Procedural fairness,15,25,60.0
+b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,implementation,Consultation,1,2,50.0
+b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,implementation,Data quality,8,14,57.1
+b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,implementation,Privacy,1,5,20.0
+b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,implementation,Procedural fairness,24,25,96.0
+b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,implementation,Consultation,1,2,50.0
+b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,implementation,Data quality,8,14,57.1
+b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,implementation,Privacy,2,4,50.0
+b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,implementation,Procedural fairness,24,25,96.0
+c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,implementation,Consultation,2,2,100.0
+c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,implementation,Data quality,7,14,50.0
+c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,implementation,Privacy,3,5,60.0
+c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,implementation,Procedural fairness,24,25,96.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,implementation,Consultation,2,2,100.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,implementation,Data quality,10,14,71.4
+cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,implementation,Privacy,2,2,100.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,implementation,Procedural fairness,22,25,88.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,implementation,Consultation,2,2,100.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,implementation,Data quality,10,14,71.4
+cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,implementation,Privacy,2,4,50.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,implementation,Procedural fairness,22,25,88.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,implementation,Consultation,2,2,100.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,implementation,Data quality,10,14,71.4
+cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,implementation,Privacy,2,4,50.0
+cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,implementation,Procedural fairness,22,25,88.0
+d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,implementation,Consultation,2,2,100.0
+d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,implementation,Data quality,7,14,50.0
+d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,implementation,Privacy,3,5,60.0
+d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,implementation,Procedural fairness,24,25,96.0
+d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,implementation,Consultation,2,2,100.0
+d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,implementation,Data quality,6,14,42.9
+d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,implementation,Privacy,1,4,25.0
+d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,implementation,Procedural fairness,22,25,88.0
+d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,implementation,Consultation,2,2,100.0
+d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,implementation,Data quality,5,14,35.7
+d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,implementation,Privacy,3,5,60.0
+d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,implementation,Procedural fairness,24,25,96.0
+daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,implementation,Consultation,1,2,50.0
+daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,implementation,Data quality,9,14,64.3
+daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,implementation,Privacy,5,5,100.0
+daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,implementation,Procedural fairness,22,25,88.0
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,implementation,Consultation,2,2,100.0
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,implementation,Data quality,7,14,50.0
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,implementation,Privacy,3,5,60.0
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,implementation,Procedural fairness,19,25,76.0
+f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,implementation,Consultation,2,2,100.0
+f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,implementation,Data quality,8,14,57.1
+f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,implementation,Privacy,3,4,75.0
+f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,implementation,Procedural fairness,25,25,100.0
+f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,implementation,Consultation,2,2,100.0
+f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,implementation,Data quality,8,14,57.1
+f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,implementation,Privacy,3,5,60.0
+f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,implementation,Procedural fairness,24,25,96.0
+44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,implementation,Consultation,2,2,100.0
+44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,implementation,Data quality,8,14,57.1
+44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,implementation,Privacy,3,5,60.0
+44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,implementation,Procedural fairness,24,25,96.0
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,design,Consultation,1,2,50.0
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,design,Data quality,2,14,14.3
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,design,Privacy,1,5,20.0
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,design,Procedural fairness,2,25,8.0
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,implementation,Consultation,2,2,100.0
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,implementation,Data quality,2,14,14.3
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,implementation,Privacy,4,5,80.0
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,implementation,Procedural fairness,8,25,32.0
+b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,design,Consultation,2,2,100.0
+b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,design,Data quality,8,14,57.1
+b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,design,Privacy,2,5,40.0
+b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,design,Procedural fairness,20,25,80.0
+c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,implementation,Consultation,7,10,70.0
+c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,implementation,Data quality,6,14,42.9
+c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,implementation,Privacy,6,9,66.7
+c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,implementation,Procedural fairness,37,44,84.1
+eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,implementation,Consultation,2,2,100.0
+eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,implementation,Data quality,7,14,50.0
+eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,implementation,Privacy,2,5,40.0
+eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,implementation,Procedural fairness,23,25,92.0
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,implementation,Consultation,10,10,100.0
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,implementation,Data quality,8,14,57.1
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,implementation,Privacy,7,9,77.8
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,implementation,Procedural fairness,33,44,75.0
