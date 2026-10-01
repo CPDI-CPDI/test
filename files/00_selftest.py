@@ -418,6 +418,89 @@ check("the two spellings of project details bridge together",
 check("every section matched on its page name",
       all(r["match_method"] in ("new_section", "page_name") for r in _rows))
 
+print("\n=== a page break before a heading does not hide it ===")
+# v1.0.1 PDFs start each Section 3.x on a new page; pdftotext glues a form feed
+# to the heading, and the Claim Summary Tool scored 0 against a printed 56.
+_ff = ("Section 3: Questions and Answers\nSection 3.1: Project Details\n1. Department\nCBSA\n"
+       "\fSection 3.2: Impact Questions and Answers\n1. Is it risky?\nYes [ Points: +3 ]\n"
+       "\fSection 3.3: Mitigation Questions and Answers\n1. Did you consult?\nYes [ Points: +2 ]\n")
+_parts = pdf.split_parts(pdf.clean_text(_ff))
+check("headings after a page break are found",
+      [p[0] for p in _parts] == ["none", "raw", "mitigation"], str([p[:2] for p in _parts]))
+check("without the clean-up they were missed (the bug this guards)",
+      [p[0] for p in pdf.split_parts(_ff)] != ["none", "raw", "mitigation"])
+
+print("\n=== a long checkbox option that wraps keeps the options after it ===")
+# ERA Food model: question 42 had three ticked options worth 1 point each. The
+# second wrapped onto two lines, its first line looked like a heading, and the
+# answer closed early: 1 point counted instead of 3.
+_cb = ("42. Indicate additional procedural fairness protections in place (check all that apply):\n"
+       "Clients are provided with adequate information about the decision-making\n"
+       "process and have the opportunity to meaningfully participate      [ Points: +1 ]\n"
+       "Clients are provided with all documents and information in which the\n"
+       "administrative decision was based                                 [ Points: +1 ]\n"
+       "Mechanism for assessing and responding to client feedback         [ Points: +1 ]\n"
+       "\nTraining and awareness\n"
+       "43. Have you undertaken training?\nYes                       [ Points: +2 ]\n")
+_cba = pdf.parse_answers(_cb, "mitigation")
+check("every ticked option is counted", _cba[0]["points"] == 3, str(_cba[0]["points"]))
+check("the wrapped option stays in the answer",
+      "administrative decision was based" in _cba[0]["answer_text"])
+check("a real heading after the answer still ends it",
+      _cba[1]["heading"] == "Training and awareness" and _cba[1]["points"] == 2,
+      str((_cba[1]["heading"], _cba[1]["points"])))
+
+print("\n=== mitigation is reported in its four areas ===")
+# Three of the four areas share one title, and v0.3-0.4 put every mitigation
+# question on a combined page. Reports grouped by section showed most
+# assessments with mitigation in a single section; the area column fixes that.
+check("page names read as areas",
+      [bridge.mitigation_area(p) for p in ("consultationDesign", "dataQualityImplementation",
+                                           "fairnessDesign", "privacyImplementation",
+                                           "rm-data-quality-design", "impact")]
+      == ["Consultation", "Data quality", "Procedural fairness", "Privacy", "Data quality", ""])
+check("v0.5 'rm-' pages bridge to the later page names",
+      bridge.page_key("rm-fairness-design") == bridge.page_key("fairnessDesign"))
+check("a page that only starts with 'rm' by chance keeps its key",
+      bridge.page_key("rmSomethingElse") == "rmsomethingelse")
+
+_mf = [
+    {"catalog_version": "0.3", "field_name": "q36", "page_name": "risk-mitigation",
+     "text_en": "Have you undertaken a Gender Based Analysis Plus of the data?", "text_fr": "",
+     "point_type": "mitigation", "answer_type": "radiogroup", "visible_if": ""},
+    {"catalog_version": "0.3", "field_name": "q99", "page_name": "risk-mitigation",
+     "text_en": "A question that was dropped after the combined page", "text_fr": "",
+     "point_type": "mitigation", "answer_type": "radiogroup", "visible_if": ""},
+    {"catalog_version": "0.6", "field_name": "dataQualityDesign5", "page_name": "dataQualityDesign",
+     "text_en": "Have you undertaken a Gender Based Analysis Plus of the data?", "text_fr": "",
+     "point_type": "mitigation", "answer_type": "radiogroup", "visible_if": ""},
+    {"catalog_version": "0.6", "field_name": "dataQualityImplementation5",
+     "page_name": "dataQualityImplementation",
+     "text_en": "Have you undertaken a Gender Based Analysis Plus of the data?", "text_fr": "",
+     "point_type": "mitigation", "answer_type": "radiogroup", "visible_if": ""},
+]
+_ms = [{"catalog_version": v, "page_name": p, "section_name_en": "De-Risking and Mitigation Measures",
+        "section_name_fr": "", "display_order": i, "point_type": "mitigation",
+        "mitigation_phase": ph, "max_raw_points": 0, "max_mitigation_points": 4}
+       for i, (v, p, ph) in enumerate([("0.3", "risk-mitigation", ""),
+                                       ("0.6", "dataQualityDesign", "design"),
+                                       ("0.6", "dataQualityImplementation", "implementation")])]
+_mc, _mrows = bridge.bridge_sections(_ms)
+_mq, _mmap, _ = bridge.bridge_questions(_mf, _mrows, {})
+_gba = next(c for c in _mq if c["canonical_text_en"].startswith("Have you undertaken"))
+_old_sec = next(r["section_uid"] for r in _mrows if r["page_name"] == "risk-mitigation")
+check("a question takes the area it moved to, not its combined first page",
+      _gba["mitigation_area"] == "Data quality", _gba["mitigation_area"])
+check("its v0.3 row on the combined page carries that area too",
+      next(r for r in _mmap if r["field_name"] == "q36")["mitigation_area"] == "Data quality")
+check("a question's section is where it sits now, not where it first appeared",
+      _gba["section_uid"] != _old_sec, str(_gba["section_uid"]))
+check("a question that never left the combined page is marked as combined",
+      next(c for c in _mq if c["canonical_text_en"].startswith("A question that was dropped"))
+      ["mitigation_area"] == bridge.COMBINED_AREA)
+check("non-mitigation questions carry no area",
+      bridge.mitigation_area("projectDetails") == "")
+
 print("\n=== answer choices stored once instead of per question ===")
 cat = importlib.import_module("02_parse_catalogs")
 _opts = []

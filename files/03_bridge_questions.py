@@ -89,7 +89,33 @@ def build_chains(fields_by_version: dict):
 # apart. Punctuation and case differ between versions ("project-details" versus
 # "projectDetails"), so both are stripped before comparing.
 def page_key(name: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "", str(name or "").lower())
+    key = re.sub(r"[^a-z0-9]+", "", str(name or "").lower())
+    # v0.5 prefixed the de-risking pages with "rm-" ("rm-data-quality-design");
+    # from v0.6 they are "dataQualityDesign". Without dropping the prefix the
+    # same page bridged as two sections and v0.5 never joined the later ones.
+    return re.sub(r"^rm(?=consultation|dataquality|fairness|privacy)", "", key)
+
+
+# The four areas mitigation is scored in. The questionnaire gives three of them
+# the same title, so the area is read from the page name. v0.3 and v0.4 put all
+# mitigation on two combined pages; a question there takes its area from the
+# page it moved to in later versions (see assign_mitigation_areas).
+MITIGATION_AREAS = (("consultation", "Consultation"), ("dataquality", "Data quality"),
+                    ("fairness", "Procedural fairness"), ("privacy", "Privacy"))
+COMBINED_AREA = "Combined page (v0.3-0.4)"
+
+
+def mitigation_area(page_name: str) -> str:
+    """'Consultation', 'Data quality', 'Procedural fairness', 'Privacy', or ''."""
+    key = page_key(page_name)
+    for stem, label in MITIGATION_AREAS:
+        if key.startswith(stem):
+            return label
+    return ""
+
+
+def is_combined_mitigation_page(page_name: str) -> bool:
+    return page_key(page_name).startswith("riskmitigation")
 
 
 # The questionnaire gives the three de-risking areas the same title, so twelve
@@ -158,6 +184,9 @@ def bridge_sections(sections):
                     "display_order": int(s["display_order"]),
                     "point_type": s["point_type"],
                     "mitigation_phase": s.get("mitigation_phase", ""),
+                    "mitigation_area": (mitigation_area(s.get("page_name"))
+                                        or (COMBINED_AREA if is_combined_mitigation_page(
+                                            s.get("page_name")) else "")),
                     "first_seen_version": v,
                     "last_seen_version": v,
                     "bridged_with_fuzzy_match": "N",
@@ -177,6 +206,9 @@ def bridge_sections(sections):
                 "max_mitigation_points": s["max_mitigation_points"],
                 "match_method": method,
                 "match_score": round(best_score, 3),
+                "mitigation_area": (mitigation_area(s.get("page_name"))
+                                    or (COMBINED_AREA if is_combined_mitigation_page(
+                                        s.get("page_name")) else "")),
             })
     for cnd in canon:
         cnd.pop("_key", None)
@@ -276,6 +308,10 @@ def bridge_questions(fields, section_map, chains):
                 score, method = 1.0, "new_question"
             else:
                 target["last_seen_version"] = v
+                # A question's section is where it sits now, not where it first
+                # appeared. Keeping the first meant most mitigation questions
+                # reported under the v0.3 combined page.
+                target["section_uid"] = sec_uid
                 if name not in target["field_names"].split("; "):
                     target["field_names"] += f"; {name}"
                     by_name[name].append(target)
@@ -320,7 +356,42 @@ def bridge_questions(fields, section_map, chains):
         c["parent_question_uid"] = parent_uid.get(c["question_uid"], "")
         c["is_follow_up"] = "Y" if parent_uid.get(c["question_uid"]) else "N"
         c.pop("_parent_text", None)
+    assign_mitigation_areas(canon, mapping)
     return canon, mapping, review
+
+
+def assign_mitigation_areas(canon, mapping):
+    """
+    Give every mitigation question, and every row of it in every version, one of
+    the four areas.
+
+    A question's area is the area of the page it sits on in the latest version
+    that places it on a named area page. The design and implementation copies of
+    a question share an area, since they are the same question asked at a
+    different phase. Rows on the v0.3-0.4 combined pages take their question's
+    area; a question that never left those pages is marked as combined.
+    """
+    by_q = defaultdict(list)
+    for r in mapping:
+        by_q[r["question_uid"]].append(r)
+    area_of = {}
+    for uid, rows in by_q.items():
+        named = [r for r in rows if mitigation_area(r.get("page_name"))]
+        if named:
+            latest = max(named, key=lambda r: version_key(r["catalog_version"]))
+            area_of[uid] = mitigation_area(latest["page_name"])
+        elif any(is_combined_mitigation_page(r.get("page_name")) for r in rows):
+            area_of[uid] = COMBINED_AREA
+    for r in mapping:
+        page = r.get("page_name")
+        if mitigation_area(page):
+            r["mitigation_area"] = mitigation_area(page)      # where it sat in that version
+        elif is_combined_mitigation_page(page):
+            r["mitigation_area"] = area_of.get(r["question_uid"], COMBINED_AREA)
+        else:
+            r["mitigation_area"] = ""
+    for c in canon:
+        c["mitigation_area"] = area_of.get(c["question_uid"], "")
 
 
 def main():

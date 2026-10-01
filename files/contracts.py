@@ -31,7 +31,8 @@ CONTRACTS = {
     "questions": [
         "question_uid", "canonical_text_en", "canonical_text_fr", "section_uid", "point_type",
         "answer_type", "first_seen_version", "last_seen_version", "version_count",
-        "field_names", "reworded", "status", "parent_question_uid", "is_follow_up"
+        "field_names", "reworded", "status", "parent_question_uid", "is_follow_up",
+        "mitigation_area"
     ],
     "question_map": [
         "field_id", "catalog_version", "field_name", "page_name", "section_name_en",
@@ -39,7 +40,8 @@ CONTRACTS = {
         "mitigation_phase", "answer_type", "is_mandatory", "visible_if", "option_count",
         "max_points", "text_en", "text_fr", "guidance_en", "guidance_fr", "question_uid",
         "parent_field_name", "root_field_name", "chain_depth", "section_uid", "match_method",
-        "match_score", "needs_review", "parent_question_uid", "root_question_uid"
+        "match_score", "needs_review", "parent_question_uid", "root_question_uid",
+        "mitigation_area"
     ],
     "question_options": [
         "catalog_version", "field_name", "field_id", "option_set_id", "point_profile_id",
@@ -63,12 +65,12 @@ CONTRACTS = {
     "sections": [
         "section_uid", "display_name_en", "name_en", "name_fr", "page_name", "display_order",
         "point_type", "mitigation_phase", "first_seen_version", "last_seen_version",
-        "bridged_with_fuzzy_match"
+        "bridged_with_fuzzy_match", "mitigation_area"
     ],
     "section_versions": [
         "section_uid", "catalog_version", "page_name", "section_name_en", "section_name_fr",
         "display_order", "point_type", "mitigation_phase", "max_raw_points",
-        "max_mitigation_points", "match_method", "match_score"
+        "max_mitigation_points", "match_method", "match_score", "mitigation_area"
     ],
     "catalog_versions": [
         "catalog_version", "git_ref", "question_count", "scored_question_count",

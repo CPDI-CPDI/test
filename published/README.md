@@ -6,25 +6,25 @@ with them. Anything reading them can rely on that.
 
 | Table | Rows | Columns |
 |---|---|---|
-| `answers` | 4035 | 15 |
+| `answers` | 4206 | 15 |
 | `catalog_versions` | 10 | 13 |
 | `crosswalk_gaps` | 0 | 9 |
 | `departments` | 102 | 4 |
-| `og_records` | 39 | 16 |
-| `og_resources` | 165 | 11 |
+| `og_records` | 40 | 16 |
+| `og_resources` | 169 | 11 |
 | `option_point_items` | 409 | 5 |
 | `option_points` | 86 | 3 |
 | `option_set_items` | 333 | 4 |
 | `option_sets` | 61 | 3 |
-| `question_map` | 1419 | 30 |
+| `question_map` | 1419 | 31 |
 | `question_options` | 996 | 7 |
-| `questions` | 206 | 14 |
-| `section_versions` | 150 | 12 |
-| `sections` | 27 | 11 |
+| `questions` | 206 | 15 |
+| `section_versions` | 150 | 13 |
+| `sections` | 21 | 12 |
 | `services` | 0 | 12 |
-| `submissions` | 40 | 22 |
+| `submissions` | 41 | 22 |
 | `system_services` | 0 | 11 |
-| `systems` | 38 | 21 |
+| `systems` | 39 | 21 |
 
 ## Reading them from a report
 

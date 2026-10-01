@@ -152,7 +152,7 @@ l’environnement, car il sera utilisé pour trier les demandes et automatiser c
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -339,7 +339,7 @@ Gestion du changement",Y,submitted_translation,Y,
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -636,7 +636,7 @@ L'approche collaborative : en fusionnant les informations basées sur les donné
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,dataQualityDesign8,33,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,dataQualityDesign9,66,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,dataQualityDesign10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
-061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
+061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign1,35,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
@@ -816,7 +816,7 @@ EDSC : Informations personnelles du bénéficiaire et informations sur la SV et 
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -954,7 +954,7 @@ Dossiers de la liste des signalements (PPU 082)",Y,submitted_translation,Y,
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -1099,7 +1099,7 @@ La vérification des documents fournis par les demandeurs entraînera un résult
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -1206,7 +1206,7 @@ Le scénario le moins désiré serait de classer une prestation qui devrait revo
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -1290,7 +1290,7 @@ Le scénario le moins désiré serait de classer une prestation qui devrait revo
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -1602,7 +1602,7 @@ Politique numérique - Initiation, Planification, Déploiement, Surveillance
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation1A,188,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation4,38,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation7,41,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -1968,7 +1968,7 @@ Dans le contexte de toute décision administrative, les résultats de l’évalu
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -2175,7 +2175,7 @@ In these cases, the estimated losses would be either $300 (median) or $900 (aver
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -2338,7 +2338,7 @@ Accessibilité de SPAC
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation1A,188,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation4,38,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation7,41,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -2722,7 +2722,7 @@ L’équipe de projet travaille en étroite collaboration avec un conseiller en 
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -2876,7 +2876,7 @@ d'immigration au nom d'un agent d’immigration.",Y,submitted_translation,Y,
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3059,7 +3059,7 @@ Conformité des entreprises",Y,submitted_translation,Y,
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3419,7 +3419,7 @@ au client par courriel?
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,dataQualityImplementation9,66,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3519,7 +3519,7 @@ Les avantages pour la santé mentale permettraient aux vétérans d’accéder a
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3604,7 +3604,7 @@ aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign8,33,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign9,66,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign1,35,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3702,7 +3702,7 @@ ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3783,7 +3783,7 @@ afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -3930,7 +3930,7 @@ b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,dataQualityImplementation1,67,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation3,37,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
+b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation3,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation6,40,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
@@ -4075,7 +4075,7 @@ b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -4227,7 +4227,7 @@ b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -4508,7 +4508,7 @@ c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -4656,7 +4656,7 @@ cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,dataQualityImplementation10,34,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -4736,7 +4736,7 @@ cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,dataQualityImplementation10,34,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -4818,7 +4818,7 @@ cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,dataQualityImplementation10,34,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -4989,7 +4989,7 @@ d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation17,46,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -5141,7 +5141,7 @@ d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -5227,7 +5227,7 @@ d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -5503,7 +5503,7 @@ daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -5765,7 +5765,7 @@ eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation5,39,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -6199,7 +6199,7 @@ f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -6293,7 +6293,7 @@ f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y,
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
-f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
+f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y,
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y,
@@ -6378,7 +6378,7 @@ over a number of releases. Trade chain partners (TCPs) made significant
 investments to upgrade their systems to align to CARM program requirements
 and objectives, and significant time and effort conducting extensive testing of
 the new system with the CBSA, and training to use the new portal. CARM is
-widely available to all importers and other trade chain partners,  using the
+widely available to all importers and other trade chain partners, using the
 CARM client portal that allows TCPs to access, an online portal, to submit
 their commercial accounting declarations to the CBSA, manage adjustments
 and corrections, and more. After releasing the system, the CBSA provides the",,Y,french_pdf_not_yet_extracted,Y,Y
@@ -6502,7 +6502,7 @@ may be considered mandatory, optional or conditional. A full list of data",,Y,fr
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,dataQualityImplementation10,34,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation1,68,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation2,36,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
-44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation3,37,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation3,68,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation4,38,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation5,39,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2-1,44fe9b0d-d730-43cf-ba7e-d952d55f88f2,0.10.0,fairnessImplementation6,40,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
@@ -6533,11 +6533,11 @@ may be considered mandatory, optional or conditional. A full list of data",,Y,fr
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,projectDetailsPhase,51,none,0,,,Design,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,projectDetailsDescription,6,none,0,,,"The project involves building a web-based offline, on-premise application that
 uses AI engines to assist with the transcription and/or translation of audio
-files collected during investigations.  The application will process audio files
+files collected during investigations. The application will process audio files
 and generate a transcription and/or translation that will then be reviewed and
-edited by transcribers/translators prior to disclosure.  The goal of the project
+edited by transcribers/translators prior to disclosure. The goal of the project
 is to increase the efficiency of the transcription/translation process, not to
-replace it.  It will help to reduce backlogs and improve operational necessity
+replace it. It will help to reduce backlogs and improve operational necessity
 by allowing investigations timelier access to relevant details of their operation
 which could impact surveillance, officer safety and potential Authorization re-
 writes. Transcribers/translators will still need to review the generated
@@ -6545,7 +6545,7 @@ transcriptions for accuracy and make any necessary edits.",,Y,french_pdf_not_yet
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutSystem1,9,none,0,,,"Text and speech analysis: Analyzing large data sets to recognize, process, and
 tag text, speech, voice, and make recommendations based on the tagging",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers1,7,raw,0,,,(Check all that apply),,Y,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers3,79,raw,0,,,"Transcribing and translating audio is a labour and time intensive process.  The
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers3,79,raw,0,,,"Transcribing and translating audio is a labour and time intensive process. The
 use of AI engines to assist with the transcription/translation will reduce the
 amount of labour and time required by transcribers/translators by generating
 a draft transcription that they can then review and edit instead of performing
@@ -6556,22 +6556,21 @@ could impact surveillance, officer safety and potential Authorization re-writes.
 It will also impact how quickly disclosure can be provided to the court,
 potentially increasing the rate at which public cases are processed.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers5,81,raw,1,,,Moderately effective,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers6,82,raw,0,,,"The automation of the transcription/translation process will increase the
-efficiency of the process by a factor of at least 10.  This will allow",,Y,french_pdf_not_yet_extracted,Y,Y
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers6,82,raw,0,,,The automation of the transcription/translation process will increase the,,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers7,83,raw,0,,,"The application uses a login based on Active Directory to limit access to only
-users with proper authorization.  SOPs will be put in place to ensure the
-proper use of the system.   Testing will be done, and feedback gathered, to
+users with proper authorization. SOPs will be put in place to ensure the
+proper use of the system. Testing will be done, and feedback gathered, to
 ensure that the efficiency and accuracy of the transcriptions/translations
 generated by the application are within an acceptable range.",,Y,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers8,84,raw,0,,,"We have considered clients' privacy and security concerns.  The system is
-designed by the RCMP , operated offline and on-premise.  No operational data
-is stored by the system.  Once the transcriptions have been generated and
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers8,84,raw,0,,,"We have considered clients' privacy and security concerns. The system is
+designed by the RCMP, operated offline and on-premise. No operational data
+is stored by the system. Once the transcriptions have been generated and
 downloaded by the user, the original audio and the transcription are deleted
 from the system.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers9,85,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,businessDrivers10,86,raw,0,,,"Manual transcription/translation requires a significant amount of labour and
 time from transcribers/translators and has led to a backlog of audio files
-waiting to be transcribed, thus delaying disclosure.  This application will
+waiting to be transcribed, thus delaying disclosure. This application will
 automatically generate the transcriptions/translations and the transcribers/
 translators will only have to review them and perform edits which is less
 labour and time intensive than transcribing them from scratch.",,Y,french_pdf_not_yet_extracted,Y,Y
@@ -6585,7 +6584,7 @@ labour and time intensive than transcribing them from scratch.",,Y,french_pdf_no
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,projectAuthority1,56,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutAlgorithm1,57,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutAlgorithm2,58,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,decisionSector3,91,raw,0,,,"The system does not make any decisions.  Transcribers/translators will be
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,decisionSector3,91,raw,0,,,"The system does not make any decisions. Transcribers/translators will be
 reviewing all transcriptions for accuracy and editing them when necessary.
 The raw transcriptions generated by the AI engine will not be relied on without
 that review and editing process by a human.",,Y,french_pdf_not_yet_extracted,Y,Y
@@ -6594,31 +6593,31 @@ that review and editing process by a human.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact30,92,raw,2,,,"Partial automation (the system will contribute to administrative decision-
 making by supporting an officer through assessments, recommendations,
 intermediate decisions, or other outputs)",,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact31,93,raw,0,,,"The system does not make decisions.  Transcriptions generated by the AI
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact31,93,raw,0,,,"The system does not make decisions. Transcriptions generated by the AI
 engine will not be relied on as-is for any decision making or for disclosure.
 They must be reviewed and edited by a transcriber/translator before being
 released.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact3,47,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact20,94,raw,0,,,"Client data are audio files that are uploaded to the application.  They are
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact20,94,raw,0,,,"Client data are audio files that are uploaded to the application. They are
 processed by the AI speech recognition model to generate a transcription/
 translation.",,Y,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact21,95,raw,0,,,"The output of the system is a text file transcription of the input audio file.  The
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact21,95,raw,0,,,"The output of the system is a text file transcription of the input audio file. The
 original audio file is needed by verify the accuracy of the text transcription by
 a transcriber/translator.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact22,96,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact5,14,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact6,15,raw,1,,,Reversible,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact7,16,raw,1,,,Impacts are most likely to be brief,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,"Transcriptions are never used in raw format from the application.  They must
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,"Transcriptions are never used in raw format from the application. They must
 be reviewed by a human transcriber/translator for accuracy before they are
 released.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact9,18,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,No impact on the rights of individuals.  Audio uploaded to the system is,,Y,french_pdf_not_yet_extracted,Y,Y
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,No impact on the rights of individuals. Audio uploaded to the system is,,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact24,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,"No impact to any individual.  Voice2Text is a tool to assist transcribers at the
-RCMP , not replace them.",,Y,french_pdf_not_yet_extracted,Y,Y
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,"No impact to any individual. Voice2Text is a tool to assist transcribers at the
+RCMP, not replace them.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact11,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,"The system does not store the audio files or transcriptions long-term.  Once
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,impact8,17,raw,0,,,"The system does not store the audio files or transcriptions long-term. Once
 the transcriptions are completed and downloaded, all data is deleted from the
 system. The application does not collect any personal information of the
 user.",,Y,french_pdf_not_yet_extracted,Y,Y
@@ -6636,7 +6635,7 @@ No",,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutDataSource7,26,raw,4,,,A foreign government or non-government third party,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutDataSource8,26,raw,1,,,Your institution,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutDataSource13,99,raw,0,,,"Input data used in the system is lawfully collected by the RCMP as evidence
-using various means.  It is uploaded to the system, transcribed/translated,
+using various means. It is uploaded to the system, transcribed/translated,
 and subsequently deleted from the system after the transcription has been
 downloaded.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,aboutDataType1,27,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
@@ -6652,7 +6651,7 @@ downloaded.",,Y,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,dataQualityDesign8,33,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,dataQualityDesign2,70,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,N
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,dataQualityDesign10,34,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
-7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,fairnessDesign1,68,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,fairnessDesign1,35,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,fairnessDesign2,36,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,fairnessDesign3,37,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc-1,7612202f-1530-41ce-80c7-6e121f5fcadc,0.10.0,fairnessDesign4,38,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
@@ -6714,7 +6713,7 @@ of using such tools are:
 - ease of evidence and intelligence sharing with external and internal partners,
 as these tools utilize a standardized format in order to export/import data
 - reduces psychological injury and grief to investigators by reducing the",,Y,french_pdf_not_yet_extracted,Y,Y
-89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,businessDrivers7,83,raw,0,,,"Griffeye Analyze  is designed for media categorization specifically for this
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,businessDrivers7,83,raw,0,,,"Griffeye Analyze is designed for media categorization specifically for this
 purpose ( as are other competitive niche solutions ), and as such is purpose
 built with these needs in mind.",,Y,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,businessDrivers8,84,raw,0,,,None,,Y,french_pdf_not_yet_extracted,Y,Y
@@ -6833,7 +6832,7 @@ media either directly from victims/complainants or via assistance requests",,Y,f
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,dataQualityImplementation10,34,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation1,68,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation2,36,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
-89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation3,37,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation3,68,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation4,38,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation5,39,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation6,40,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
@@ -6849,11 +6848,7 @@ media either directly from victims/complainants or via assistance requests",,Y,f
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation16,45,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,fairnessImplementation17,46,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,privacyImplementation1,71,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
-89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,privacyDesign5,100,mitigation,0,,,"PIA is collateral to FVEYE Hash Sharing Agreement reviewed by RCMP Legal,
-ATIP , DSB, LSU and other internal stakeholders which defines personal
-information as it pertains to this data type. Documentation regarding the use
-of hashes and derivative meta data have been produced for collateral issues
-and can be provided upon request.",,Y,french_pdf_not_yet_extracted,Y,Y
+89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,privacyDesign5,100,mitigation,0,,,"PIA is collateral to FVEYE Hash Sharing Agreement reviewed by RCMP Legal,",,Y,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,privacyImplementation2,72,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,privacyImplementation3,77,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 89898244-aaae-4591-ba9b-fe5cd81d5924-1,89898244-aaae-4591-ba9b-fe5cd81d5924,0.10.0,privacyDesign4,78,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
@@ -7244,7 +7239,7 @@ b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10
 b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,dataQualityDesign8,33,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,dataQualityDesign2,70,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,dataQualityDesign10,34,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
-b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,fairnessDesign1,68,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,fairnessDesign1,35,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,fairnessDesign2,36,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,fairnessDesign3,37,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 b8a34d1b-d27f-4506-973c-d2ea2f68c623-1,b8a34d1b-d27f-4506-973c-d2ea2f68c623,0.10.0,fairnessDesign4,38,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
@@ -7497,7 +7492,7 @@ c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,aboutSystem9,131,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,aboutSystem10A,40,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,aboutSystem11,132,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
-c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,aboutSystem12,133,raw,0,,,"The CST will have little or no impact on the environmental ecosystem because it is used  to
+c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,aboutSystem12,133,raw,0,,,"The CST will have little or no impact on the environmental ecosystem because it is used to
 scan Disability Beneﬁt applications and supporting documentation, and to assemble
 relevant evidence into a structured, traceable, and accurate summary for the decision
 maker.",,Y,french_pdf_not_yet_extracted,Y,Y
@@ -7868,7 +7863,7 @@ c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation1,68,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation1A,188,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation2,36,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
-c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation3,37,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation3,68,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation4,38,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation5,39,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 c839bedc-0d5f-4b02-98a7-671d1f60ac51-1,c839bedc-0d5f-4b02-98a7-671d1f60ac51,1.0.1,fairnessImplementation7,41,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
@@ -7969,7 +7964,7 @@ Process optimization and workflow automation: Analyzing large data sets to",,Y,f
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers1,7,raw,0,,,(Check all that apply),,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers3,79,raw,0,,,The tool will provide CBSA Officers with additional information to help them,,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers4,80,raw,0,,,"By improving the quality of examination referrals, the tool will contribute to the
-improved  facilitation of low-risk shipments, i.e. fewer compliant export
+improved facilitation of low-risk shipments, i.e. fewer compliant export
 shipments will be subject to examination. CBSA Officers will be able to focus
 on shipments of higher risk.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers5,81,raw,0,,,Very effective,,N,french_pdf_not_yet_extracted,Y,Y
@@ -7981,7 +7976,7 @@ compliance.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers7,83,raw,0,,,The tool is intended to provide additional information that will supplement,,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers8,84,raw,0,,,"There are no trade-offs between client interests and program objectives. The
 tool will assist CBSA Officers' decision-making to better identify potential non-
-compliance. This  will improve the facilitation of low-risk shipments.",,Y,french_pdf_not_yet_extracted,Y,Y
+compliance. This will improve the facilitation of low-risk shipments.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers9,85,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,businessDrivers10,86,raw,0,,,"Regional staff have other manual processes they use that are less effective.
 This is because the information is not available in any existing single
@@ -8005,7 +8000,7 @@ eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10
 making by supporting an officer through assessments, recommendations,
 intermediate decisions, or other outputs)",,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact31,93,raw,0,,,"When reviewing shipments for export, CBSA Officers refer to many sources to
-gather  information, including internal systems and databases, as well as
+gather information, including internal systems and databases, as well as
 publicly available information on the internet. The tool can supplement the
 Officers' existing systems and database checks by providing additional
 information about potential risk in export shipments.",,Y,french_pdf_not_yet_extracted,Y,Y
@@ -8030,20 +8025,20 @@ cancelled by an Officer using existing system functionality, which will allow
 the exporter to proceed with the export of the goods.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact9,18,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact8,17,raw,0,,,"The tool supplements CBSA Officers' existing systems and database checks
-related to export shipments.  By assisting the Officer in making more precise
+related to export shipments. By assisting the Officer in making more precise
 examination referrals, fewer compliant export shipments will be subject to
-examination.   As the tool contains only export shipment information, it has no
+examination. As the tool contains only export shipment information, it has no
 direct impacts on the rights or freedoms of individuals.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact24,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact8,17,raw,0,,,"The inspection of export shipments does not affect the equality, dignity,
-privacy nor the autonomy of individuals.  The tool  supplements the existing
+privacy nor the autonomy of individuals. The tool supplements the existing
 systems and database checks currently being performed by CBSA Officers.
 While the tool will improve the quality of examination referrals, it will not
 impact the examination process.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact11,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact8,17,raw,0,,,"The inspection of export shipments does not affect the health or well-being of
-individuals.  The tool contains information related to export shipments only
-and does not risk assess against individuals.  The tool supplements existing
+individuals. The tool contains information related to export shipments only
+and does not risk assess against individuals. The tool supplements existing
 systems and database checks currently being performed by CBSA Officers.",,Y,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact13,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,impact8,17,raw,0,,,"Any shipment of exported goods may be examined by the CBSA under Section
@@ -8104,7 +8099,7 @@ eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,dataQualityImplementation10,34,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation1,68,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation2,36,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
-eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation3,37,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation3,68,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation4,38,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation5,39,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,fairnessImplementation6,40,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
@@ -8130,3 +8125,416 @@ eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,privacyImplementation3,77,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,privacyDesign4,78,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
 eed746a8-a682-47c2-86b1-b427398fa2e2-1,eed746a8-a682-47c2-86b1-b427398fa2e2,0.10.0,privacyDesign7,102,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,ADMresponsible,105,none,0,,,,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,projectDetailsID,49,none,0,,,,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,ServiceID,107,none,0,,,,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,none,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,projectDetailsPhase,51,none,0,,,Implementation,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,projectDetailsDescription,6,none,0,,,"The Canadian Food Inspection Agency (CFIA) is committed to leveraging its
+data, intelligence reports and surveillance information more effectively to
+identify emerging trends. This approach enables the agency to prioritize risks",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers1,7,raw,0,,,(Check all that apply),,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,raw,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers3,79,raw,0,,,"The system addresses the CFIA’s tactical work planning team’s (i.e., the
+clients) needs for risk assessment of federally regulated domestic food",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers4,80,raw,0,,,"Benefits associated with having a risk-based automated system for CFIA
+clients include:
+Enhancing the Agency’s effectiveness with respect to program design and",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers5,81,raw,0,,,Very effective,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers5B,108,raw,0,,,"The ERA-Food model helps the CFIA prioritize its oversight activities and
+allocate its inspection resources using a scientific, risk-based decision-
+making approach. By evaluating food establishments based on the level of
+risk their products represent to Canadian consumers, the model provides
+input to the agency’s risk management process. This information is taken into
+consideration when developing the program direction and determining the
+prioritization and frequency of inspection activities and work planning. The",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers7,83,raw,0,,,"The model is designed to remain strictly aligned with its intended purpose of
+supporting CFIA’s risk-based oversight mandate and addressing clients needs
+related to inspection prioritization and resource allocation.
+The ERA-Food model supports internal clients (e.g. CFIA inspectors, analysts,",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers8,84,raw,0,,,"A central design element of this project was having a standardized
+questionnaire to collect information directly from regulated parties. For
+external clients (i.e. regulated parties), this activity might be perceived as
+burdensome and not always well received. However, for internal clients, this
+information is essential to ensure consistent, high-quality data inputs for the
+ERA-Food model, to enable accurate risk assessment.
+As of October 2025, regulated parties with domestic activities must complete
+the Food Safety Supplemental Information (FSSI, previously named Additional
+Establishment Information (AEI)) to obtain, renew or amend an SFC license.
+To mitigate the administrative trade-off associated with this requirement, the
+questionnaire was designed using plain language and structured to collect
+only necessary information. The questionnaire’s purpose, how the data will be
+used, and the benefits for transparency and consistency in oversight were
+clearly communicated. This approach balances program objectives with client
+impact by ensuring the integrity and effectiveness of the ERA-Food model",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers6A,109,raw,0,,,"Data not already collected by existing CFIA applications/systems are
+centralized into one system.
+The ERA Risk Profile is available both through an internal reporting
+interface and will be available through a web service that external users would
+be able to access.
+Capacity to extract aggregated data for internal and external usage.
+Adaptable to the other CFIA's business lines (i.e. Animal and Plant health).
+Data is available in near real-time.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers6B,110,raw,0,,,"Performance of the ERA-Food model is currently assessed via a Treasury
+Board (TB) indicator (code IFS-R2-1) under the “Setting Rules for Food Safety
+and Consumer Protection” program. This indicator measures the extent to
+which regulated establishments are integrated into the ERA-Food model,
+serving as a proxy for data coverage and model uptake (i.e., through the
+completion of the FSSI questionnaire) by external stakeholders. Target values",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers6C,111,raw,0,,,"Current performance level against the ERA Treasury Board indicator (IFS-R2-1)
+showed that three sectors met or exceeded their targets (i.e., fresh fruits and
+vegetables, dairy, and meat). The remaining six sectors (manufactured food,
+fish, processed fruits and vegetables, egg, maple, and honey) did not meet
+their targets, although positive performance trends were observed in all
+cases. Notably, the fish, honey, egg, and maple sector were within 5% of their
+targets, indicating near achievement.
+Performance levels are influenced by factors such as the rate at which
+regulated parties provide the required information, as well as sector-specific
+characteristics (e.g. size, maturity, and seasonality). Overall, current
+performance of this indicator demonstrates improving data coverage and
+increasing completion rates of the FSSI questionnaire by external clients,
+which supports the continued strengthening of the ERA-Food model. Further
+progress is expected as regulatory requirements and stakeholder participation
+evolves.
+For the performance metrics on how well inspection activities are delivered
+according to risk, current results show a strong alignment between risk levels
+and inspection effort, particularly for establishments categorized as higher
+risk. For example, the proportion of inspection cases delivered by CFIA
+inspectors increased from 0% to 100% for risk category 1 establishments,
+from 72% to 93% for category 2 establishments, and from 77% to 84% for
+category 3 establishments. These results demonstrate improved targeting of",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers6D,112,raw,0,,,"Because as of October 2025, regulated parties with domestic activities must
+complete the Food Safety Supplemental Information (FSSI) to get a licence,
+this change is expected to significantly improve data completeness for the
+ERA-Food model (and consequently, positively impact the IFS-R2-1 indicator
+performance). This means, the model will be able to assess 100% of domestic
+food establishments within the next two years, strengthening the accuracy,
+consistency, and coverage of risk assessments.
+As near-complete data coverage is achieved, the IFS-R2-1 indicator will",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers9,85,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers10,86,raw,0,,,"If a non-automated process is used to run the ERA-Food model, several
+drawbacks will be expected including:
+The algorithm would be applied to the data using custom developed
+scripts and not in an automated system.
+Risk results would not be refreshed in near real-time but on an annual
+basis.
+Public reporting would be delayed.
+No ability to verify automatically that the information centralized is
+complete.
+The information provided by regulated parties would require more human
+intervention for data curation which reduces data quality and timeliness.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers11,87,raw,0,,,Service cannot be delivered in a timely or efficient manner,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile1,52,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile2,53,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile3,54,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile4,55,raw,0,,,"Assessment has been conducted, barriers were identified, and measures are
+in place or planned to remove or prevent them.",,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile4B,115,raw,0,,,N/A - Barriers for persons with disabilities were not identified.,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile7,116,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile8,117,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,riskProfile10,119,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,projectAuthority1,56,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,projectAuthority2,120,raw,0,,,"The ERA-Food model operates under the Safe Food for Canadians Act and Regulations (SFCR) as
+a tool to support implementation of SFCR inspection requirements. It refines oversight under the
+existing licensing framework—particularly the periodic inspections already mandated under
+SFCR.
+Data feeding into ERA Food model comes through processes already authorized under SFCR and
+agency policy:
+The Food Safety Supplemental Information (FSSI, formerly the Additional Establishment
+Information (AEI) questionnaire) is submitted via MyCFIA as part of existing licensing/renewal
+processes.
+Compliance history is accessed via CFIA’s databases.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem1,9,raw,0,,,"Risk assessment: Analyzing large data sets to identify patterns and
+recommend courses of action and in some cases trigger specific actions
+Process optimization and workflow automation: Analyzing large data sets to",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem3,121,raw,0,,,Your institution,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem4,123,raw,0,,,Your institution,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem5,124,raw,1,,,Custom built,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem6,32,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem7,128,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem8,129,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem9,131,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem10A,40,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem11,132,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutSystem12,133,raw,0,,,"The impacts resulting from the system’s development, operations, and
+maintenance have little to no effect on the ongoing sustainability of an
+environmental ecosystem. The ERA-Food model only requires the energy and
+resources associated with standard information technology infrastructure and
+IT systems.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm1,57,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm2,58,raw,3,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm3,134,raw,0,,,Based on rules developed from laws and policy and/or using human expertise,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm4,135,raw,0,,,Deterministic (follow precise rules and generate single outcome),,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm5,136,raw,0,,,"Discriminative (for example, regression analyses, decision trees)",,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm6,137,raw,0,,,"The ERA-Food model uses a deterministic and multiplicative structure. The
+model generates a single, fixed risk estimate for each establishment, rather
+than a range or uncertainty interval. Criterion weights linked to relevant risk
+factors of a given establishment are multiplied within each cluster (inherent",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,raw,0,,,"This included insights on lessons learned by the countries throughout the
+implementation of their tools and their application to inform resource
+allocation.",,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm8,139,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm9,141,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm11,143,raw,2,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutAlgorithm11B,145,raw,0,,,"An evaluation of whether variables in the model could act as proxies for
+protected characteristics was not conducted because the model does not rely
+on any demographic, socio-economic, or personal identifiers that could
+reasonably correlate with protected characteristics such as race, gender, age,
+or ethnicity. Since none of the input variables capture information about
+individuals or groups in a way that relates to these attributes, the likelihood
+that any variable could function as a proxy is minimal. In the absence of data
+that could be linked – directly or indirectly to protected characteristics, there
+is no meaningful basis for conduction a proxy-bias assessment.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,decisionSector3,91,raw,0,,,"Five (5) main functions of the ERA technical solution:
+1. Data Collection: populates the ERA system with the required risk factors’
+information as well as other contextual information by extracting data from
+existing systems.
+2. Algorithm calculation: computes the risk result for an establishment by
+using the risk factors populated by the data collection function.
+3. Risk results: stores the calculated risk result number and retain the value
+for historical purposes and trends analysis.
+4. Reporting management: generates outputs and reports at the individual
+and aggregated levels which includes the risk result and profile and related
+information to support decision making and provide input to stakeholders’
+business processes.
+5. Data governance: enables the configuration of the data used to support
+the model.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,decisionSector1,11,raw,1,,,"Health-related services (environmental and workplace health, product and
+food safety, drug regulation)",,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact30,92,raw,2,,,"Partial automation (the system will contribute to administrative decision-
+making by supporting an officer with assessments, recommendations,
+intermediate decisions, or other outputs)",,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact31,93,raw,0,,,"The ERA technical solution assesses the food safety risk associated with
+regulated establishments with domestic activities. Risk managers use the
+model outputs along with additional risk intelligence to guide CFIA’s program
+design and allocation of inspection resources.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact3,47,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,businessDrivers12,88,raw,0,,,"The ERA-Food model is designed to be objective, standardized and
+reproducible in the quantification of food safety risk associated to federally
+regulated food establishments based on data and predefined criteria. It uses
+measurable inputs and applies an established algorithm with weighted risk
+factors to produce a consistent risk assessment. Outputs of this model are
+one of many factors taken into consideration during the development of
+tactical work planning at the agency. Indeed, CFIA inspectors retain sole
+authority for all final determinations regarding what is inspected. The system
+functions exclusively as a decision-support tool, providing informational input
+and non-binding recommendations to inspectors.",,Y,french_pdf_not_yet_extracted,Y,N
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact4A,55,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact20,94,raw,0,,,"The ERA-Food model concept is based on the allocation of risks to food
+establishments based on their impact on consumers’ health in Canada.
+Results are expressed in Disability Adjusted Life Years (DALYs), a unit that is
+used internationally by government and public health organizations to identify
+and quantify the impact on a population so they can prioritize prevention and
+management efforts accordingly. This value takes into consideration the
+number of illnesses associated with a food safety hazard, their attribution to
+specific food commodities and sub-products, and the health impact per case
+of illness for each hazard. Thus, the health impact is first allocated to
+individual establishments based on the type of activity and the volume of
+each product type they manufacture. The establishment-level health impact is
+then adjusted considering the presence or absence of specific food safety risk
+factors in the establishments and their relative risk.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact21,95,raw,0,,,"The outputs of the ERA model are the inherent, mitigated and final risk results
+which are displayed as a graph with three bars representing the risk level
+associated to an establishment (available in the ERA Establishment Risk
+Profile). The first bar represents the risk level when considering the inherent
+risk factors such as the type of products and the volume. The second bar
+represents the risk level when considering the inherent risk factors combined
+with the mitigation factors such as third-party audits. The last bar represents
+the final risk considering the inherent risk factors, mitigation factors and
+compliance factors. Compliance factors include information about how well
+the establishment has been complying with regulatory requirements. Higher
+risk establishments or sectors that require urgent attention can be easily",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact22,96,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact5,14,raw,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact6,15,raw,1,,,Reversible,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact7,16,raw,2,,,"Some impacts may last a matter of months, but some lingering impacts may
+last longer",,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact8,17,raw,0,,,"There are three kinds of risk factors that influence the ERA-Food model result:
+inherent, mitigation and compliance factors.
+Information linked to the inherent and mitigation factors is provided by the",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact9,18,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact10,17,raw,0,,,"The ERA-Food model assesses the food safety risk of establishments and has
+no impact on the rights or freedoms of individuals.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact24,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact8,17,raw,0,,,"The ERA-Food model assesses the food safety risk of establishments and has
+no impact on the equality, dignity, privacy, and autonomy of individuals.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact11,69,raw,2,,,Moderate impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact8,17,raw,0,,,As part of the Canadian Food Inspection Agency's efforts to modernize its,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact13,69,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact8,17,raw,0,,,"The ERA-Food model assesses the food safety risk of establishments. It does
+not consider economic risks of food establishments and as a result has no
+impact on the economic interests of individuals.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact15,19,raw,1,,,Little to no impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact8,17,raw,0,,,"The ERA-Food model assesses the food safety risk of establishments and has
+no impact on the ongoing sustainability of an environmental ecosystem.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact18,148,raw,0,,,Assessment conducted; no performance differences identified.,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact18B,150,raw,0,,,"Assessment of system performance across diverse populations is informed
+by the nature of the data collected from regulated parties and the scope of the
+ERA-Food model. The model evaluates risk as the establishment level and
+does not process personal information related to individual identity factors
+(e.g. gender, age, race, ethnicity, or disability). As such, direct assessment or
+performance across these identity factors is non-existent.
+However, when completing the Food Safety Supplemental Information (FSSI)
+questionnaire, licence applicants are asked whether their establishment(s)
+distribute food to vulnerable population groups (e.g. hospitals, long-term care
+facilities). This variable was used as a proxy to assess whether the model",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact19I,152,raw,1,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact19IN,154,raw,0,,,"System performance has not been assessed across a variety of disabilities
+because the ERA-Food model is used to evaluate food safety risk at the
+establishment level, not at the individual level.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact23,97,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,raw,0,,,"For internal clients (e.g. inspectors, analysts, risk managers), the model provides structured,
+evidence-based risk insights that support more consistent and transparent decision-making.
+While this may influence how inspection activities are prioritized, it reduces variability as a
+consistent process is applied, enhancing alignment with risk-based objectives.
+Establishments identified as higher risk may be subject to an increased inspection frequency
+or oversight, however, this reflects their risk and is consistent with the CFIA’s mandate of
+protecting Canadian consumers.
+Ongoing monitoring and validation processes are in place to ensure the model continues to
+operate as intended and does not introduce unintended or disproportionate impacts.",,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact26,156,raw,0,,,100%,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact28,160,raw,2,,,Moderate impact,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,impact28A,161,raw,0,,,"Only SFC licence holders with domestic activities are evaluated by the ERA-
+Food model. If an SFC licence applicant mistakenly adds domestic activities
+to their licence, they will be asked to complete the FSSI (formerly AEI)
+questionnaire during the licencing process. As part of the licence application
+review process, an agency agent will reach out to the licence holder to confirm
+their activities, and at this point the error will be identified and corrected. Thus,
+the chances of being wrongfully included are virtually zero.
+There is potential that a SFC licence holder mistakenly omits domestic
+activities from their licence application (e.g. if previously they only performed
+import activities but recently started conducting domestic activities). In this
+case, there is a risk that this establishment will not be evaluated by the ERA-
+Food model. As a result, the appropriate inspection frequency will not be
+applied which may lead to regulatory blind spots where critical risks may go",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource1,20,raw,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource9,73,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource10,74,raw,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource11,75,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource12,98,raw,0,,,CFIA PPU 103,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource14,162,raw,1,,,Within your department,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource15,164,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource15Y,165,raw,0,,,"A performance assessment of the ERA-Food model was conducted prior to its
+implementation. The objectives of this exercise were to:
+Evaluate data collection tools
+Estimate the level of agreement between the risk assessment outputs
+obtained with the ERA-Food model and the assessment done by CFIA senior",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource16,167,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource16N,169,raw,0,,,"The ERA-Food automated decision tool does not rely on machine‑learning or
+any type of model that is trained using historical data. Instead, it uses a set of",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource2,21,raw,3,,,Protected B,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource17,171,raw,0,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource17Y,172,raw,0,,,"To ensure the information contained in the ERA-Food profile is accurate and
+up to date, a high-level review of the licence applicant information, including
+their establishment’s activities and mitigation measures is conducted by staff
+at CFIA (i.e., the National Center for Permissions) during the application,
+renewal and amendment of an SFC licence. Additionally, the inspectorate is
+advised to review the ERA risk profile with licence holders during their first
+Preventive Control Inspection, and licence holders are also invited to update
+their FSSI (formerly AEI) as new information becomes available.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource3,22,raw,1,,,Federal Government,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource4,23,raw,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource5,24,raw,4,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource6,25,raw,4,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource7,26,raw,1,,,Your institution,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource8,26,raw,1,,,Your institution,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSource13,99,raw,0,,,"To collect information on the establishment’s inherent and mitigation factors,
+regulated parties fill out an online questionnaire (FSSI (formerly AEI)) through
+My CFIA. When applying for a Safe Food for Canadians (SFC) licence, all food
+businesses that conduct domestic activities must list their operational
+activities, as well as information about how risk is controlled at their",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSourceType1,27,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,aboutDataSourceType3,174,raw,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationImplementation1,61,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationImplementation2,62,mitigation,0,,,Strategic Policy and Planning,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,mitigation,0,,,,,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationDesign3,63,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationImplementation4,64,mitigation,0,,,Academia,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationImplementation5,176,mitigation,0,,,"Academia (Université de Montréal, University of Guelph, Dalhousie university,
+University of Manitoba) and industry (Risk Sciences International): Consulted
+at all project lifecycle stages of the ERA-Food Model.
+Government in other Jurisdictions including foreign and provincial food safety
+authorities (e.g., Ontario Ministry of Agriculture, Food and Agribusiness
+(OMAFA), Ministère de l’Agriculture, des Pêcheries et de l’Alimentation",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationImplementation6,177,mitigation,3,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationImplementation7,177,mitigation,3,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationDesign8,180,mitigation,0,,,Fairness of outputs,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationDesign8A,181,mitigation,0,,,"Concerns regarding fairness of outputs, protection of personal information as
+well as accuracy of the system were raised during the initial design and",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,consultationDesign9,182,mitigation,0,,,Feedback from stakeholders and partners is documented through inquiries,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation1,67,mitigation,3,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation2,66,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation3,30,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation4,66,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation5,31,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation7,32,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityDesign7A,185,mitigation,0,,,"The GBA Plus analysis determined that the ERA model does not need Gender-
+Based considerations, as the information collected, and the results produced
+focus exclusively on compliance requirements and operational standards of
+the Food Operations Division. The model’s scope is centered on federally
+regulated food establishments and does not directly or indirectly interact with
+or affect communities, groups, or individuals in ways that would require
+specific Gender-Based considerations.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation8,33,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityImplementation4,66,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,dataQualityDesign10,34,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation1,68,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation1A,188,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation2,36,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation3,68,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation4,38,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation5,39,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation7,41,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation10,44,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation8,42,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation9,43,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation12,46,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign12A,189,mitigation,0,,,"From the perspective of industry users, the FSSI (formerly AEI) includes an
+“Others” option that allows establishments to report additional processes or
+mitigations steps not covered by standard categories of the ERA-Food model.
+These entries are reviewed by the ERA team to determine whether updates or
+refinements to the FSSI are needed.
+Feedback is also gathered through inquiries or comments sent to the generic",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation13,42,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign13A,191,mitigation,0,,,"When a client challenges their ERA results, they are asked to contact the ERA-
+technical team. A meeting is then arranged to review their risk profile step-by-
+step, verify the accuracy of the information and provide a detailed explanation
+on how their ERA outcome was determined by the model.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation16,45,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation17,46,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation18,192,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign18A,193,mitigation,0,,,"Prior to the model implementation, the ERA-Food model algorithm was tested
+through pilot projects across all food sectors, and the performance of the
+model assessed through a validation exercise that compared the algorithm’s
+outputs to the assessment done by senior inspectors.",,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation19,194,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign20,195,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign21,196,mitigation,3,,,"Clients are provided with adequate information about the decision-making
+process and have the opportunity to meaningfully participate
+Clients are provided with all documents and information in which the
+administrative decision was based
+Mechanism for assessing and responding to client feedback",,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign22,198,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessImplementation22A,199,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign23,200,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign24,201,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,fairnessDesign24A,202,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,mitigation,0,,,"If there are many adjustments/updates, they will be usually grouped and
+applied, for example, at the beginning of the new fiscal year. In this case, as",,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyImplementation1,71,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyDesign5,100,mitigation,0,,,ERA System Project,,Y,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyImplementation2,72,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,mitigation,0,,,"The ERA and Digital Service Branch (DSB) teams designed and built security
+conditions into the system from the concept stage of the project. ERA data is",,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyImplementation9,206,mitigation,2,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,,,mitigation,0,,,"The ERA and DSB teams designed and built privacy conditions into the system
+from the concept stage of the project. ERA data is controlled by the federal",,Y,french_pdf_not_yet_extracted,N,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyImplementation3,77,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyDesign4,78,mitigation,1,,,Yes,,N,french_pdf_not_yet_extracted,Y,Y
+f77faef4-27d8-4929-929e-bfb1371affde-1,f77faef4-27d8-4929-929e-bfb1371affde,1.0.1,privacyDesign7,102,mitigation,0,,,No,,N,french_pdf_not_yet_extracted,Y,Y

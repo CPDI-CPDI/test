@@ -91,18 +91,29 @@ def part_point_type(title: str) -> str:
 MAX_NUMBER_JUMP = 150
 
 
+def clean_text(text: str) -> str:
+    """
+    pdftotext marks each page break with a form feed glued to the start of the
+    next line. v1.0.1 starts every Section 3.x on a new page, so its headings
+    arrived as "\\fSection 3.2: ..." and the heading pattern, which allows only
+    spaces and tabs before "Section", never found them. The whole document was
+    then read as one unscored block. A page break is a line break here.
+    """
+    return text.replace("\r\n", "\n").replace("\f", "\n")
+
+
 def extract_text(path: Path) -> str:
     if shutil.which("pdftotext"):
         try:
             out = subprocess.run(["pdftotext", "-layout", str(path), "-"],
                                  capture_output=True, timeout=180)
             if out.returncode == 0:
-                return out.stdout.decode("utf-8", errors="replace")
+                return clean_text(out.stdout.decode("utf-8", errors="replace"))
         except Exception:
             pass
     try:
         from pypdf import PdfReader
-        return "\n".join((p.extract_text() or "") for p in PdfReader(str(path)).pages)
+        return clean_text("\n".join((p.extract_text() or "") for p in PdfReader(str(path)).pages))
     except ImportError:
         raise SystemExit("No PDF reader available. "
                          "Install poppler-utils (pdftotext) or run: pip install pypdf")
@@ -196,7 +207,15 @@ def parse_answers(body: str, point_type: str, title: str = "") -> list[dict]:
         del entry["_lines"]
         out.append(entry)
 
-    for raw_line in lines:
+    def next_line_scores(i):
+        """Whether the next non-blank line carries a points marker and is not a question."""
+        for later in lines[i + 1:]:
+            if not later.strip() or RE_PAGE.match(later):
+                continue
+            return bool(RE_POINTS.search(later)) and not RE_QUESTION.match(later)
+        return False
+
+    for i, raw_line in enumerate(lines):
         line = raw_line.strip()
         if not line or RE_PAGE.match(raw_line):
             continue
@@ -238,8 +257,12 @@ def parse_answers(body: str, point_type: str, title: str = "") -> list[dict]:
             current["question_text"] += " " + line
             continue
 
-        # A heading ends a written answer rather than joining it.
-        if current["_lines"] and not RE_POINTS.search(line) and looks_like_heading(line):
+        # A heading ends a written answer rather than joining it. A heading-shaped
+        # line whose next line carries points is not a heading, though: it is a
+        # long checkbox option wrapping onto a second line. Closing there dropped
+        # every option ticked after it (ERA Food model, mitigation 56 of 58).
+        if current["_lines"] and not RE_POINTS.search(line) and looks_like_heading(line) \
+                and not next_line_scores(i):
             heading = line
             current["_closed"] = True
             continue

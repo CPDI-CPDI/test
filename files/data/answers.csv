@@ -152,7 +152,7 @@ l’environnement, car il sera utilisé pour trier les demandes et automatiser c
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 01396e33-2c69-47e5-9381-32e717943b96-1,01396e33-2c69-47e5-9381-32e717943b96,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -341,7 +341,7 @@ Gestion du changement",Y,submitted_translation,Y
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 04556b29-284a-4d2b-8076-928476d64553-1,04556b29-284a-4d2b-8076-928476d64553,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -665,7 +665,7 @@ L'approche collaborative : en fusionnant les informations basées sur les donné
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,dataQualityDesign8,33,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,dataQualityDesign9,66,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,dataQualityDesign10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign1,35,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 061ee9d1-a04a-4590-a381-df8527390f68-1,061ee9d1-a04a-4590-a381-df8527390f68,0.10.0,fairnessDesign4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
@@ -851,7 +851,7 @@ EDSC : Informations personnelles du bénéficiaire et informations sur la SV et 
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 123aefbb-c9cb-4243-9be3-7f901daf13f7-1,123aefbb-c9cb-4243-9be3-7f901daf13f7,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -998,7 +998,7 @@ Dossiers de la liste des signalements (PPU 082)
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 1257e5c1-243f-4ab8-be42-e7433c8ebe70-1,1257e5c1-243f-4ab8-be42-e7433c8ebe70,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -1143,7 +1143,7 @@ La vérification des documents fournis par les demandeurs entraînera un résult
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378-1,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -1256,7 +1256,7 @@ Le scénario le moins désiré serait de classer une prestation qui devrait revo
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 24d2cab2-6a0d-4234-9239-b6ce102ebabd-1,24d2cab2-6a0d-4234-9239-b6ce102ebabd,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -1340,7 +1340,7 @@ Le scénario le moins désiré serait de classer une prestation qui devrait revo
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 380f8da2-a18e-4747-a29f-7775450b7283-1,380f8da2-a18e-4747-a29f-7775450b7283,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -1671,7 +1671,7 @@ Politique numérique - Initiation, Planification, Déploiement, Surveillance
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation1A,188,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation4,38,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 452e10be-383d-4d7a-9c7d-6484dc366a4a-1,452e10be-383d-4d7a-9c7d-6484dc366a4a,1.0.1,fairnessImplementation7,41,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -2041,7 +2041,7 @@ Dans le contexte de toute décision administrative, les résultats de l’évalu
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 52b8574d-5c95-463b-b375-8edd092cea30-1,52b8574d-5c95-463b-b375-8edd092cea30,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -2257,7 +2257,7 @@ In these cases, the estimated losses would be either $300 (median) or $900 (aver
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6b429c8e-ee5b-451a-883f-b6180ada9286-1,6b429c8e-ee5b-451a-883f-b6180ada9286,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -2429,7 +2429,7 @@ Accessibilité de SPAC
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation1A,188,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation4,38,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6ca819ed-dfde-4c4e-ac6b-831310825b03-1,6ca819ed-dfde-4c4e-ac6b-831310825b03,1.0.1,fairnessImplementation7,41,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -2893,7 +2893,7 @@ L’équipe de projet travaille en étroite collaboration avec un conseiller en 
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0-1,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3047,7 +3047,7 @@ d'immigration au nom d'un agent d’immigration.",Y,submitted_translation,Y
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 71b309a0-efd2-4e85-8124-37e935c23aef-1,71b309a0-efd2-4e85-8124-37e935c23aef,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3234,7 +3234,7 @@ Conformité des entreprises",Y,submitted_translation,Y
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 92d7bc61-3724-44cd-9917-e2bf75023d4e-1,92d7bc61-3724-44cd-9917-e2bf75023d4e,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3596,7 +3596,7 @@ au client par courriel?
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,dataQualityImplementation9,66,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 94d9dd91-803a-458c-a381-db6a22c9571a-1,94d9dd91-803a-458c-a381-db6a22c9571a,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3700,7 +3700,7 @@ Les avantages pour la santé mentale permettraient aux vétérans d’accéder a
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3787,7 +3787,7 @@ aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign8,33,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign9,66,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign1,35,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3887,7 +3887,7 @@ ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -3968,7 +3968,7 @@ afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 afc17416-3781-422d-a4a9-cc55e3a053c8-1,afc17416-3781-422d-a4a9-cc55e3a053c8,0.9,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -4115,7 +4115,7 @@ b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,dataQualityImplementation1,67,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation3,37,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation3,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80-1,b3dc23b6-8c06-4c45-bc65-4cb4ec30bf80,0.10.0,fairnessImplementation6,40,mitigation,0,item2-0,1,No,Non,N,catalog,Y
@@ -4264,7 +4264,7 @@ b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 b4a417f7-5040-4328-9863-bb8bbb8568c3-1,b4a417f7-5040-4328-9863-bb8bbb8568c3,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -4424,7 +4424,7 @@ b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d-1,b92cbf7b-3b1c-4b02-a219-ce5b9bdb030d,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -4710,7 +4710,7 @@ c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 c088f841-2d79-4c7e-9281-cc65cbae1b06-1,c088f841-2d79-4c7e-9281-cc65cbae1b06,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -4862,7 +4862,7 @@ cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,dataQualityImplementation10,34,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-1,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.8a1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -4942,7 +4942,7 @@ cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,dataQualityImplementation10,34,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-2,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -5024,7 +5024,7 @@ cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,dataQualityImplementation10,34,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation1,68,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation4,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 cea9985f-5e0f-425e-9b7e-e1d122272c56-3,cea9985f-5e0f-425e-9b7e-e1d122272c56,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -5205,7 +5205,7 @@ d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation17,46,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 d24ae2dd-8399-4b49-8441-3e0318aaf69a-1,d24ae2dd-8399-4b49-8441-3e0318aaf69a,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -5361,7 +5361,7 @@ d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534-1,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -5447,7 +5447,7 @@ d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a-1,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -5727,7 +5727,7 @@ daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 daa9ca66-566f-4c2e-a285-d2e217c2a00f-1,daa9ca66-566f-4c2e-a285-d2e217c2a00f,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -5989,7 +5989,7 @@ eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation5,39,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 eaeb269c-6ac5-4429-a5aa-1fcc07c77933-1,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -6429,7 +6429,7 @@ f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32-1,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,0.9.1,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
@@ -6523,7 +6523,7 @@ f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,dataQualityImplementation10,34,mitigation,0,item2-0,1,No,Non,N,catalog,Y
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation1,68,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation2,36,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation3,37,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation3,68,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation4,38,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation5,39,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
 f95dbd40-1236-428c-acd1-25b7559686be-1,f95dbd40-1236-428c-acd1-25b7559686be,0.10.0,fairnessImplementation6,40,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y

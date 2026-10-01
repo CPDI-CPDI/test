@@ -36,7 +36,7 @@ over a number of releases. Trade chain partners (TCPs) made significant
 investments to upgrade their systems to align to CARM program requirements
 and objectives, and significant time and effort conducting extensive testing of
 the new system with the CBSA, and training to use the new portal. CARM is
-widely available to all importers and other trade chain partners,  using the
+widely available to all importers and other trade chain partners, using the
 CARM client portal that allows TCPs to access, an online portal, to submit
 their commercial accounting declarations to the CBSA, manage adjustments
 and corrections, and more. After releasing the system, the CBSA provides the",0,N,Y,businessDrivers8,Y,84,1.0,
@@ -160,7 +160,7 @@ may be considered mandatory, optional or conditional. A full list of data",0,N,Y
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,14,Is the data used for this system posted on the Open Government Portal?,True,No,0,Y,N,dataQualityImplementation10,Y,34,1.0,
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,15,Does the audit trail identify the authority or delegated authority identified in legislation?,False,Yes,1,Y,N,fairnessImplementation1,Y,68,1.0,
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,16,Does the system provide an audit trail that records all the recommendations or decisions made by the system?,False,Yes,2,Y,N,fairnessImplementation2,Y,36,1.0,
-44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,17,Are all key decision points identifiable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,37,1.0,
+44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,17,Are all key decision points identifiable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,68,1.0,
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,18,"Are all key decision points within the automated system's logic linked to the relevant legislation, policy or procedures?",False,Yes,1,Y,N,fairnessImplementation4,Y,38,1.0,
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,19,Do you maintain a current and up to date log detailing all of the changes made to the model and the system?,False,Yes,2,Y,N,fairnessImplementation5,Y,39,1.0,
 44fe9b0d-d730-43cf-ba7e-d952d55f88f2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,20,Does the system's audit trail indicate all of the decision points made by the system?,False,Yes,1,Y,N,fairnessImplementation6,Y,40,1.0,
@@ -191,11 +191,11 @@ may be considered mandatory, optional or conditional. A full list of data",0,N,Y
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Project Details,none,,8,Project Phase,False,Design,0,Y,N,projectDetailsPhase,Y,51,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Project Details,none,,9,Please provide a project description:,True,"The project involves building a web-based offline, on-premise application that
 uses AI engines to assist with the transcription and/or translation of audio
-files collected during investigations.  The application will process audio files
+files collected during investigations. The application will process audio files
 and generate a transcription and/or translation that will then be reviewed and
-edited by transcribers/translators prior to disclosure.  The goal of the project
+edited by transcribers/translators prior to disclosure. The goal of the project
 is to increase the efficiency of the transcription/translation process, not to
-replace it.  It will help to reduce backlogs and improve operational necessity
+replace it. It will help to reduce backlogs and improve operational necessity
 by allowing investigations timelier access to relevant details of their operation
 which could impact surveillance, officer safety and potential Authorization re-
 writes. Transcribers/translators will still need to review the generated
@@ -203,7 +203,7 @@ transcriptions for accuracy and make any necessary edits.",0,N,Y,projectDetailsD
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Project Details,none,About The System,10,Please check which of the following capabilities apply to your system.,False,"Text and speech analysis: Analyzing large data sets to recognize, process, and
 tag text, speech, voice, and make recommendations based on the tagging",0,N,Y,aboutSystem1,Y,9,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Reasons for Automation,1,What is motivating your team to introduce automation into this decision-making process?,True,(Check all that apply),0,N,Y,businessDrivers1,Y,7,0.891,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Use innovative approaches,2,"What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",False,"Transcribing and translating audio is a labour and time intensive process.  The
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Use innovative approaches,2,"What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",False,"Transcribing and translating audio is a labour and time intensive process. The
 use of AI engines to assist with the transcription/translation will reduce the
 amount of labour and time required by transcribers/translators by generating
 a draft transcription that they can then review and edit instead of performing
@@ -214,22 +214,21 @@ could impact surveillance, officer safety and potential Authorization re-writes.
 It will also impact how quickly disclosure can be provided to the court,
 potentially increasing the rate at which public cases are processed.",0,N,Y,businessDrivers4,Y,80,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Use innovative approaches,4,How effective will the system likely be in meeting client needs?,False,Moderately effective,1,Y,N,businessDrivers5,Y,81,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Use innovative approaches,5,"Please describe any improvements, benefits, or advantages you expect from using an automated system. This could include relevant program indicators and performance targets.",True,"The automation of the transcription/translation process will increase the
-efficiency of the process by a factor of at least 10.  This will allow",0,N,Y,businessDrivers6,Y,82,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Use innovative approaches,5,"Please describe any improvements, benefits, or advantages you expect from using an automated system. This could include relevant program indicators and performance targets.",True,The automation of the transcription/translation process will increase the,0,N,Y,businessDrivers6,Y,82,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,investigators more timely access to information important for their,6,Please describe how you will ensure that the system is confined to addressing the client needs identified above.,False,"The application uses a login based on Active Directory to limit access to only
-users with proper authorization.  SOPs will be put in place to ensure the
-proper use of the system.   Testing will be done, and feedback gathered, to
+users with proper authorization. SOPs will be put in place to ensure the
+proper use of the system. Testing will be done, and feedback gathered, to
 ensure that the efficiency and accuracy of the transcriptions/translations
 generated by the application are within an acceptable range.",0,N,Y,businessDrivers7,Y,83,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,investigators more timely access to information important for their,7,Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.,False,"We have considered clients' privacy and security concerns.  The system is
-designed by the RCMP , operated offline and on-premise.  No operational data
-is stored by the system.  Once the transcriptions have been generated and
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,investigators more timely access to information important for their,7,Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.,False,"We have considered clients' privacy and security concerns. The system is
+designed by the RCMP, operated offline and on-premise. No operational data
+is stored by the system. Once the transcriptions have been generated and
 downloaded by the user, the original audio and the transcription are deleted
 from the system.",0,N,Y,businessDrivers8,Y,84,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,investigators more timely access to information important for their,8,Have alternative non-automated processes been considered?,False,Yes,0,Y,N,businessDrivers9,Y,85,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,investigators more timely access to information important for their,9,"If non-automated processes were considered, why was automation identified as the preferred option?",False,"Manual transcription/translation requires a significant amount of labour and
 time from transcribers/translators and has led to a backlog of audio files
-waiting to be transcribed, thus delaying disclosure.  This application will
+waiting to be transcribed, thus delaying disclosure. This application will
 automatically generate the transcriptions/translations and the transcribers/
 translators will only have to review them and perform edits which is less
 labour and time intensive than transcribing them from scratch.",0,N,Y,businessDrivers10,Y,86,1.0,
@@ -243,7 +242,7 @@ labour and time intensive than transcribing them from scratch.",0,N,Y,businessDr
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,Project Authority,17,Will you require new policy authority for this project?,True,No,0,Y,N,projectAuthority1,Y,56,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Algorithm,18,The algorithm used will be a (trade) secret,False,No,0,Y,N,aboutAlgorithm1,Y,57,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Algorithm,19,The algorithmic process will be difficult to interpret or to explain,True,No,0,Y,N,aboutAlgorithm2,Y,58,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,20,Please describe the decision(s) that will be automated.,False,"The system does not make any decisions.  Transcribers/translators will be
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,20,Please describe the decision(s) that will be automated.,False,"The system does not make any decisions. Transcribers/translators will be
 reviewing all transcriptions for accuracy and editing them when necessary.
 The raw transcriptions generated by the AI engine will not be relied on without
 that review and editing process by a human.",0,N,Y,decisionSector3,Y,91,1.0,
@@ -252,38 +251,38 @@ that review and editing process by a human.",0,N,Y,decisionSector3,Y,91,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,23,Which of the following best describes the type of automation you are planning?,False,"Partial automation (the system will contribute to administrative decision-
 making by supporting an officer through assessments, recommendations,
 intermediate decisions, or other outputs)",2,Y,N,impact30,Y,92,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,24,Please describe the role of the system in the decision-making process.,False,"The system does not make decisions.  Transcriptions generated by the AI
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,24,Please describe the role of the system in the decision-making process.,False,"The system does not make decisions. Transcriptions generated by the AI
 engine will not be relied on as-is for any decision making or for disclosure.
 They must be reviewed and edited by a transcriber/translator before being
 released.",0,N,Y,impact31,Y,93,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,25,Will the system be making decisions or assessments that require judgement or discretion?,False,No,0,Y,N,impact3,Y,47,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,26,Please describe the criteria used to evaluate client data and the operations applied to process it.,False,"Client data are audio files that are uploaded to the application.  They are
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,26,Please describe the criteria used to evaluate client data and the operations applied to process it.,False,"Client data are audio files that are uploaded to the application. They are
 processed by the AI speech recognition model to generate a transcription/
 translation.",0,N,Y,impact20,Y,94,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,27,Please describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.,False,"The output of the system is a text file transcription of the input audio file.  The
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,27,Please describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.,False,"The output of the system is a text file transcription of the input audio file. The
 original audio file is needed by verify the accuracy of the text transcription by
 a transcriber/translator.",0,N,Y,impact21,Y,95,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,28,Will the system perform an assessment or other operation that would not otherwise be completed by a human?,False,No,0,Y,N,impact22,Y,96,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,29,Is the system used by a different part of the organization than the ones who developed it?,False,No,0,Y,N,impact5,Y,14,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,30,Are the impacts resulting from the decision reversible?,False,Reversible,1,Y,N,impact6,Y,15,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,31,How long will impacts from the decision last?,False,Impacts are most likely to be brief,1,Y,N,impact7,Y,16,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,32,Please describe why the impacts resulting from the decision are as per selected option above.,False,"Transcriptions are never used in raw format from the application.  They must
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,32,Please describe why the impacts resulting from the decision are as per selected option above.,False,"Transcriptions are never used in raw format from the application. They must
 be reviewed by a human transcriber/translator for accuracy before they are
 released.",0,N,Y,impact8,Y,17,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,33,The impacts that the decision will have on the rights or freedoms of individuals will likely be:,False,Little to no impact,1,Y,N,impact9,Y,18,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,34,Please describe why the impacts resulting from the decision are as per selected option above.,True,No impact on the rights of individuals.  Audio uploaded to the system is,0,N,Y,impact8,Y,17,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,35,"The impacts that the decision will have on the equality, dignity, privacy, and autonomy of individuals will likely be:",False,Little to no impact,1,Y,N,impact24,Y,69,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,36,Please describe why the impacts resulting from the decision are as per selected option above.,False,"No impact to any individual.  Voice2Text is a tool to assist transcribers at the
-RCMP , not replace them.",0,N,Y,impact8,Y,17,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,37,The impacts that the decision will have on the health and well-being of individuals will likely be:,False,Little to no impact,1,Y,N,impact11,Y,69,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,38,Please describe why the impacts resulting from the decision are as per selected option above.,False,"The system does not store the audio files or transcriptions long-term.  Once
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Decision,34,Please describe why the impacts resulting from the decision are as per selected option above.,True,No impact on the rights of individuals. Audio uploaded to the system is,0,N,Y,impact8,Y,17,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,35,"The impacts that the decision will have on the equality, dignity, privacy, and autonomy of individuals will likely be:",False,Little to no impact,1,Y,N,impact24,Y,69,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,36,Please describe why the impacts resulting from the decision are as per selected option above.,False,"No impact to any individual. Voice2Text is a tool to assist transcribers at the
+RCMP, not replace them.",0,N,Y,impact8,Y,17,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,37,The impacts that the decision will have on the health and well-being of individuals will likely be:,False,Little to no impact,1,Y,N,impact11,Y,69,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,38,Please describe why the impacts resulting from the decision are as per selected option above.,False,"The system does not store the audio files or transcriptions long-term. Once
 the transcriptions are completed and downloaded, all data is deleted from the
 system. The application does not collect any personal information of the
 user.",0,N,Y,impact8,Y,17,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,39,The impacts that the decision will have on the economic interests of individuals will likely be:,False,Little to no impact,1,Y,N,impact13,Y,69,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,40,Please describe why the impacts resulting from the decision are as per selected option above.,False,No economic impact.,0,N,Y,impact8,Y,17,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,41,"The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",False,Little to no impact,1,Y,N,impact15,Y,19,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained.  The application doesn't have to be used if manual,42,Please describe why the impacts resulting from the decision are as per selected option above.,True,No impact on sustainability or environment.,0,N,Y,impact8,Y,17,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,39,The impacts that the decision will have on the economic interests of individuals will likely be:,False,Little to no impact,1,Y,N,impact13,Y,69,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,40,Please describe why the impacts resulting from the decision are as per selected option above.,False,No economic impact.,0,N,Y,impact8,Y,17,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,41,"The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",False,Little to no impact,1,Y,N,impact15,Y,19,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,lawfully obtained. The application doesn't have to be used if manual,42,Please describe why the impacts resulting from the decision are as per selected option above.,True,No impact on sustainability or environment.,0,N,Y,impact8,Y,17,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - A. Data Source,43,Will the Automated Decision System use personal information as input data?,False,No,0,Y,N,aboutDataSource1,Y,20,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - A. Data Source,44,What is the highest security classification of the input data used by the system? (Select one),False,Protected B / Protected C,3,Y,N,aboutDataSource2,Y,21,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - A. Data Source,45,Who controls the data?,False,Federal government,1,Y,N,aboutDataSource3,Y,22,1.0,
@@ -294,7 +293,7 @@ No",0,Y,N,aboutDataSource5,Y,24,0.867,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - A. Data Source,49,Who collected the data used for training the system?,False,A foreign government or non-government third party,4,Y,N,aboutDataSource7,Y,26,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - A. Data Source,50,Who collected the input data used by the system?,False,Your institution,1,Y,N,aboutDataSource8,Y,26,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - A. Data Source,51,"Please describe the input data collected and used by the system, its source, and method of collection.",True,"Input data used in the system is lawfully collected by the RCMP as evidence
-using various means.  It is uploaded to the system, transcribed/translated,
+using various means. It is uploaded to the system, transcribed/translated,
 and subsequently deleted from the system after the transcription has been
 downloaded.",0,N,Y,aboutDataSource13,Y,99,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Impact Questions and Answers,raw,About the Data - B. Type of Data,52,Will the system require the analysis of unstructured data to render a recommendation or a decision?,False,No,0,Y,N,aboutDataType1,Y,27,1.0,
@@ -310,7 +309,7 @@ downloaded.",0,N,Y,aboutDataSource13,Y,99,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,10,Will you have a documented process to manage the risk that outdated or unreliable data is used to make an automated decision?,False,No,0,Y,N,dataQualityDesign8,Y,33,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,11,Will you be making this information publicly available?,False,No,0,Y,N,dataQualityDesign2,N,70,1.0,"{dataQualityDesign1} = ""item1-2"""
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,12,Will the data used for this system be posted on the Open Government Portal?,True,No,0,Y,N,dataQualityDesign10,Y,34,1.0,
-7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,13,Will the audit trail identify the authority or delegated authority identified in legislation?,False,No,0,Y,N,fairnessDesign1,Y,68,1.0,
+7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,13,Will the audit trail identify the authority or delegated authority identified in legislation?,False,No,0,Y,N,fairnessDesign1,Y,35,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,14,Will the system provide an audit trail that records all the recommendations or decisions made by the system?,False,No,0,Y,N,fairnessDesign2,Y,36,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,15,Will all key decision points be identifiable in the audit trail?,False,No,0,Y,N,fairnessDesign3,Y,37,1.0,
 7612202f-1530-41ce-80c7-6e121f5fcadc,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,16,"Will all key decision points within the automated system's logic be linked to the relevant legislation, policy or procedure?",False,No,0,Y,N,fairnessDesign4,Y,38,1.0,
@@ -372,7 +371,7 @@ of using such tools are:
 - ease of evidence and intelligence sharing with external and internal partners,
 as these tools utilize a standardized format in order to export/import data
 - reduces psychological injury and grief to investigators by reducing the",0,N,Y,businessDrivers6,Y,82,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Impact Questions and Answers,raw,abuse and the associate police response,7,Please describe how you will ensure that the system is confined to addressing the client needs identified above.,False,"Griffeye Analyze  is designed for media categorization specifically for this
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Impact Questions and Answers,raw,abuse and the associate police response,7,Please describe how you will ensure that the system is confined to addressing the client needs identified above.,False,"Griffeye Analyze is designed for media categorization specifically for this
 purpose ( as are other competitive niche solutions ), and as such is purpose
 built with these needs in mind.",0,N,Y,businessDrivers7,Y,83,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Impact Questions and Answers,raw,abuse and the associate police response,8,Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.,False,None,0,N,Y,businessDrivers8,Y,84,1.0,
@@ -491,7 +490,7 @@ media either directly from victims/complainants or via assistance requests",0,N,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,14,Is the data used for this system posted on the Open Government Portal?,True,No,0,Y,N,dataQualityImplementation10,Y,34,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,15,Does the audit trail identify the authority or delegated authority identified in legislation?,False,No,0,Y,N,fairnessImplementation1,Y,68,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,16,Does the system provide an audit trail that records all the recommendations or decisions made by the system?,False,Yes,2,Y,N,fairnessImplementation2,Y,36,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,17,Are all key decision points identifiable in the audit trail?,False,No,0,Y,N,fairnessImplementation3,Y,37,1.0,
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,17,Are all key decision points identifiable in the audit trail?,False,No,0,Y,N,fairnessImplementation3,Y,68,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,18,"Are all key decision points within the automated system's logic linked to the relevant legislation, policy or procedures?",False,No,0,Y,N,fairnessImplementation4,Y,38,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,19,Do you maintain a current and up to date log detailing all of the changes made to the model and the system?,False,No,0,Y,N,fairnessImplementation5,Y,39,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,20,Does the system's audit trail indicate all of the decision points made by the system?,False,No,0,Y,N,fairnessImplementation6,Y,40,1.0,
@@ -507,21 +506,17 @@ media either directly from victims/complainants or via assistance requests",0,N,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,30,Does the system's audit trail include change control processes to record modifications to the system's operation or performance?,False,No,0,Y,N,fairnessImplementation16,Y,45,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,31,Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Board?,True,No,0,Y,N,fairnessImplementation17,Y,46,1.0,
 89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,32,"If your system uses or creates personal information, have you undertaken a Privacy Impact Assessment, or updated an existing one?",False,Yes,1,Y,N,privacyImplementation1,Y,71,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,33,Please indicate the following in your answer: Title and scope of the Privacy Impact Assessment; How the automation project fits into the program; and Date of Privacy Impact Assessment completion or modification.,False,"PIA is collateral to FVEYE Hash Sharing Agreement reviewed by RCMP Legal,
-ATIP , DSB, LSU and other internal stakeholders which defines personal
-information as it pertains to this data type. Documentation regarding the use
-of hashes and derivative meta data have been produced for collateral issues
-and can be provided upon request.",0,N,Y,privacyDesign5,Y,100,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,34,Have you designed and built security and privacy into your systems from the concept stage of the project?,False,Yes,1,Y,N,privacyImplementation2,Y,72,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,35,"Is the information used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",False,Yes,1,Y,N,privacyImplementation3,Y,77,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,36,"If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",False,Yes,1,Y,N,privacyDesign4,Y,78,1.0,
-89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,37,Will you de-identify any personal information used or created by the system at any point in the lifecycle?,False,No,0,Y,N,privacyDesign7,Y,102,1.0,
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,33,Please indicate the following in your answer: Title and scope of the Privacy Impact Assessment; How the automation project fits into the program; and Date of Privacy Impact Assessment completion or modification.,True,"PIA is collateral to FVEYE Hash Sharing Agreement reviewed by RCMP Legal,",0,N,Y,privacyDesign5,Y,100,1.0,
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,"ATIP, DSB, LSU and other internal stakeholders which defines personal",34,Have you designed and built security and privacy into your systems from the concept stage of the project?,False,Yes,1,Y,N,privacyImplementation2,Y,72,1.0,
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,"ATIP, DSB, LSU and other internal stakeholders which defines personal",35,"Is the information used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",False,Yes,1,Y,N,privacyImplementation3,Y,77,1.0,
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,"ATIP, DSB, LSU and other internal stakeholders which defines personal",36,"If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",False,Yes,1,Y,N,privacyDesign4,Y,78,1.0,
+89898244-aaae-4591-ba9b-fe5cd81d5924,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,"ATIP, DSB, LSU and other internal stakeholders which defines personal",37,Will you de-identify any personal information used or created by the system at any point in the lifecycle?,False,No,0,Y,N,privacyDesign7,Y,102,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,1,Name of Respondent Chantal Demers,False,,0,N,Y,,Y,,0.706,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,2,Job Title Manager,False,,0,N,Y,,Y,,0.692,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,3,Department Canada Border Services Agency,False,,0,N,Y,,Y,,0.4,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,4,Branch Travellers,False,,0,N,Y,,Y,,0.522,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,5,Project Title Traveller Compliance Indicator,False,,0,N,Y,,Y,,0.478,
-b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,6,Departmental  Program (from Department  Results Framework) Traveller Facilitation and Compliance,False,,0,N,Y,,Y,,0.74,
+b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,6,Departmental Program (from Department Results Framework) Traveller Facilitation and Compliance,False,,0,N,Y,,Y,,0.74,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,7,Project Phase,False,Design,0,Y,N,projectDetailsPhase,Y,51,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Project Details,none,,8,Please provide a project description:,True,"The Canada Border Services Agency (CBSA) provides integrated border services to protect national
 security and public safety while facilitating the lawful flow of people and goods across our border.
@@ -902,7 +897,7 @@ b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and 
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,13,Will you have a documented process to manage the risk that outdated or unreliable data is used to make an automated decision?,False,Yes,2,Y,N,dataQualityDesign8,Y,33,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,14,Will you be making this information publicly available?,False,No,0,Y,N,dataQualityDesign2,Y,70,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Data Quality,15,Will the data used for this system be posted on the Open Government Portal?,True,No,0,Y,N,dataQualityDesign10,Y,34,1.0,
-b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,16,Will the audit trail identify the authority or delegated authority identified in legislation?,False,Yes,1,Y,N,fairnessDesign1,Y,68,1.0,
+b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,16,Will the audit trail identify the authority or delegated authority identified in legislation?,False,Yes,1,Y,N,fairnessDesign1,Y,35,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,17,Will the system provide an audit trail that records all the recommendations or decisions made by the system?,False,Yes,2,Y,N,fairnessDesign2,Y,36,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,18,Will all key decision points be identifiable in the audit trail?,False,Yes,2,Y,N,fairnessDesign3,Y,37,1.0,
 b8a34d1b-d27f-4506-973c-d2ea2f68c623,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,19,"Will all key decision points within the automated system's logic be linked to the relevant legislation, policy or procedure?",False,Yes,1,Y,N,fairnessDesign4,Y,38,1.0,
@@ -1155,7 +1150,7 @@ c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Impact Questions and Answe
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Impact Questions and Answers,raw,"classiﬁcation, and context associated with an image or object",34,Is a non-automated alternative planned and available in the event the automated decision system was unavailable for an extended period of time?,False,Yes,0,Y,N,aboutSystem9,Y,131,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Impact Questions and Answers,raw,"classiﬁcation, and context associated with an image or object",35,"Is there a process in place to grant, monitor, and revoke access permission to the system?",False,Yes,0,Y,N,aboutSystem10A,Y,40,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Impact Questions and Answers,raw,"classiﬁcation, and context associated with an image or object",36,"The impacts that the development, operation, and maintenance of the system could have on the ongoing sustainability of an environmental ecosystem, may be:",False,Little to no impact,1,Y,N,aboutSystem11,Y,132,1.0,
-c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Impact Questions and Answers,raw,"classiﬁcation, and context associated with an image or object",37,"Describe why the impacts resulting from the system's development, operations and maintenance are as selected.",True,"The CST will have little or no impact on the environmental ecosystem because it is used  to
+c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Impact Questions and Answers,raw,"classiﬁcation, and context associated with an image or object",37,"Describe why the impacts resulting from the system's development, operations and maintenance are as selected.",True,"The CST will have little or no impact on the environmental ecosystem because it is used to
 scan Disability Beneﬁt applications and supporting documentation, and to assemble
 relevant evidence into a structured, traceable, and accurate summary for the decision
 maker.",0,N,Y,aboutSystem12,Y,133,1.0,
@@ -1526,7 +1521,7 @@ c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and A
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,20,Does the audit trail provide information to trace the chain of legislative authority for the decision and key decision points?,False,Yes,1,Y,N,fairnessImplementation1,Y,68,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,21,"Are all key decision points in the automated system's logic linked to the relevant legislation, policy or procedures?",False,Yes,1,Y,N,fairnessImplementation1A,Y,188,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,22,Does the audit trail capture all the recommendations or decisions made by the system?,False,Yes,2,Y,N,fairnessImplementation2,Y,36,1.0,
-c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,23,Are all key decision points identiﬁable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,37,1.0,
+c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,23,Are all key decision points identiﬁable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,68,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,24,Is there a process in place to log the instances when overrides were performed?,False,Yes,2,Y,N,fairnessImplementation4,Y,38,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,25,Is there an up-to-date log of the changes made to the model and the system?,False,Yes,2,Y,N,fairnessImplementation5,Y,39,1.0,
 c839bedc-0d5f-4b02-98a7-671d1f60ac51,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures – Procedural Fairness,26,Does the audit trail capture information that can be used to help generate an explanation of the decision where required?,False,Yes,1,Y,N,fairnessImplementation7,Y,41,1.0,
@@ -1627,7 +1622,7 @@ Process optimization and workflow automation: Analyzing large data sets to",0,N,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,Reasons for Automation,1,What is motivating your team to introduce automation into this decision-making process?,True,(Check all that apply),0,N,Y,businessDrivers1,Y,7,0.891,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,reasonable period of time,2,"What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",True,The tool will provide CBSA Officers with additional information to help them,0,N,Y,businessDrivers3,Y,79,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,better identify non-compliant shipments and improve the Agency's,3,Please describe any public benefits the system is expected to have.,False,"By improving the quality of examination referrals, the tool will contribute to the
-improved  facilitation of low-risk shipments, i.e. fewer compliant export
+improved facilitation of low-risk shipments, i.e. fewer compliant export
 shipments will be subject to examination. CBSA Officers will be able to focus
 on shipments of higher risk.",0,N,Y,businessDrivers4,Y,80,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,better identify non-compliant shipments and improve the Agency's,4,How effective will the system likely be in meeting client needs?,False,Very effective,0,Y,N,businessDrivers5,Y,81,1.0,
@@ -1639,7 +1634,7 @@ compliance.",0,N,Y,businessDrivers6,Y,82,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,better identify non-compliant shipments and improve the Agency's,6,Please describe how you will ensure that the system is confined to addressing the client needs identified above.,True,The tool is intended to provide additional information that will supplement,0,N,Y,businessDrivers7,Y,83,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,communicated upon deployment in accompanying messaging and in an,7,Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.,False,"There are no trade-offs between client interests and program objectives. The
 tool will assist CBSA Officers' decision-making to better identify potential non-
-compliance. This  will improve the facilitation of low-risk shipments.",0,N,Y,businessDrivers8,Y,84,1.0,
+compliance. This will improve the facilitation of low-risk shipments.",0,N,Y,businessDrivers8,Y,84,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,communicated upon deployment in accompanying messaging and in an,8,Have alternative non-automated processes been considered?,False,Yes,0,Y,N,businessDrivers9,Y,85,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,communicated upon deployment in accompanying messaging and in an,9,"If non-automated processes were considered, why was automation identified as the preferred option?",False,"Regional staff have other manual processes they use that are less effective.
 This is because the information is not available in any existing single
@@ -1663,7 +1658,7 @@ eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answ
 making by supporting an officer through assessments, recommendations,
 intermediate decisions, or other outputs)",2,Y,N,impact30,Y,92,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,database checks to support informed decisions on whether to examine a,23,Please describe the role of the system in the decision-making process.,False,"When reviewing shipments for export, CBSA Officers refer to many sources to
-gather  information, including internal systems and databases, as well as
+gather information, including internal systems and databases, as well as
 publicly available information on the internet. The tool can supplement the
 Officers' existing systems and database checks by providing additional
 information about potential risk in export shipments.",0,N,Y,impact31,Y,93,1.0,
@@ -1688,20 +1683,20 @@ cancelled by an Officer using existing system functionality, which will allow
 the exporter to proceed with the export of the goods.",0,N,Y,impact8,Y,17,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,32,The impacts that the decision will have on the rights or freedoms of individuals will likely be:,False,Little to no impact,1,Y,N,impact9,Y,18,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,33,Please describe why the impacts resulting from the decision are as per selected option above.,False,"The tool supplements CBSA Officers' existing systems and database checks
-related to export shipments.  By assisting the Officer in making more precise
+related to export shipments. By assisting the Officer in making more precise
 examination referrals, fewer compliant export shipments will be subject to
-examination.   As the tool contains only export shipment information, it has no
+examination. As the tool contains only export shipment information, it has no
 direct impacts on the rights or freedoms of individuals.",0,N,Y,impact8,Y,17,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,34,"The impacts that the decision will have on the equality, dignity, privacy, and autonomy of individuals will likely be:",False,Little to no impact,1,Y,N,impact24,Y,69,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,35,Please describe why the impacts resulting from the decision are as per selected option above.,False,"The inspection of export shipments does not affect the equality, dignity,
-privacy nor the autonomy of individuals.  The tool  supplements the existing
+privacy nor the autonomy of individuals. The tool supplements the existing
 systems and database checks currently being performed by CBSA Officers.
 While the tool will improve the quality of examination referrals, it will not
 impact the examination process.",0,N,Y,impact8,Y,17,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,36,The impacts that the decision will have on the health and well-being of individuals will likely be:,False,Little to no impact,1,Y,N,impact11,Y,69,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,37,Please describe why the impacts resulting from the decision are as per selected option above.,False,"The inspection of export shipments does not affect the health or well-being of
-individuals.  The tool contains information related to export shipments only
-and does not risk assess against individuals.  The tool supplements existing
+individuals. The tool contains information related to export shipments only
+and does not risk assess against individuals. The tool supplements existing
 systems and database checks currently being performed by CBSA Officers.",0,N,Y,impact8,Y,17,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,38,The impacts that the decision will have on the economic interests of individuals will likely be:,False,Little to no impact,1,Y,N,impact13,Y,69,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Impact Questions and Answers,raw,make informed decisions on the appropriateness of examining shipments,39,Please describe why the impacts resulting from the decision are as per selected option above.,False,"Any shipment of exported goods may be examined by the CBSA under Section
@@ -1762,7 +1757,7 @@ eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and 
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Program Policy,16,Is the data used for this system posted on the Open Government Portal?,True,No,0,Y,N,dataQualityImplementation10,Y,34,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,17,Does the audit trail identify the authority or delegated authority identified in legislation?,False,Yes,1,Y,N,fairnessImplementation1,Y,68,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,18,Does the system provide an audit trail that records all the recommendations or decisions made by the system?,False,Yes,2,Y,N,fairnessImplementation2,Y,36,1.0,
-eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,19,Are all key decision points identifiable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,37,1.0,
+eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,19,Are all key decision points identifiable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,68,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,20,"Are all key decision points within the automated system's logic linked to the relevant legislation, policy or procedures?",False,Yes,1,Y,N,fairnessImplementation4,Y,38,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,21,Do you maintain a current and up to date log detailing all of the changes made to the model and the system?,False,Yes,2,Y,N,fairnessImplementation5,Y,39,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,Fairness,22,Does the system's audit trail indicate all of the decision points made by the system?,False,Yes,1,Y,N,fairnessImplementation6,Y,40,1.0,
@@ -1788,3 +1783,416 @@ eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and 
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,37,"Is the information used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",False,No,0,Y,N,privacyImplementation3,Y,77,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,38,"If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",False,Yes,1,Y,N,privacyDesign4,Y,78,1.0,
 eed746a8-a682-47c2-86b1-b427398fa2e2,Original,0.10.0,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,39,Will you de-identify any personal information used or created by the system at any point in the lifecycle?,False,No,0,Y,N,privacyDesign7,Y,102,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,1,Name of Respondent Elisabeth Mantil,False,,0,N,Y,,Y,,0.679,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,2,Job Title A/Science Leader,False,,0,N,Y,,Y,,0.514,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,3,Name of ADM responsible for the program using the automated decision system Debbie Beresford-Green,False,,0,N,Y,ADMresponsible,Y,105,0.867,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,4,Department Canadian Food Inspection Agency,False,,0,N,Y,,Y,,0.436,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,5,Branch Food Safety and Science Branch,False,,0,N,Y,,Y,,0.374,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,6,"Teams consulted on completion of the Algorithmic Impact Assessment Data Engineering Services, Risk Management Outcomes and Modernization",False,,0,N,Y,,Y,,0.657,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,7,Project Title Establishment-based Risk Assessment Model for Food Establishments (ERA- Food Model),False,,0,N,Y,,Y,,0.4,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,8,Project ID from IT Plan 1617-020,False,,0,N,Y,projectDetailsID,Y,49,0.836,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,9,Service ID N/A,False,,0,N,Y,ServiceID,Y,107,0.833,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,10,Departmental Program (from Departmental Results Framework) Setting Rules for Food Safety and Consumer Protection,False,,0,N,Y,,Y,,0.675,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,11,Project Phase,False,Implementation,0,Y,N,projectDetailsPhase,Y,51,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Project Details,none,Project Details,12,Provide a project description:,True,"The Canadian Food Inspection Agency (CFIA) is committed to leveraging its
+data, intelligence reports and surveillance information more effectively to
+identify emerging trends. This approach enables the agency to prioritize risks",0,N,Y,projectDetailsDescription,Y,6,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Reasons for Automation,1,What is motivating your team to introduce automation into this decision-making process?,True,(Check all that apply),0,N,Y,businessDrivers1,Y,7,0.891,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Other (specify),2,Please describe Ensure consistency on the risk assessment process by following a science- based approach.,False,,0,N,Y,,Y,,0.43,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Other (specify),3,What are the client needs the system will address? Describe how client needs have been identified.,True,"The system addresses the CFIA’s tactical work planning team’s (i.e., the
+clients) needs for risk assessment of federally regulated domestic food",0,N,Y,businessDrivers3,Y,79,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,establishments. The ERA Automated Business solution has been,4,Describe any positive impacts on clients and Canadian society that the system is expected to have.,True,"Benefits associated with having a risk-based automated system for CFIA
+clients include:
+Enhancing the Agency’s effectiveness with respect to program design and",0,N,Y,businessDrivers4,Y,80,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,system for food is effective through ongoing rigorous and systematic,5,How effective will the system likely be in meeting client needs?,False,Very effective,0,Y,N,businessDrivers5,Y,81,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,system for food is effective through ongoing rigorous and systematic,6,Describe why effectiveness is as selected.,True,"The ERA-Food model helps the CFIA prioritize its oversight activities and
+allocate its inspection resources using a scientific, risk-based decision-
+making approach. By evaluating food establishments based on the level of
+risk their products represent to Canadian consumers, the model provides
+input to the agency’s risk management process. This information is taken into
+consideration when developing the program direction and determining the
+prioritization and frequency of inspection activities and work planning. The",0,N,Y,businessDrivers5B,Y,108,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,ERA-Food model is therefore a consistent and transparent assessment,7,Describe how you will ensure that the system is confined to addressing the client needs identified.,True,"The model is designed to remain strictly aligned with its intended purpose of
+supporting CFIA’s risk-based oversight mandate and addressing clients needs
+related to inspection prioritization and resource allocation.
+The ERA-Food model supports internal clients (e.g. CFIA inspectors, analysts,",0,N,Y,businessDrivers7,Y,83,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,mechanisms further ensure that the system continues to support both,8,Describe any trade-offs between client interests and program objectives that you have considered during the design of the project.,True,"A central design element of this project was having a standardized
+questionnaire to collect information directly from regulated parties. For
+external clients (i.e. regulated parties), this activity might be perceived as
+burdensome and not always well received. However, for internal clients, this
+information is essential to ensure consistent, high-quality data inputs for the
+ERA-Food model, to enable accurate risk assessment.
+As of October 2025, regulated parties with domestic activities must complete
+the Food Safety Supplemental Information (FSSI, previously named Additional
+Establishment Information (AEI)) to obtain, renew or amend an SFC license.
+To mitigate the administrative trade-off associated with this requirement, the
+questionnaire was designed using plain language and structured to collect
+only necessary information. The questionnaire’s purpose, how the data will be
+used, and the benefits for transparency and consistency in oversight were
+clearly communicated. This approach balances program objectives with client
+impact by ensuring the integrity and effectiveness of the ERA-Food model",0,N,Y,businessDrivers8,Y,84,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,regulated parties. The approach has confirmed buy-in from industry as,9,"Describe any improvements, benefits, or advantages your department expects from using an automated system.",False,"Data not already collected by existing CFIA applications/systems are
+centralized into one system.
+The ERA Risk Profile is available both through an internal reporting
+interface and will be available through a web service that external users would
+be able to access.
+Capacity to extract aggregated data for internal and external usage.
+Adaptable to the other CFIA's business lines (i.e. Animal and Plant health).
+Data is available in near real-time.",0,N,Y,businessDrivers6A,Y,109,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,regulated parties. The approach has confirmed buy-in from industry as,10,"What are your current program indicators, service standards or performance targets?",True,"Performance of the ERA-Food model is currently assessed via a Treasury
+Board (TB) indicator (code IFS-R2-1) under the “Setting Rules for Food Safety
+and Consumer Protection” program. This indicator measures the extent to
+which regulated establishments are integrated into the ERA-Food model,
+serving as a proxy for data coverage and model uptake (i.e., through the
+completion of the FSSI questionnaire) by external stakeholders. Target values",0,N,Y,businessDrivers6B,Y,110,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"Together, these indicators support monitoring model coverage, and the",11,"What is your current performance level against these indicators, standards or targets?",True,"Current performance level against the ERA Treasury Board indicator (IFS-R2-1)
+showed that three sectors met or exceeded their targets (i.e., fresh fruits and
+vegetables, dairy, and meat). The remaining six sectors (manufactured food,
+fish, processed fruits and vegetables, egg, maple, and honey) did not meet
+their targets, although positive performance trends were observed in all
+cases. Notably, the fish, honey, egg, and maple sector were within 5% of their
+targets, indicating near achievement.
+Performance levels are influenced by factors such as the rate at which
+regulated parties provide the required information, as well as sector-specific
+characteristics (e.g. size, maturity, and seasonality). Overall, current
+performance of this indicator demonstrates improving data coverage and
+increasing completion rates of the FSSI questionnaire by external clients,
+which supports the continued strengthening of the ERA-Food model. Further
+progress is expected as regulatory requirements and stakeholder participation
+evolves.
+For the performance metrics on how well inspection activities are delivered
+according to risk, current results show a strong alignment between risk levels
+and inspection effort, particularly for establishments categorized as higher
+risk. For example, the proportion of inspection cases delivered by CFIA
+inspectors increased from 0% to 100% for risk category 1 establishments,
+from 72% to 93% for category 2 establishments, and from 77% to 84% for
+category 3 establishments. These results demonstrate improved targeting of",0,N,Y,businessDrivers6C,Y,111,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,inspection resources toward higher-risk establishments and increased,12,"How do you expect the system will change performance against your program indicators, service standards or performance targets?",True,"Because as of October 2025, regulated parties with domestic activities must
+complete the Food Safety Supplemental Information (FSSI) to get a licence,
+this change is expected to significantly improve data completeness for the
+ERA-Food model (and consequently, positively impact the IFS-R2-1 indicator
+performance). This means, the model will be able to assess 100% of domestic
+food establishments within the next two years, strengthening the accuracy,
+consistency, and coverage of risk assessments.
+As near-complete data coverage is achieved, the IFS-R2-1 indicator will",0,N,Y,businessDrivers6D,Y,112,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,become less relevant. Performance measurement is expected to evolve,13,Have alternative non-automated processes been considered?,False,Yes,0,Y,N,businessDrivers9,Y,85,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,become less relevant. Performance measurement is expected to evolve,14,"If non-automated processes were considered, why was automation identified as the preferred option?",False,"If a non-automated process is used to run the ERA-Food model, several
+drawbacks will be expected including:
+The algorithm would be applied to the data using custom developed
+scripts and not in an automated system.
+Risk results would not be refreshed in near real-time but on an annual
+basis.
+Public reporting would be delayed.
+No ability to verify automatically that the information centralized is
+complete.
+The information provided by regulated parties would require more human
+intervention for data curation which reduces data quality and timeliness.",0,N,Y,businessDrivers10,Y,86,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,become less relevant. Performance measurement is expected to evolve,15,What would be the consequence of not deploying the system?,True,Service cannot be delivered in a timely or efficient manner,0,N,Y,businessDrivers11,Y,87,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,16,"Is the project within an area of intense public scrutiny (for example, because of privacy concerns) and/or frequent litigation?",False,No,0,Y,N,riskProfile1,Y,52,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,17,Does the line of business serve equity denied groups?,False,No,0,Y,N,riskProfile2,Y,53,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,18,Are there any population groups that the automated decision system should not be applied to?,False,No,0,Y,N,riskProfile3,Y,54,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,19,"Has the system been assessed to understand whether it would create or exacerbate barriers for persons with disabilities, and are measures in place to address any identified issues?",False,"Assessment has been conducted, barriers were identified, and measures are
+in place or planned to remove or prevent them.",0,Y,N,riskProfile4,Y,55,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,20,"If barriers for persons with disabilities were identified, describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",False,N/A - Barriers for persons with disabilities were not identified.,0,N,Y,riskProfile4B,Y,115,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,21,"Could the automated decision-system be at heightened risk of being an exploitation target for malicious actors (for example, fraud for financial gain)?",False,No,0,Y,N,riskProfile7,Y,116,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,22,"Have potential issues or harms with the existing service delivery approach been raised by clients or their representatives, the media, audits or parliamentary committees?",False,No,0,Y,N,riskProfile8,Y,117,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Risk Profile,23,Have you submitted a concept case to TBS and presented the project to the Government of Canada Enterprise Architecture Review Board?,True,No,0,Y,N,riskProfile10,Y,119,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Project Authority,24,Will you require new policy or legal authority for this project?,False,No,0,Y,N,projectAuthority1,Y,56,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Project Authority,25,Indicate why you have chosen the response.,True,"The ERA-Food model operates under the Safe Food for Canadians Act and Regulations (SFCR) as
+a tool to support implementation of SFCR inspection requirements. It refines oversight under the
+existing licensing framework—particularly the periodic inspections already mandated under
+SFCR.
+Data feeding into ERA Food model comes through processes already authorized under SFCR and
+agency policy:
+The Food Safety Supplemental Information (FSSI, formerly the Additional Establishment
+Information (AEI) questionnaire) is submitted via MyCFIA as part of existing licensing/renewal
+processes.
+Compliance history is accessed via CFIA’s databases.",0,N,Y,projectAuthority2,Y,120,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About The System,26,Check which of the following capabilities apply to your system.,True,"Risk assessment: Analyzing large data sets to identify patterns and
+recommend courses of action and in some cases trigger specific actions
+Process optimization and workflow automation: Analyzing large data sets to",0,N,Y,aboutSystem1,Y,9,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,27,Who developed the system?,False,Your institution,0,Y,N,aboutSystem3,Y,121,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,28,Who configured the system?,False,Your institution,0,Y,N,aboutSystem4,Y,123,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,29,Is the system:,False,Custom built,1,Y,N,aboutSystem5,Y,124,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,30,"Have you assigned accountability in your institution for the design, development, and maintenance, of the system?",False,Yes,0,Y,N,aboutSystem6,Y,32,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,31,Is there a group in your institution responsible for identifying and implementing opportunities for improvement?,False,Yes,0,Y,N,aboutSystem7,Y,128,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,32,"Does your system conform with the appropriate clauses of standard CAN/ASC EN 301 549:2024, Accessibility requirements for Information and Communication Technology (ICT) products and services?",False,Yes,0,Y,N,aboutSystem8,Y,129,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,33,Is a non-automated alternative planned and available in the event the automated decision system was unavailable for an extended period of time?,False,Yes,0,Y,N,aboutSystem9,Y,131,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,34,"Is there a process in place to grant, monitor, and revoke access permission to the system?",False,Yes,0,Y,N,aboutSystem10A,Y,40,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,35,"The impacts that the development, operation, and maintenance of the system could have on the ongoing sustainability of an environmental ecosystem, may be:",False,Little to no impact,1,Y,N,aboutSystem11,Y,132,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,optimize; and automate specific workflows,36,"Describe why the impacts resulting from the system's development, operations and maintenance are as selected.",True,"The impacts resulting from the system’s development, operations, and
+maintenance have little to no effect on the ongoing sustainability of an
+environmental ecosystem. The ERA-Food model only requires the energy and
+resources associated with standard information technology infrastructure and
+IT systems.",0,N,Y,aboutSystem12,Y,133,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Algorithm,37,The algorithm used will be a (trade) secret,False,No,0,Y,N,aboutAlgorithm1,Y,57,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Algorithm,38,The algorithmic process will be difficult to interpret or to explain,False,Yes,3,Y,N,aboutAlgorithm2,Y,58,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Algorithm,39,Is the algorithm (Check all that apply):,True,Based on rules developed from laws and policy and/or using human expertise,0,N,Y,aboutAlgorithm3,Y,134,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"(for example, if/then statements)",40,"If the automated decision-system is model based, is the model inference (select all that apply):",False,Deterministic (follow precise rules and generate single outcome),0,N,Y,aboutAlgorithm4,Y,135,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"(for example, if/then statements)",41,Is the model:,False,"Discriminative (for example, regression analyses, decision trees)",0,Y,N,aboutAlgorithm5,Y,136,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"(for example, if/then statements)",42,Describe the model being used.,True,"The ERA-Food model uses a deterministic and multiplicative structure. The
+model generates a single, fixed risk estimate for each establishment, rather
+than a range or uncertainty interval. Criterion weights linked to relevant risk
+factors of a given establishment are multiplied within each cluster (inherent",0,N,Y,aboutAlgorithm6,Y,137,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"risk, mitigation and compliance) and sub-cluster to produce multiple",43,"Explain why you chose the model This model was chosen and developed by CFIA in collaboration with a Scientific Advisory Committee (SAC) composed of members from academia (University of Montreal, University of Manitoba, Dalhousie University, and University of Guelph), as well as representatives from Health Canada, the Public Health Agency of Canada, and a consultant from Risk Sciences International. The model was designed based on information gained through an international benchmarking exercise that evaluated risk assessment tools developed by various countries to assess the risk of food establishments.",False,"This included insights on lessons learned by the countries throughout the
+implementation of their tools and their application to inform resource
+allocation.",0,N,Y,,Y,,0.099,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"risk, mitigation and compliance) and sub-cluster to produce multiple",44,Will the algorithm continue to learn and evolve as it is used?,False,No,0,Y,N,aboutAlgorithm8,Y,139,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"risk, mitigation and compliance) and sub-cluster to produce multiple",45,Does the algorithm consider protected characteristics to make its decisions or recommendations?,False,No,0,Y,N,aboutAlgorithm9,Y,141,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"risk, mitigation and compliance) and sub-cluster to produce multiple",46,Have you evaluated whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?,False,No,2,Y,N,aboutAlgorithm11,Y,143,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"risk, mitigation and compliance) and sub-cluster to produce multiple",47,Describe why you have not evaluated whether variables could be proxies for protected characteristics.,True,"An evaluation of whether variables in the model could act as proxies for
+protected characteristics was not conducted because the model does not rely
+on any demographic, socio-economic, or personal identifiers that could
+reasonably correlate with protected characteristics such as race, gender, age,
+or ethnicity. Since none of the input variables capture information about
+individuals or groups in a way that relates to these attributes, the likelihood
+that any variable could function as a proxy is minimal. In the absence of data
+that could be linked – directly or indirectly to protected characteristics, there
+is no meaningful basis for conduction a proxy-bias assessment.",0,N,Y,aboutAlgorithm11B,Y,145,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Decision,48,Describe the administrative decision(s) that is being supported or made by the algorithm.,False,"Five (5) main functions of the ERA technical solution:
+1. Data Collection: populates the ERA system with the required risk factors’
+information as well as other contextual information by extracting data from
+existing systems.
+2. Algorithm calculation: computes the risk result for an establishment by
+using the risk factors populated by the data collection function.
+3. Risk results: stores the calculated risk result number and retain the value
+for historical purposes and trends analysis.
+4. Reporting management: generates outputs and reports at the individual
+and aggregated levels which includes the risk result and profile and related
+information to support decision making and provide input to stakeholders’
+business processes.
+5. Data governance: enables the configuration of the data used to support
+the model.",0,N,Y,decisionSector3,Y,91,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Decision,49,Does the decision pertain to any of the categories below (check all that apply). Note that the examples in brackets are not exhaustive.,True,"Health-related services (environmental and workplace health, product and
+food safety, drug regulation)",1,Y,N,decisionSector1,Y,11,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,50,Which of the following best describes the type of automation you are planning?,False,"Partial automation (the system will contribute to administrative decision-
+making by supporting an officer with assessments, recommendations,
+intermediate decisions, or other outputs)",2,Y,N,impact30,Y,92,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,51,Describe the role of the system in the decision-making process.,False,"The ERA technical solution assesses the food safety risk associated with
+regulated establishments with domestic activities. Risk managers use the
+model outputs along with additional risk intelligence to guide CFIA’s program
+design and allocation of inspection resources.",0,N,Y,impact31,Y,93,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,52,Will the system be making decisions or assessments that require judgment or discretion?,False,No,0,Y,N,impact3,Y,47,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,53,Describe.,False,"The ERA-Food model is designed to be objective, standardized and
+reproducible in the quantification of food safety risk associated to federally
+regulated food establishments based on data and predefined criteria. It uses
+measurable inputs and applies an established algorithm with weighted risk
+factors to produce a consistent risk assessment. Outputs of this model are
+one of many factors taken into consideration during the development of
+tactical work planning at the agency. Indeed, CFIA inspectors retain sole
+authority for all final determinations regarding what is inspected. The system
+functions exclusively as a decision-support tool, providing informational input
+and non-binding recommendations to inspectors.",0,N,Y,businessDrivers12,N,88,1.0,"{businessDrivers11} contains ""item6-0"""
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,54,"Will this project have major impacts on staff, either in terms of their numbers or their roles?",False,No,0,Y,N,impact4A,Y,55,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,55,Describe the criteria used to evaluate client data and the operations applied to process it.,False,"The ERA-Food model concept is based on the allocation of risks to food
+establishments based on their impact on consumers’ health in Canada.
+Results are expressed in Disability Adjusted Life Years (DALYs), a unit that is
+used internationally by government and public health organizations to identify
+and quantify the impact on a population so they can prioritize prevention and
+management efforts accordingly. This value takes into consideration the
+number of illnesses associated with a food safety hazard, their attribution to
+specific food commodities and sub-products, and the health impact per case
+of illness for each hazard. Thus, the health impact is first allocated to
+individual establishments based on the type of activity and the volume of
+each product type they manufacture. The establishment-level health impact is
+then adjusted considering the presence or absence of specific food safety risk
+factors in the establishments and their relative risk.",0,N,Y,impact20,Y,94,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,Impact Assessment,56,Describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.,True,"The outputs of the ERA model are the inherent, mitigated and final risk results
+which are displayed as a graph with three bars representing the risk level
+associated to an establishment (available in the ERA Establishment Risk
+Profile). The first bar represents the risk level when considering the inherent
+risk factors such as the type of products and the volume. The second bar
+represents the risk level when considering the inherent risk factors combined
+with the mitigation factors such as third-party audits. The last bar represents
+the final risk considering the inherent risk factors, mitigation factors and
+compliance factors. Compliance factors include information about how well
+the establishment has been complying with regulatory requirements. Higher
+risk establishments or sectors that require urgent attention can be easily",0,N,Y,impact21,Y,95,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"These resources support transparency for industry, and consistency in",57,Will the system perform an assessment or other operation that is not currently completed by a human?,False,No,0,Y,N,impact22,Y,96,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"These resources support transparency for industry, and consistency in",58,Is the system used by a different part of the organization than the ones who developed it?,False,Yes,2,Y,N,impact5,Y,14,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"These resources support transparency for industry, and consistency in",59,Are the impacts resulting from the decision reversible?,False,Reversible,1,Y,N,impact6,Y,15,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"These resources support transparency for industry, and consistency in",60,How long could impacts from the decision last?,False,"Some impacts may last a matter of months, but some lingering impacts may
+last longer",2,Y,N,impact7,Y,16,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"These resources support transparency for industry, and consistency in",61,"Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",True,"There are three kinds of risk factors that influence the ERA-Food model result:
+inherent, mitigation and compliance factors.
+Information linked to the inherent and mitigation factors is provided by the",0,N,Y,impact8,Y,17,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,walkthrough and assessment of conditions observed within the,62,The impacts that the decision could have on the rights or freedoms of individuals may be:,False,Little to no impact,1,Y,N,impact9,Y,18,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,walkthrough and assessment of conditions observed within the,63,"Describe how this impact level was determined. Include which human rights frameworks were assessed, potential risk that were identified and mitigations put in place.",False,"The ERA-Food model assesses the food safety risk of establishments and has
+no impact on the rights or freedoms of individuals.",0,N,Y,impact10,Y,17,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,walkthrough and assessment of conditions observed within the,64,"The impacts that the decision could have on the equality, dignity, privacy, and autonomy of individuals may be:",False,Little to no impact,1,Y,N,impact24,Y,69,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,walkthrough and assessment of conditions observed within the,65,"Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",False,"The ERA-Food model assesses the food safety risk of establishments and has
+no impact on the equality, dignity, privacy, and autonomy of individuals.",0,N,Y,impact8,Y,17,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,walkthrough and assessment of conditions observed within the,66,The impacts that the decision could have on the health and well-being of individuals may be:,False,Moderate impact,2,Y,N,impact11,Y,69,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,walkthrough and assessment of conditions observed within the,67,"Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",True,As part of the Canadian Food Inspection Agency's efforts to modernize its,0,N,Y,impact8,Y,17,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"inspection system, the ERA-Food model was developed to evaluate food",68,The impacts that the decision could have on the economic interests of individuals may be:,False,Little to no impact,1,Y,N,impact13,Y,69,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"inspection system, the ERA-Food model was developed to evaluate food",69,"Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",False,"The ERA-Food model assesses the food safety risk of establishments. It does
+not consider economic risks of food establishments and as a result has no
+impact on the economic interests of individuals.",0,N,Y,impact8,Y,17,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"inspection system, the ERA-Food model was developed to evaluate food",70,"The impacts that the decision could have on the ongoing sustainability of an environmental ecosystem, may be:",False,Little to no impact,1,Y,N,impact15,Y,19,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"inspection system, the ERA-Food model was developed to evaluate food",71,"Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",False,"The ERA-Food model assesses the food safety risk of establishments and has
+no impact on the ongoing sustainability of an environmental ecosystem.",0,N,Y,impact8,Y,17,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"inspection system, the ERA-Food model was developed to evaluate food",72,"Have you assessed system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people, and have the identified disparities been addressed?",False,Assessment conducted; no performance differences identified.,0,Y,N,impact18,Y,148,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"inspection system, the ERA-Food model was developed to evaluate food",73,Describe your approach to assessing system performance.,True,"Assessment of system performance across diverse populations is informed
+by the nature of the data collected from regulated parties and the scope of the
+ERA-Food model. The model evaluates risk as the establishment level and
+does not process personal information related to individual identity factors
+(e.g. gender, age, race, ethnicity, or disability). As such, direct assessment or
+performance across these identity factors is non-existent.
+However, when completing the Food Safety Supplemental Information (FSSI)
+questionnaire, licence applicants are asked whether their establishment(s)
+distribute food to vulnerable population groups (e.g. hospitals, long-term care
+facilities). This variable was used as a proxy to assess whether the model",0,N,Y,impact18B,Y,150,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,74,Have you tested system performance for clients with a variety of different disabilities?,False,No,1,Y,N,impact19I,Y,152,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,75,Describe why system performance has not been assessed across a variety of disabilities.,False,"System performance has not been assessed across a variety of disabilities
+because the ERA-Food model is used to evaluate food safety risk at the
+establishment level, not at the individual level.",0,N,Y,impact19IN,Y,154,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,76,Are there clients or groups of clients that will experience the most significant negative impacts from the system being used?,False,No,0,Y,N,impact23,Y,97,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,77,"Describe No specific clients or groups of clients are expected to experience disproportionate negative impacts from the use of the ERA-Food model. The model supports the CFIA’s risk-informed approach to managing food safety risks by informing inspection prioritization and work planning. External clients (i.e. Safe Food for Canadians (SFC) licence holders with domestic activities) are assessed using a standardized methodology and consistent risk criteria. Risk results reflect the level of risk associated with the products and activities conducted at each establishment, rather than characteristics of specific groups, ensuring fair and consistent treatment across regulted parties.",False,"For internal clients (e.g. inspectors, analysts, risk managers), the model provides structured,
+evidence-based risk insights that support more consistent and transparent decision-making.
+While this may influence how inspection activities are prioritized, it reduces variability as a
+consistent process is applied, enhancing alignment with risk-based objectives.
+Establishments identified as higher risk may be subject to an increased inspection frequency
+or oversight, however, this reflects their risk and is consistent with the CFIA’s mandate of
+protecting Canadian consumers.
+Ongoing monitoring and validation processes are in place to ensure the model continues to
+operate as intended and does not introduce unintended or disproportionate impacts.",0,N,Y,,Y,,0.055,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,78,What proportion of clients will the system be applied to?,False,100%,0,Y,N,impact26,Y,156,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,79,The impact of individuals being wrongfully included or overlooked by the system could be:,False,Moderate impact,2,Y,N,impact28,Y,160,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,across the assessed groups. Ongoing monitoring is in place to ensure,80,Describe why the impact of being wrongfully included or overlooked by the system is as selected.,True,"Only SFC licence holders with domestic activities are evaluated by the ERA-
+Food model. If an SFC licence applicant mistakenly adds domestic activities
+to their licence, they will be asked to complete the FSSI (formerly AEI)
+questionnaire during the licencing process. As part of the licence application
+review process, an agency agent will reach out to the licence holder to confirm
+their activities, and at this point the error will be identified and corrected. Thus,
+the chances of being wrongfully included are virtually zero.
+There is potential that a SFC licence holder mistakenly omits domestic
+activities from their licence application (e.g. if previously they only performed
+import activities but recently started conducting domestic activities). In this
+case, there is a risk that this establishment will not be evaluated by the ERA-
+Food model. As a result, the appropriate inspection frequency will not be
+applied which may lead to regulatory blind spots where critical risks may go",0,N,Y,impact28A,Y,161,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,81,Will the system use personal information as input data?,False,Yes,2,Y,N,aboutDataSource1,Y,20,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,82,Have you verified that the collection of personal information is limited to only what is directly related to a program or activity of your institution?,False,Yes,0,Y,N,aboutDataSource9,Y,73,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,83,Is the personal information of individuals used in a decision-making process that affects those individuals?,False,Yes,2,Y,N,aboutDataSource10,Y,74,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,84,Have you verified whether the system is using personal information in a way that is consistent with: (a) the current personal information banks (PIBs) and privacy impact assessments (PIAs) of your programs or (b) planned or implemented modifications to the PIBs or PIAs that take new uses and processes into account?,False,Yes,0,Y,N,aboutDataSource11,Y,75,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,85,List relevant PIB numbers.,False,CFIA PPU 103,0,N,Y,aboutDataSource12,Y,98,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,86,Will the personal information be shared (check all that apply),False,Within your department,1,Y,N,aboutDataSource14,Y,162,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,87,Is the training and testing data for the system representative of the clients being served?,False,Yes,0,Y,N,aboutDataSource15,Y,164,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,About the Data,88,Describe how you have assessed that data was representative.,True,"A performance assessment of the ERA-Food model was conducted prior to its
+implementation. The objectives of this exercise were to:
+Evaluate data collection tools
+Estimate the level of agreement between the risk assessment outputs
+obtained with the ERA-Food model and the assessment done by CFIA senior",0,N,Y,aboutDataSource15Y,Y,165,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"size, ensuring a balanced representation of small, medium, and large",89,Are there biases in the training data that could increase the likelihood of discriminatory outcomes or lead to other impacts on human rights?,False,No,0,Y,N,aboutDataSource16,Y,167,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,"size, ensuring a balanced representation of small, medium, and large",90,Explain the process taken to confirm that there are no biases in the training data that could increase the likelihood of discriminatory outcomes or other impacts on human rights.,True,"The ERA-Food automated decision tool does not rely on machine‑learning or
+any type of model that is trained using historical data. Instead, it uses a set of",0,N,Y,aboutDataSource16N,Y,169,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,91,What is the highest security classification of the input data used by the system? (Select one),False,Protected B,3,Y,N,aboutDataSource2,Y,21,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,92,Are there measures in place to ensure the accuracy of the personal information used?,False,Yes,0,Y,N,aboutDataSource17,Y,171,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,93,"If yes, describe the measures taken to ensure and verify the accuracy of personal information.",False,"To ensure the information contained in the ERA-Food profile is accurate and
+up to date, a high-level review of the licence applicant information, including
+their establishment’s activities and mitigation measures is conducted by staff
+at CFIA (i.e., the National Center for Permissions) during the application,
+renewal and amendment of an SFC licence. Additionally, the inspectorate is
+advised to review the ERA risk profile with licence holders during their first
+Preventive Control Inspection, and licence holders are also invited to update
+their FSSI (formerly AEI) as new information becomes available.",0,N,Y,aboutDataSource17Y,Y,172,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,94,Who controls the data?,False,Federal Government,1,Y,N,aboutDataSource3,Y,22,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,95,Will the system use data from multiple different sources?,False,Yes,2,Y,N,aboutDataSource4,Y,23,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,96,"Will the system require input data from a network-connected device? (such as Internet of Things, sensor)",False,Yes,4,Y,N,aboutDataSource5,Y,24,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,97,Will the system interface with other IT systems?,False,Yes,4,Y,N,aboutDataSource6,Y,25,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,98,Who collected the data used for training the system?,False,Your institution,1,Y,N,aboutDataSource7,Y,26,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,99,Who collected the input data used by the system?,False,Your institution,1,Y,N,aboutDataSource8,Y,26,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,absence of individual data supports the conclusion that there are no,100,"Describe the input data collected and used by the system, its source, method of collection, and any quality assurance measures in place.",True,"To collect information on the establishment’s inherent and mitigation factors,
+regulated parties fill out an online questionnaire (FSSI (formerly AEI)) through
+My CFIA. When applying for a Safe Food for Canadians (SFC) licence, all food
+businesses that conduct domestic activities must list their operational
+activities, as well as information about how risk is controlled at their",0,N,Y,aboutDataSource13,Y,99,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,establishment via the FSSI. This data along with the establishment’s,101,"Will the system require the analysis of unstructured data to make an assessment, recommendation or decision?",False,No,0,Y,N,aboutDataSourceType1,Y,27,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Impact Questions and Answers,raw,establishment via the FSSI. This data along with the establishment’s,102,Has there been a decision to exclude certain data?,False,No,0,Y,N,aboutDataSourceType3,Y,174,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Consultations,1,"Internal Stakeholders (federal institutions, including the federal public service)",False,Yes,2,Y,N,consultationImplementation1,Y,61,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Consultations,2,Which internal consultees or partners have you engaged?,True,Strategic Policy and Planning,0,N,Y,consultationImplementation2,Y,62,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Other (describe),3,"Please describe Corporate Management Security, International Affairs, Operations, Other Government departments (Public Health Agency of Canada and Health Canada)",False,,0,N,Y,,Y,,0.444,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Other (describe),4,External consultees or partners (groups in other sectors or jurisdictions).,False,Yes,2,Y,N,consultationDesign3,Y,63,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Other (describe),5,Which external consultees or partners have you engaged?,True,Academia,0,N,Y,consultationImplementation4,Y,64,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Governments in other Jurisdictions,6,"Identify the consultees or partners and indicate the project lifecycle stage (Concept, Design, Data collection and processing, Building or adapting the model, Testing, Deployment, Production, Monitoring, Decommission) in which engagement took place.",True,"Academia (Université de Montréal, University of Guelph, Dalhousie university,
+University of Manitoba) and industry (Risk Sciences International): Consulted
+at all project lifecycle stages of the ERA-Food Model.
+Government in other Jurisdictions including foreign and provincial food safety
+authorities (e.g., Ontario Ministry of Agriculture, Food and Agribusiness
+(OMAFA), Ministère de l’Agriculture, des Pêcheries et de l’Alimentation",0,N,Y,consultationImplementation5,Y,176,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"(MAPAQ), Belgian Food Safety Authority, Agence nationale de securité",7,Did you consult with the clients that will be most impacted by the system?,False,Yes,3,Y,N,consultationImplementation6,Y,177,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"(MAPAQ), Belgian Food Safety Authority, Agence nationale de securité",8,Did you consult with clients or communities that will be adversely impacted by the system?,False,Yes,3,Y,N,consultationImplementation7,Y,177,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"(MAPAQ), Belgian Food Safety Authority, Agence nationale de securité",9,Have consultees or partners raised any significant concerns about the system in the following areas:,True,Fairness of outputs,0,N,Y,consultationDesign8,Y,180,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Accuracy,10,Describe how the identified concerns have been assessed and managed.,True,"Concerns regarding fairness of outputs, protection of personal information as
+well as accuracy of the system were raised during the initial design and",0,N,Y,consultationDesign8A,Y,181,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,implementation of the model. The concerns encountered were primarily,11,"Explain how you documented, analyzed and addressed the feedback received.",True,Feedback from stakeholders and partners is documented through inquiries,0,N,Y,consultationDesign9,Y,182,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,12,"Do you have documented processes in place to test datasets against biases, discrimination, and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines, or other assessment tools.",False,Yes,3,Y,N,dataQualityImplementation1,Y,67,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,13,Is the documented process publicly available?,False,No,0,Y,N,dataQualityImplementation2,Y,66,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,14,Have you developed a process to document how data quality issues were resolved during the design process?,False,Yes,1,Y,N,dataQualityImplementation3,Y,30,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,15,Is the process publicly available?,False,No,0,Y,N,dataQualityImplementation4,Y,66,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,16,Have you undertaken a Gender-based Analysis Plus (GBA Plus) of the data?,False,Yes,2,Y,N,dataQualityImplementation5,Y,31,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,17,Are the GBA Plus findings publicly available?,False,No,0,Y,N,dataQualityImplementation7,Y,32,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,18,Summarize the findings or provide a link if publicly available.,False,"The GBA Plus analysis determined that the ERA model does not need Gender-
+Based considerations, as the information collected, and the results produced
+focus exclusively on compliance requirements and operational standards of
+the Food Operations Division. The model’s scope is centered on federally
+regulated food establishments and does not directly or indirectly interact with
+or affect communities, groups, or individuals in ways that would require
+specific Gender-Based considerations.",0,N,Y,dataQualityDesign7A,Y,185,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,19,"Do you have a documented process to manage the risk that low quality, outdated or unreliable data is used to make an automated decision?",False,Yes,2,Y,N,dataQualityImplementation8,Y,33,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,20,Is the process publicly available?,False,No,0,Y,N,dataQualityImplementation4,Y,66,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-risking and Mitigation Measures - Data Quality,21,Will the data used for this system be posted on the Open Government Portal?,True,No,0,Y,N,dataQualityDesign10,Y,34,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,22,Does the audit trail provide information to trace the chain of legislative authority for the decision and key decision points?,False,Yes,1,Y,N,fairnessImplementation1,Y,68,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,23,"Are all key decision points in the automated system's logic linked to the relevant legislation, policy or procedures?",False,Yes,1,Y,N,fairnessImplementation1A,Y,188,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,24,Does the audit trail capture all the recommendations or decisions made by the system?,False,Yes,2,Y,N,fairnessImplementation2,Y,36,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,25,Are all key decision points identifiable in the audit trail?,False,Yes,2,Y,N,fairnessImplementation3,Y,68,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,26,Is there a process in place to log the instances when overrides were performed?,False,No,0,Y,N,fairnessImplementation4,Y,38,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,27,Is there an up-to-date log of the changes made to the model and the system?,False,Yes,2,Y,N,fairnessImplementation5,Y,39,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,28,Does the audit trail capture information that can be used to help generate an explanation of the decision where required?,False,Yes,1,Y,N,fairnessImplementation7,Y,41,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,29,Is the system able to produce reasons for its decisions or recommendations when required?,False,Yes,2,Y,N,fairnessImplementation10,Y,44,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,30,Does the audit trail identify precisely which version of the system was used for each decision it supports?,False,No,0,Y,N,fairnessImplementation8,Y,42,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,31,Does the audit trail show who the authorized decision-maker is?,False,No,0,Y,N,fairnessImplementation9,Y,43,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,32,Is there a mechanism to capture feedback by users of the system?,False,Yes,2,Y,N,fairnessImplementation12,Y,46,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,Fairness,33,Describe how user feedback informs updates to the system.,True,"From the perspective of industry users, the FSSI (formerly AEI) includes an
+“Others” option that allows establishments to report additional processes or
+mitigations steps not covered by standard categories of the ERA-Food model.
+These entries are reviewed by the ERA team to determine whether updates or
+refinements to the FSSI are needed.
+Feedback is also gathered through inquiries or comments sent to the generic",0,N,Y,fairnessDesign12A,Y,189,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",34,Is there a recourse process established for clients to challenge the decision?,False,Yes,2,Y,N,fairnessImplementation13,Y,42,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",35,Provide information on the recourse process or link to a website where this is described.,False,"When a client challenges their ERA results, they are asked to contact the ERA-
+technical team. A meeting is then arranged to review their risk profile step-by-
+step, verify the accuracy of the information and provide a detailed explanation
+on how their ERA outcome was determined by the model.",0,N,Y,fairnessDesign13A,Y,191,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",36,Does the audit trail include change control processes to record modifications to the system's operation or performance?,False,No,0,Y,N,fairnessImplementation16,Y,45,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",37,Does the system base its decision or recommendation on all of the information provided by the client?,False,No,0,Y,N,fairnessImplementation17,Y,46,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",38,Have you undertaken mitigations in algorithm development and model testing to address bias and discrimination?,False,Yes,2,Y,N,fairnessImplementation18,Y,192,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",39,Describe the metrics used and any mitigations taken to address identified issues.,False,"Prior to the model implementation, the ERA-Food model algorithm was tested
+through pilot projects across all food sectors, and the performance of the
+model assessed through a validation exercise that compared the algorithm’s
+outputs to the assessment done by senior inspectors.",0,N,Y,fairnessDesign18A,Y,193,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",40,Does the system only consider input data and information relevant to the decision?,False,Yes,2,Y,N,fairnessImplementation19,Y,194,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",41,Are the system rules directly relevant to the administrative decision?,False,Yes,2,Y,N,fairnessDesign20,Y,195,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",42,Indicate additional procedural fairness protections in place (check all that apply):,False,"Clients are provided with adequate information about the decision-making
+process and have the opportunity to meaningfully participate
+Clients are provided with all documents and information in which the
+administrative decision was based
+Mechanism for assessing and responding to client feedback",3,Y,N,fairnessDesign21,Y,196,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",43,Are there processes in place to ensure impartiality and ethical conduct by the decision- maker in the use of the system and its outputs?,False,Yes,2,Y,N,fairnessDesign22,Y,198,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",44,Have you undertaken training on appropriate use and awareness of risks associated with automation bias?,False,Yes,2,Y,N,fairnessImplementation22A,Y,199,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",45,Will your team be regularly retraining the model or reviewing the rules?,False,Yes,2,Y,N,fairnessDesign23,Y,200,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",46,Do you have monitoring processes in place to detect changes in system performance over time?,False,Yes,2,Y,N,fairnessDesign24,Y,201,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",47,Do you have a process in place to update the system based on the monitoring results?,False,Yes,1,Y,N,fairnessDesign24A,Y,202,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"improvements to the FSSI– for example, when users report IT problems",48,"Describe No model retraining is applied to the ERA Food model. Adjustments/updates to the ERA-Food model algorithm rules are applied continuously and the process to update the system depends on the needs identified (e.g., new information on a pathogen, a new mitigation strategy applied by the industry).",True,"If there are many adjustments/updates, they will be usually grouped and
+applied, for example, at the beginning of the new fiscal year. In this case, as",0,N,Y,,Y,,0.107,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,49,"If your system uses or creates personal information, have you undertaken a PIA, or updated an existing one?",False,Yes,2,Y,N,privacyImplementation1,Y,71,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,De-Risking and Mitigation Measures - Privacy,50,Indicate the following in your answer: Title and scope of the PIA; How the automation project fits into the program; and Date of PIA completion or modification.,True,ERA System Project,0,N,Y,privacyDesign5,Y,100,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"Date of Privacy Impact Assessment completion: March 6, 2017",51,Have you designed and built security into your systems from the concept stage of the project?,False,Yes,2,Y,N,privacyImplementation2,Y,72,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,"Date of Privacy Impact Assessment completion: March 6, 2017",52,"Describe As part of the project development, the ERA-Food automated tool was subjected to a Privacy Impact Assessment (PIA) in March 2017, and it was determined that information was used in a way that is consistent with the current Personal Information Banks, Privacy Practices and Security Management.",True,"The ERA and Digital Service Branch (DSB) teams designed and built security
+conditions into the system from the concept stage of the project. ERA data is",0,N,Y,,Y,,0.152,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,controlled by the federal government (CFIA) and actions have been,53,Have you designed and built privacy into your systems from the concept stage of the project?,False,Yes,2,Y,N,privacyImplementation9,Y,206,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,controlled by the federal government (CFIA) and actions have been,54,"Describe As part of the project development, the ERA-Food automated tool was subjected to a Privacy Impact Assessment (PIA) in March 2017, and it was determined that information was used in a way that is consistent with the current Personal Information Banks, Privacy Practices and Security Management.",True,"The ERA and DSB teams designed and built privacy conditions into the system
+from the concept stage of the project. ERA data is controlled by the federal",0,N,Y,,Y,,0.152,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,appropriate use of DSDP and IMS data respectively. The FSSI preamble,55,"Is the information used within a closed system (no connections to the Internet, Intranet or any other system)?",False,No,0,Y,N,privacyImplementation3,Y,77,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,appropriate use of DSDP and IMS data respectively. The FSSI preamble,56,"If the disclosing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",False,Yes,1,Y,N,privacyDesign4,Y,78,1.0,
+f77faef4-27d8-4929-929e-bfb1371affde,Original,1.0.1,Y,Mitigation Questions and Answers,mitigation,appropriate use of DSDP and IMS data respectively. The FSSI preamble,57,Will you de-identify any personal information used or created by the system at any point in the lifecycle?,False,No,0,Y,N,privacyDesign7,Y,102,1.0,
