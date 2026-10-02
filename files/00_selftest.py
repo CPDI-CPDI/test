@@ -934,6 +934,38 @@ check("share of the area maximum", _areas["Data quality"]["pct_of_max"] == 60.0)
 check("an answer to a question not shown does not count",
       _areas["Privacy"]["points"] == 3, str(_areas["Privacy"]["points"]))
 
+print("\n=== a question id holds one field per version ===")
+# Short follow-ups worded alike ("Please describe") under different parents
+# were folded into one question_uid, so one submission was "shown" the same
+# question four times and coverage counted a question 228 times out of 40.
+_rows = [
+    {"catalog_version": "0.10.0", "field_name": f, "page_name": pg, "text_en": t, "text_fr": "",
+     "point_type": pt, "answer_type": "comment", "visible_if": "", "mitigation_phase": ph}
+    for f, pg, t, pt, ph in [
+        ("impact10", "impact", "Please describe", "none", ""),
+        ("impact12", "impact", "Please describe", "none", ""),
+        ("impact14", "impact", "Please describe", "none", ""),
+        ("dqD5", "dataQualityDesign", "Have you undertaken a GBA Plus of the data?", "mitigation", "design"),
+        ("dqI5", "dataQualityImplementation", "Have you undertaken a GBA Plus of the data?",
+         "mitigation", "implementation"),
+        ("q3", "rm-data-quality-implementation", "Have you undertaken a GBA Plus of the data?",
+         "mitigation", "")]]
+_rows[-1]["catalog_version"] = "0.5"
+_secs = [{"catalog_version": r["catalog_version"], "page_name": r["page_name"],
+          "section_name_en": r["page_name"], "section_name_fr": "", "display_order": i,
+          "point_type": r["point_type"], "mitigation_phase": r["mitigation_phase"],
+          "max_raw_points": 0, "max_mitigation_points": 0}
+         for i, r in enumerate({(r["catalog_version"], r["page_name"]): r for r in _rows}.values())]
+_c, _sm = bridge.bridge_sections(_secs)
+_q, _m, _ = bridge.bridge_questions(_rows, _sm, {})
+_uid = {r["field_name"]: r["question_uid"] for r in _m}
+check("alike follow-ups in one version keep separate ids",
+      len({_uid["impact10"], _uid["impact12"], _uid["impact14"]}) == 3)
+check("a question's design and implementation copies share one id",
+      _uid["dqD5"] == _uid["dqI5"])
+check("an untagged v0.5 implementation page still pairs with its design copy",
+      _uid["q3"] == _uid["dqD5"], str(_uid))
+
 print("\n=== branching conditions read brackets, numbers and lists ===")
 _H = {"a": {"item1"}, "b": {"item2"}, "c": {"item3", "item4"}, "n": {"4"}}
 check("brackets group before 'and'",

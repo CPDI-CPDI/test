@@ -251,15 +251,34 @@ def bridge_questions(fields, section_map, chains):
         # Both are follow-ups: their parents must agree too.
         return 0.6 * s + 0.4 * similarity(a_parent, b_parent)
 
+    # A question_uid holds at most one field per version. The one exception is
+    # the design and implementation copies of a mitigation question, which are
+    # the same question asked at a different phase; a submission only ever sees
+    # one of them. Without this rule, short follow-ups with near-identical
+    # wording ("Please describe", "Specify") under different parents were
+    # folded into one uid, so one submission was shown the "same" question four
+    # times and coverage counted it 228 times across 40 submissions.
+    used = defaultdict(list)          # (version, uid) -> [phase of each field]
+
+    def free(c, v, phase):
+        taken = used.get((v, c["question_uid"]), [])
+        return all(p and phase and p != phase for p in taken)
+
     for v in versions:
         for f in by_ver[v]:
             name = f["field_name"]
+            # v0.5 left its implementation pages untagged; the page name still
+            # says which phase it is, and the pairing rule depends on it.
+            phase = f.get("mitigation_phase", "") or next(
+                (p for p in ("implementation", "design") if p in page_key(f.get("page_name"))), "")
             sec_uid = sec_lookup.get((v, f["page_name"]))
             f_text, f_parent = signature(f, v)
             target, score, method = None, 0.0, ""
 
             # pass 1 — same field name, and wording has not diverged
             for c in by_name.get(name, []):
+                if not free(c, v, phase):
+                    continue
                 s = similarity(c["canonical_text_en"], f["text_en"])
                 if s >= WEAK or c["point_type"] == f["point_type"]:
                     target, score, method = c, max(s, 0.95), "field_name"
@@ -268,7 +287,7 @@ def bridge_questions(fields, section_map, chains):
             # pass 2 — same section, near-identical wording and parent
             if target is None:
                 for c in canon:
-                    if c["section_uid"] != sec_uid:
+                    if c["section_uid"] != sec_uid or not free(c, v, phase):
                         continue
                     s = compare(c["canonical_text_en"], c.get("_parent_text", ""),
                                 f_text, f_parent)
@@ -280,6 +299,8 @@ def bridge_questions(fields, section_map, chains):
             # pass 3 — near-identical wording and parent anywhere
             if target is None:
                 for c in canon:
+                    if not free(c, v, phase):
+                        continue
                     s = compare(c["canonical_text_en"], c.get("_parent_text", ""),
                                 f_text, f_parent)
                     if s > score:
@@ -318,6 +339,7 @@ def bridge_questions(fields, section_map, chains):
                 if score < 1.0 and method != "field_name":
                     target["reworded"] = "Y"
 
+            used[(v, target["question_uid"])].append(phase)
             target["version_count"] += 1
 
             ch = chains.get((v, name), {})

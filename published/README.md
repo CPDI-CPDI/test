@@ -19,7 +19,7 @@ with them. Anything reading them can rely on that.
 | `question_coverage` | 6494 | 14 |
 | `question_map` | 1419 | 31 |
 | `question_options` | 996 | 7 |
-| `questions` | 206 | 15 |
+| `questions` | 240 | 15 |
 | `section_versions` | 150 | 13 |
 | `sections` | 21 | 12 |
 | `services` | 0 | 12 |
