@@ -327,6 +327,117 @@ def load_option_lookup():
     return out
 
 
+# ---------------------------------------------------------------- branching
+# A question's visibleIf condition, evaluated against the answers a submission
+# holds. The catalogs use a small part of SurveyJS's expression language:
+#   {field} = "item1"     {field} <> "item1"     {field} = 4
+#   {field} contains "item1"     {field} contains ["item1"]
+#   {field} empty / notempty
+# joined by and / or, with brackets. Brackets matter: v1.0.x has conditions
+# like (A or B) and (C or D), which read left to right without them give the
+# wrong answer.
+#
+# Logic is three-valued. An atom that cannot be read is unknown, and an unknown
+# result counts as met, so a question is never dropped on a rule we could not
+# interpret.
+
+_TOKEN = re.compile(r"""\s*(\(|\)|\band\b|\bor\b|\{[^}]+\}\s*(?:=|<>|!=|(?:not\s*)?contains|(?:not)?empty)"""
+                    r"""\s*(?:"[^"]*"|'[^']*'|\[[^\]]*\]|-?\d+(?:\.\d+)?)?)""", re.I)
+_ATOM = re.compile(r"""^\{([^}]+)\}\s*(=|<>|!=|(?:not\s*)?contains|(?:not)?empty)\s*(.*)$""", re.I)
+
+
+def _literal_values(text: str) -> list[str] | None:
+    t = text.strip()
+    if not t:
+        return []
+    if t[0] in "\"'" and t[-1] == t[0]:
+        return [t[1:-1]]
+    if t.startswith("[") and t.endswith("]"):
+        return re.findall(r"""["']([^"']*)["']""", t)
+    if re.fullmatch(r"-?\d+(?:\.\d+)?", t):
+        return [t]
+    return None
+
+
+def _atom(expr: str, held: dict, missing_is_empty: bool):
+    m = _ATOM.match(expr.strip())
+    if not m:
+        return None
+    field, op, rest = m.group(1).split(".")[0].strip(), m.group(2).lower(), m.group(3)
+    got = held.get(field)
+    if got is None:
+        if not missing_is_empty:
+            return None
+        got = set()
+    if op.endswith("empty"):
+        empty = not got
+        return (not empty) if op.startswith("not") else empty
+    values = _literal_values(rest)
+    if values is None:
+        return None
+    hit = all(v in got for v in values) if values else False
+    if op in ("<>", "!="):
+        return not hit
+    if op.startswith("not"):
+        return not hit
+    return hit
+
+
+def satisfies(condition: str, answers_by_field: dict, missing_is_empty: bool = False) -> bool:
+    """
+    Whether a branching condition is met.
+
+    answers_by_field maps a field name to the set of option values it holds.
+    With missing_is_empty, a field with no answer counts as empty (the tool's
+    own reading: an unanswered question equals nothing); without it, a missing
+    field makes the atom unknown, which is the cautious reading for a PDF where
+    an answer may simply not have been extracted.
+    """
+    if not condition or not str(condition).strip():
+        return True
+    tokens = [t.strip() for t in _TOKEN.findall(condition) if t.strip()]
+    if "".join(tokens).replace(" ", "") != re.sub(r"\s+", "", condition):
+        return True                                  # something we do not parse
+    pos = 0
+
+    def expr():
+        nonlocal pos
+        left = term()
+        while pos < len(tokens) and tokens[pos].lower() == "or":
+            pos += 1
+            right = term()
+            left = True if (left is True or right is True) else \
+                None if (left is None or right is None) else False
+        return left
+
+    def term():
+        nonlocal pos
+        left = factor()
+        while pos < len(tokens) and tokens[pos].lower() == "and":
+            pos += 1
+            right = factor()
+            left = False if (left is False or right is False) else \
+                None if (left is None or right is None) else True
+        return left
+
+    def factor():
+        nonlocal pos
+        if pos >= len(tokens):
+            return None
+        t = tokens[pos]
+        if t == "(":
+            pos += 1
+            v = expr()
+            if pos < len(tokens) and tokens[pos] == ")":
+                pos += 1
+            return v
+        pos += 1
+        return _atom(t, answers_by_field, missing_is_empty)
+
+    result = expr()
+    return True if result is None else bool(result)
+
+
 # ---------------------------------------------------------------- assembly
 # The core tables — systems, submissions, answers — are assembled from three
 # sources: the JSON submissions (step 4), the validated PDF extractions
@@ -631,6 +742,108 @@ def build_mitigation_areas(submissions, answers) -> list[dict]:
     return rows
 
 
+def _has_content(a: dict) -> bool:
+    raw = str(a.get("answer_value_raw", "") or "").strip()
+    if raw and raw not in ('""', "[]", "null", "{}"):
+        return True
+    return bool(str(a.get("answer_text_en", "") or "").strip())
+
+
+def _held_values(a: dict, options: dict) -> set:
+    """The option values an answer holds, in the form conditions compare against."""
+    raw = str(a.get("answer_value_raw", "") or "").strip()
+    if raw:
+        try:
+            val = json.loads(raw)
+        except ValueError:
+            val = raw
+        vals = val if isinstance(val, list) else [val]
+        return {str(v) for v in vals if v not in (None, "")}
+    # PDFs carry the label, not the value: map labels back to values, an exact
+    # label first, then labels found inside a multi-select answer.
+    text = norm(a.get("answer_text_en", ""))
+    opts = options.get((a.get("catalog_version", ""), a.get("field_name", "")), [])
+    vals = {o["option_value"] for o in opts if o.get("text_en") and norm(o["text_en"]) == text}
+    if not vals:
+        vals = {o["option_value"] for o in opts
+                if o.get("text_en") and norm(o["text_en"]) and norm(o["text_en"]) in text}
+    return vals or ({"__answered__"} if text else set())
+
+
+def build_question_coverage(submissions, answers) -> list[dict]:
+    """
+    One row per submission per question in its version: was the question
+    shown to the department, and did they answer it.
+
+    A question is not shown when it sits on the mitigation pages of the other
+    phase, when its parent was not shown, or when its branching condition is
+    not met by the answers held. An unanswered parent counts as empty, which is
+    how the questionnaire reads it. A condition that cannot be read counts as
+    met, so the question is treated as shown rather than silently dropped.
+
+    'Skipped' in the report is shown = Y and answered = N.
+    """
+    qrows = defaultdict(list)
+    for r in _read_optional("question_map.csv"):
+        qrows[r["catalog_version"]].append(r)
+    if not qrows:
+        return []
+    for v in qrows:
+        qrows[v].sort(key=lambda r: int(r.get("chain_depth") or 0))
+    try:
+        options = load_option_lookup()
+    except SystemExit:
+        options = {}
+
+    by_sub = defaultdict(list)
+    for a in answers:
+        by_sub[a.get("submission_id", "")].append(a)
+    qmap = {(r["catalog_version"], r["field_name"]): r for rs in qrows.values() for r in rs}
+
+    out = []
+    for s in submissions:
+        sid, ver = s.get("submission_id", ""), s.get("catalog_version", "")
+        mine = by_sub.get(sid, [])
+        phase = submission_phase(mine, qmap)
+        held, answered = {}, set()
+        for a in mine:
+            f = a.get("field_name", "")
+            if _has_content(a):
+                held.setdefault(f, set()).update(_held_values(a, options))
+                if a.get("shown") != "N":
+                    answered.add(f)
+        shown = {}
+        for r in qrows.get(ver, []):
+            f = r["field_name"]
+            parent = r.get("parent_field_name", "")
+            if r.get("mitigation_phase") and phase and r["mitigation_phase"] != phase:
+                state, why = "N", "other phase"
+            elif parent and shown.get(parent) == "N":
+                state, why = "N", "parent not shown"
+            elif r.get("visible_if") and not satisfies(r["visible_if"], held, missing_is_empty=True):
+                state, why = "N", "condition not met"
+            else:
+                state, why = "Y", ""
+            shown[f] = state
+            out.append({
+                "submission_id": sid,
+                "og_record_id": s.get("og_record_id", ""),
+                "catalog_version": ver,
+                "field_name": f,
+                "qm_key": f"{ver}|{f}",
+                "question_uid": r.get("question_uid", ""),
+                "point_type": r.get("point_type", ""),
+                "mitigation_area": r.get("mitigation_area", ""),
+                "mitigation_phase": r.get("mitigation_phase", ""),
+                "is_follow_up": "Y" if r.get("visible_if") else "N",
+                "is_mandatory": r.get("is_mandatory", ""),
+                "shown": state,
+                "hidden_reason": why,
+                "answered": "Y" if f in answered else "N",
+            })
+    return out
+
+
 def assemble_core_tables() -> dict[str, list[dict]]:
     """
     The one place the core tables are put together.
@@ -646,8 +859,16 @@ def assemble_core_tables() -> dict[str, list[dict]]:
     answers = _read_optional("answers.csv")
     systems, submissions, answers, _ = merge_pdf_results(systems, submissions, answers)
     systems, _, _ = merge_crosswalk(systems)
+    coverage = build_question_coverage(submissions, answers)
+    # Step 4 does not record whether a JSON answer's question was shown; the
+    # coverage table now knows, so fill it in. PDF answers keep step 7's flag.
+    shown = {(c["submission_id"], c["field_name"]): c["shown"] for c in coverage}
+    for a in answers:
+        if not a.get("shown"):
+            a["shown"] = shown.get((a.get("submission_id", ""), a.get("field_name", "")), "")
     return {"systems": systems, "submissions": submissions, "answers": answers,
-            "submission_mitigation_areas": build_mitigation_areas(submissions, answers)}
+            "submission_mitigation_areas": build_mitigation_areas(submissions, answers),
+            "question_coverage": coverage}
 
 
 def log(msg=""):

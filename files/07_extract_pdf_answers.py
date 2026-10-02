@@ -276,52 +276,8 @@ def parse_answers(body: str, point_type: str, title: str = "") -> list[dict]:
 RE_REF = re.compile(r"\{([^}]+)\}")
 
 
-def satisfies(condition: str, answers_by_field: dict) -> bool:
-    """
-    Whether a branching condition is met, given the answers found in the
-    document. An unreadable condition counts as met, so a question is never
-    dropped on a rule we could not interpret.
-    """
-    if not condition:
-        return True
-
-    # The published catalogs quote values with double quotes — 331 of the 332
-    # conditions across all versions. Matching single quotes only made every
-    # real condition unreadable, so branching never fired outside the tests.
-    lit = r"""(?:'([^']*)'|"([^"]*)")"""
-
-    def atom(expr):
-        expr = expr.strip()
-        m = re.match(r"^\{([^}]+)\}\s*(=|<>|!=)\s*" + lit + "$", expr)
-        if m:
-            got = answers_by_field.get(m.group(1).split(".")[0].strip())
-            if got is None:
-                return None
-            value = m.group(3) if m.group(3) is not None else m.group(4)
-            hit = value in got
-            return hit if m.group(2) == "=" else not hit
-        m = re.match(r"^\{([^}]+)\}\s+(not\s*)?contains\s+" + lit + "$", expr, re.I)
-        if m:
-            got = answers_by_field.get(m.group(1).split(".")[0].strip())
-            if got is None:
-                return None
-            value = m.group(3) if m.group(3) is not None else m.group(4)
-            hit = value in got
-            return (not hit) if m.group(2) else hit
-        m = re.match(r"^\{([^}]+)\}\s+(not)?empty$", expr, re.I)
-        if m:
-            got = answers_by_field.get(m.group(1).split(".")[0].strip())
-            empty = not got
-            return (not empty) if m.group(2) else empty
-        return None
-
-    for part in re.split(r"\s+or\s+", condition.replace("(", " ").replace(")", " "), flags=re.I):
-        results = [atom(a) for a in re.split(r"\s+and\s+", part, flags=re.I)]
-        if any(r is None for r in results):
-            return True                      # unreadable: keep the question
-        if all(results):
-            return True
-    return False
+# The condition evaluator lives in common.py, shared with the coverage table.
+from common import satisfies  # noqa: E402
 
 
 def apply_branching(rows, version, fields_by_name, options):

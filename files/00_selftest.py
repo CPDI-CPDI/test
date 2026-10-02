@@ -934,6 +934,55 @@ check("share of the area maximum", _areas["Data quality"]["pct_of_max"] == 60.0)
 check("an answer to a question not shown does not count",
       _areas["Privacy"]["points"] == 3, str(_areas["Privacy"]["points"]))
 
+print("\n=== branching conditions read brackets, numbers and lists ===")
+_H = {"a": {"item1"}, "b": {"item2"}, "c": {"item3", "item4"}, "n": {"4"}}
+check("brackets group before 'and'",
+      C.satisfies('({a} = "item2" or {b} = "item2") and {c} contains "item3"', _H) is True
+      and C.satisfies('({a} = "item2" or {b} = "item1") and {c} contains "item3"', _H) is False)
+check("'and' binds tighter than 'or'",
+      C.satisfies('{a} = "item2" or {b} = "item2" and {c} contains "x"', _H) is False)
+check("a bare number and a bracketed list are read",
+      C.satisfies("{n} = 4", _H) and C.satisfies('{c} contains ["item4"]', _H))
+check("an unanswered parent counts as empty when asked to",
+      C.satisfies('{z} = "item1"', _H, missing_is_empty=True) is False
+      and C.satisfies('{z} = "item1"', _H) is True)
+
+print("\n=== question coverage: shown, and answered ===")
+with tempfile.TemporaryDirectory() as _t:
+    _d = Path(_t)
+    _qm = lambda f, **k: dict({"catalog_version": "0.10.0", "field_name": f, "question_uid": f,
+                               "point_type": "raw", "mitigation_area": "", "mitigation_phase": "",
+                               "visible_if": "", "parent_field_name": "", "chain_depth": "0",
+                               "is_mandatory": "N"}, **k)
+    _write(_d, "question_map.csv", [
+        _qm("projectDetailsPhase", point_type="none"),
+        _qm("q1"),
+        _qm("q1a", visible_if='{q1} = "item1"', parent_field_name="q1", chain_depth="1"),
+        _qm("q1b", visible_if='{q1a} notempty', parent_field_name="q1a", chain_depth="2"),
+        _qm("q2"),
+        _qm("dqD1", point_type="mitigation", mitigation_area="Data quality", mitigation_phase="design"),
+        _qm("dqI1", point_type="mitigation", mitigation_area="Data quality",
+            mitigation_phase="implementation")])
+    C.DATA_DIR = _d
+    try:
+        _cov = {c["field_name"]: c for c in C.build_question_coverage(
+            [{"submission_id": "r-1", "og_record_id": "r", "catalog_version": "0.10.0"}],
+            [{"submission_id": "r-1", "catalog_version": "0.10.0", "field_name": f,
+              "answer_value_raw": v, "answer_text_en": ""}
+             for f, v in [("projectDetailsPhase", '"item2"'), ("q1", '"item2"'),
+                          ("dqI1", '"item1-2"')]])}
+    finally:
+        C.DATA_DIR = _real_data
+check("a top-level question left blank is shown and not answered",
+      (_cov["q2"]["shown"], _cov["q2"]["answered"]) == ("Y", "N"))
+check("a follow-up whose condition is not met is not shown",
+      (_cov["q1a"]["shown"], _cov["q1a"]["hidden_reason"]) == ("N", "condition not met"))
+check("a follow-up of a hidden question is not shown either",
+      _cov["q1b"]["hidden_reason"] == "parent not shown")
+check("the other phase's mitigation questions are not shown",
+      (_cov["dqD1"]["shown"], _cov["dqD1"]["hidden_reason"]) == ("N", "other phase")
+      and (_cov["dqI1"]["shown"], _cov["dqI1"]["answered"]) == ("Y", "Y"))
+
 print("\n" + "=" * 60)
 if FAILURES:
     print(f"{len(FAILURES)} CHECK(S) FAILED: {', '.join(FAILURES)}")

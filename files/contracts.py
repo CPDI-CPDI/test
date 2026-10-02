@@ -103,6 +103,11 @@ CONTRACTS = {
         "submission_id", "og_record_id", "catalog_version", "mitigation_phase",
         "mitigation_area", "points", "max_points", "pct_of_max"
     ],
+    "question_coverage": [
+        "submission_id", "og_record_id", "catalog_version", "field_name", "qm_key",
+        "question_uid", "point_type", "mitigation_area", "mitigation_phase", "is_follow_up",
+        "is_mandatory", "shown", "hidden_reason", "answered"
+    ],
     "crosswalk_gaps": [
         "gap_type", "og_record_id", "system_name_en", "department_en", "service_id",
         "service_name_en", "match_confidence", "reason", "candidate"
@@ -120,7 +125,7 @@ PUBLIC = {
     "option_point_items", "departments", "sections", "section_versions",
     "catalog_versions", "og_records", "og_resources",
     "services", "system_services", "crosswalk_gaps",
-    "submission_mitigation_areas",
+    "submission_mitigation_areas", "question_coverage",
 }
 
 # Where each published file is built from.

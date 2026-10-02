@@ -28,6 +28,7 @@ SHEETS = [
     ("submissions",       "submissions.csv",       "One row per completed AIA. A system may have several."),
     ("answers",           "answers.csv",           "One row per question per submission."),
     ("mitigation_areas",  "submission_mitigation_areas.csv", "Mitigation points per area per submission, against that area's maximum for its version and phase."),
+    ("question_coverage", "question_coverage.csv", "One row per question per submission: shown to the department, and answered."),
     ("questions",         "questions.csv",         "DERIVED roll-up of question_map, one row per question. Convenience dimension; question_map is the source."),
     ("question_map",      "question_map.csv",      "One row per question per version: wording, guidance, branching, points, parent, and its question_uid."),
     ("question_options",  "question_options.csv",  "One row per question: which label set and scoring pattern it uses."),

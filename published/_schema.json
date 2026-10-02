@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "generated_utc": "2026-10-01T21:30:41Z",
+  "generated_utc": "2026-10-02T15:16:20Z",
   "encoding": "utf-8",
   "byte_order_mark": false,
   "line_terminator": "\\n",
@@ -139,6 +139,25 @@
         "labels"
       ],
       "row_count": 61
+    },
+    "question_coverage": {
+      "columns": [
+        "submission_id",
+        "og_record_id",
+        "catalog_version",
+        "field_name",
+        "qm_key",
+        "question_uid",
+        "point_type",
+        "mitigation_area",
+        "mitigation_phase",
+        "is_follow_up",
+        "is_mandatory",
+        "shown",
+        "hidden_reason",
+        "answered"
+      ],
+      "row_count": 6494
     },
     "question_map": {
       "columns": [
