@@ -224,12 +224,20 @@ def version_key(v: str):
 
 
 def impact_level(pct: float | None):
+    """
+    Level I to IV from the share of the maximum raw score.
+
+    The bands are continuous: above 25% is Level II, above 50% Level III, above
+    75% Level IV. Reading IMPACT_LEVELS as whole-number ranges (0-25, 26-50)
+    left gaps, and a score of 25.2% fell through to Level I where the tool
+    prints Level II (ESDC's EI recalculation assessment, 27 of 107).
+    """
     if pct is None:
         return None
-    for lvl, lo, hi in IMPACT_LEVELS:
-        if lo <= pct <= hi:
+    for lvl, _lo, hi in IMPACT_LEVELS:
+        if pct <= hi:
             return lvl
-    return 4 if pct > 100 else 1
+    return 4
 
 
 def current_score(raw: float, mitigation: float, max_mitigation: float | None):
@@ -336,7 +344,8 @@ import shutil as _shutil, subprocess as _subprocess
 RE_PDF_VERSION = re.compile(r"^\s*Version\s*:\s*v?\s*([0-9][0-9A-Za-z.]*)", re.M)
 RE_PDF_LEVEL = re.compile(r"Impact\s+Level\s*:\s*(\d+)", re.I)
 RE_PDF_CURRENT = re.compile(r"Current\s+Score\s*:\s*(-?\d+)", re.I)
-RE_PDF_RAW = re.compile(r"Raw\s+Impact\s+Score\s*:\s*(-?\d+)", re.I)
+# Some releases print "Raw Score:", others "Raw Impact Score:".
+RE_PDF_RAW = re.compile(r"Raw\s+(?:Impact\s+)?Score\s*:\s*(-?\d+)", re.I)
 RE_PDF_MITIGATION = re.compile(r"Mitigation\s+Score\s*:\s*(-?\d+)", re.I)
 
 

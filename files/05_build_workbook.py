@@ -44,6 +44,7 @@ SHEETS = [
     ("og_resources",      "og_resources.csv",      "Every file attached to each record."),
     ("bridge_review",     "bridge_review.csv",     "Cross-version matches below the confidence threshold."),
     ("json_pdf_check",    "json_pdf_check.csv",    "Each JSON submission against the results PDF published beside it. The PDF's word wins."),
+    ("registry_review",   "registry_review.csv",   "Where question matching disagrees with the registry. The registry was kept; change it deliberately if matching is right."),
     ("ingest_issues",     "ingest_issues.csv",     "Anything that did not parse cleanly."),
     ("pdf_triage",        "pdf_triage.csv",        "Which questionnaire version each PDF-only record used."),
     ("pdf_validation",    "pdf_submissions.csv",   "PDF extractions checked against the scores printed in each document."),

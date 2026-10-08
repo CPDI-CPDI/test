@@ -17,13 +17,17 @@ review rather than being quietly accepted; the reporting layer can exclude them.
 Outputs
     data/questions.csv          one row per distinct question (question_uid)
     data/sections.csv           one row per distinct section (section_uid)
+    registry/question_registry.csv   lasting question_uid per (version, field); commit it
+    registry/section_registry.csv    lasting section_uid per (version, page); commit it
+    data/registry_review.csv    where matching disagrees with the registry
     data/question_map.csv       field_name + version -> question_uid, with evidence
     data/bridge_review.csv      matches below the confidence threshold
 """
 from __future__ import annotations
 import re
 from collections import defaultdict
-from common import (read_csv, write_csv, similarity, norm, version_key, log, header)
+import csv
+from common import (BASE, read_csv, write_csv, similarity, norm, version_key, log, header)
 
 # Wording similarity required to treat two questions as the same question.
 STRONG = 0.92     # accepted silently
@@ -416,6 +420,186 @@ def assign_mitigation_areas(canon, mapping):
         c["mitigation_area"] = area_of.get(c["question_uid"], "")
 
 
+# --------------------------------------------------------------------------
+# Registry: identifiers that do not move
+# --------------------------------------------------------------------------
+# Matching proposes which fields are the same question; the registry decides
+# what that question is called. question_uid and section_uid used to be counters
+# assigned in matching order, so every improvement to the matching renumbered
+# everything after it and broke report filters (Gender Based Analysis Plus was
+# 31, then 39). Now a field already in the registry keeps its identifier
+# whatever the matching says, and new identifiers are only ever issued above the
+# highest one in use. Where matching disagrees with the registry, the registry
+# wins and the disagreement is written to registry_review.csv for a person to
+# decide; changing an identifier is a deliberate edit to the registry, visible
+# as a diff in git.
+REGISTRY_DIR = BASE / "registry"
+QUESTION_REGISTRY = REGISTRY_DIR / "question_registry.csv"
+SECTION_REGISTRY = REGISTRY_DIR / "section_registry.csv"
+
+
+def read_registry(path, key_cols, id_col) -> dict:
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8-sig") as f:
+        return {tuple(r[k] for k in key_cols): int(r[id_col])
+                for r in csv.DictReader(f) if r.get(id_col)}
+
+
+def write_registry(path, key_cols, id_col, assigned: dict):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    rows = sorted(assigned.items(), key=lambda kv: (kv[1], version_key(kv[0][0]), kv[0][1]))
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(list(key_cols) + [id_col])
+        for key, uid in rows:
+            w.writerow(list(key) + [uid])
+
+
+def settle_ids(groups, registry, conflicts=lambda uid, member, taken: False):
+    """
+    Turn proposed groups into lasting identifiers.
+
+    groups: {proposed_id: [member key, ...]} in the order matching produced them.
+    A registered member keeps its identifier. Unregistered members take the
+    identifier most of their group's registered members hold, unless that would
+    break a rule (conflicts); otherwise the group gets one new identifier above
+    every one in use. Returns ({member: id}, [disagreements]).
+    """
+    final, review = {}, []
+    next_id = max(registry.values(), default=0) + 1
+    taken = defaultdict(list)
+    for members in groups.values():                 # registered members first
+        for m in members:
+            if m in registry:
+                final[m] = registry[m]
+                taken[registry[m]].append(m)
+    for pid, members in groups.items():
+        regs = [registry[m] for m in members if m in registry]
+        counts = defaultdict(int)
+        for r in regs:
+            counts[r] += 1
+        dominant = min(counts, key=lambda r: (-counts[r], r)) if counts else None
+        for m in members:
+            if m in registry and dominant is not None and registry[m] != dominant:
+                review.append({"member": m, "registered_id": registry[m],
+                               "matching_suggests": dominant})
+        fresh = None
+        for m in members:
+            if m in final:
+                continue
+            uid = dominant
+            if uid is None or conflicts(uid, m, taken[uid]):
+                if fresh is None:
+                    fresh, next_id = next_id, next_id + 1
+                uid = fresh
+            final[m] = uid
+            taken[uid].append(m)
+    return final, review
+
+
+def rebuild_questions(mapping, versions):
+    """The per-question table, rebuilt from the per-version rows after ids settle."""
+    by_uid = defaultdict(list)
+    for r in mapping:
+        by_uid[r["question_uid"]].append(r)
+    canon = []
+    for uid, rows in by_uid.items():
+        first, last = rows[0], rows[-1]
+        names = []
+        for r in rows:
+            if r["field_name"] not in names:
+                names.append(r["field_name"])
+        parent = next((r["parent_question_uid"] for r in rows if r.get("parent_question_uid")), "")
+        canon.append({
+            "question_uid": uid,
+            "canonical_text_en": first.get("text_en", ""),
+            "canonical_text_fr": first.get("text_fr", ""),
+            "section_uid": last.get("section_uid", ""),
+            "point_type": first.get("point_type", ""),
+            "answer_type": first.get("answer_type", ""),
+            "first_seen_version": min((r["catalog_version"] for r in rows), key=version_key),
+            "last_seen_version": max((r["catalog_version"] for r in rows), key=version_key),
+            "version_count": len(rows),
+            "field_names": "; ".join(names),
+            "reworded": "Y" if any(r.get("match_method") in ("text_and_parent", "text_global")
+                                   and float(r.get("match_score") or 1) < 1 for r in rows) else "N",
+        })
+    for c in canon:
+        c["status"] = "active" if c["last_seen_version"] == versions[-1] else "retired"
+        c["parent_question_uid"] = next(
+            (r["parent_question_uid"] for r in by_uid[c["question_uid"]]
+             if r.get("parent_question_uid")), "")
+        c["is_follow_up"] = "Y" if c["parent_question_uid"] else "N"
+    canon.sort(key=lambda c: int(c["question_uid"]))
+    assign_mitigation_areas(canon, mapping)
+    return canon
+
+
+def phase_of(row) -> str:
+    return row.get("mitigation_phase", "") or next(
+        (p for p in ("implementation", "design") if p in page_key(row.get("page_name"))), "")
+
+
+def apply_registries(canon_sec, sec_map, q_map, versions):
+    """Replace proposed section and question ids with registered ones."""
+    # sections: one id per page, stable across runs
+    s_reg = read_registry(SECTION_REGISTRY, ("catalog_version", "page_name"), "section_uid")
+    s_groups = defaultdict(list)
+    for r in sec_map:
+        s_groups[r["section_uid"]].append((r["catalog_version"], r["page_name"]))
+    s_final, s_review = settle_ids(s_groups, s_reg)
+    proposed_to_final = {}
+    for r in sec_map:
+        key = (r["catalog_version"], r["page_name"])
+        proposed_to_final.setdefault(r["section_uid"], s_final[key])
+        r["section_uid"] = s_final[key]
+    for c in canon_sec:
+        c["section_uid"] = proposed_to_final.get(c["section_uid"], c["section_uid"])
+    canon_sec.sort(key=lambda c: int(c["section_uid"]))
+    sec_of = {(r["catalog_version"], r["page_name"]): r["section_uid"] for r in sec_map}
+    for r in q_map:
+        r["section_uid"] = sec_of.get((r["catalog_version"], r["page_name"]), r["section_uid"])
+
+    # questions: one field per version, except a design/implementation pair
+    q_reg = read_registry(QUESTION_REGISTRY, ("catalog_version", "field_name"), "question_uid")
+    row_of = {(r["catalog_version"], r["field_name"]): r for r in q_map}
+
+    def conflicts(uid, member, holders):
+        v, ph = member[0], phase_of(row_of[member])
+        same_version = [phase_of(row_of[h]) for h in holders if h[0] == v]
+        return not all(p and ph and p != ph for p in same_version)
+
+    q_groups = defaultdict(list)
+    for r in q_map:
+        q_groups[r["question_uid"]].append((r["catalog_version"], r["field_name"]))
+    q_final, q_review = settle_ids(q_groups, q_reg, conflicts)
+    for r in q_map:
+        r["question_uid"] = q_final[(r["catalog_version"], r["field_name"])]
+    uid_by_field = {(r["catalog_version"], r["field_name"]): r["question_uid"] for r in q_map}
+    for r in q_map:
+        p = r.get("parent_field_name")
+        r["parent_question_uid"] = uid_by_field.get((r["catalog_version"], p), "") if p else ""
+        r["root_question_uid"] = uid_by_field.get(
+            (r["catalog_version"], r.get("root_field_name")), r["question_uid"])
+    canon_q = rebuild_questions(q_map, versions)
+
+    new_q = sum(1 for k in q_final if k not in q_reg)
+    new_s = sum(1 for k in s_final if k not in s_reg)
+    write_registry(QUESTION_REGISTRY, ("catalog_version", "field_name"), "question_uid", q_final)
+    write_registry(SECTION_REGISTRY, ("catalog_version", "page_name"), "section_uid", s_final)
+    review = ([{"kind": "question", "catalog_version": m[0], "name": m[1],
+                "registered_id": x["registered_id"], "matching_suggests": x["matching_suggests"]}
+               for x in q_review for m in [x["member"]]] +
+              [{"kind": "section", "catalog_version": m[0], "name": m[1],
+                "registered_id": x["registered_id"], "matching_suggests": x["matching_suggests"]}
+               for x in s_review for m in [x["member"]]])
+    return canon_sec, sec_map, canon_q, q_map, {
+        "seeded": not q_reg, "new_questions": new_q, "new_sections": new_s,
+        "kept_questions": len(q_final) - new_q, "kept_sections": len(s_final) - new_s,
+        "review": review}
+
+
 def main():
     header("STEP 3 — Bridging questions and sections across versions")
 
@@ -436,6 +620,8 @@ def main():
     chains = build_chains({v: [f for f in fields if f["catalog_version"] == v]
                            for v in {f["catalog_version"] for f in fields}})
     canon_q, q_map, review = bridge_questions(fields, sec_map, chains)
+    canon_sec, sec_map, canon_q, q_map, reg = apply_registries(canon_sec, sec_map, q_map, versions)
+    write_csv("registry_review.csv", reg["review"])
 
     write_csv("sections.csv", canon_sec)
     write_csv("section_versions.csv", sec_map)
@@ -444,6 +630,16 @@ def main():
     write_csv("bridge_review.csv", review)
 
     header("SUMMARY")
+    if reg["seeded"]:
+        log(f"  registry created: {len(q_map)} fields and {len(sec_map)} section pages")
+        log(f"    -> {QUESTION_REGISTRY}  (commit it; identifiers are fixed from here on)")
+    else:
+        log(f"  registry: {reg['kept_questions']} fields kept their question_uid, "
+            f"{reg['new_questions']} new; {reg['kept_sections']} section pages kept their "
+            f"section_uid, {reg['new_sections']} new")
+    if reg["review"]:
+        log(f"  matching disagrees with the registry on {len(reg['review'])} item(s); the "
+            f"registry was kept -> registry_review.csv")
     log(f"  distinct questions (question_uid) : {len(canon_q)}")
     log(f"  field-name mappings               : {len(q_map)}")
     log(f"  questions present in every version: "

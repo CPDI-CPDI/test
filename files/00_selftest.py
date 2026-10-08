@@ -1031,6 +1031,30 @@ check("the 15% reduction is accepted as consistent",
 check("a header missing a value is not trusted",
       not C.header_trusted(dict(_vh, stated_mitigation=None)))
 
+print("\n=== question ids do not move between runs ===")
+# question_uid was a counter in matching order, so each improvement to matching
+# renumbered questions and broke report filters. The registry fixes them.
+_reg = {("0.10.0", "a"): 5, ("0.10.0", "b"): 7, ("1.0.1", "a"): 5}
+_groups = {1: [("0.10.0", "a"), ("1.0.1", "a"), ("1.0.2", "a")],   # a new version of a
+           2: [("0.10.0", "b")],
+           3: [("1.0.2", "brand_new")]}
+_fin, _rev = bridge.settle_ids(_groups, _reg)
+check("registered fields keep their ids", _fin[("0.10.0", "a")] == 5 and _fin[("0.10.0", "b")] == 7)
+check("a known question's field in a new version joins its id", _fin[("1.0.2", "a")] == 5)
+check("a new question gets an id above every one in use", _fin[("1.0.2", "brand_new")] == 8)
+_fin2, _rev2 = bridge.settle_ids({1: [("0.10.0", "a"), ("0.10.0", "b")]}, _reg)
+check("when matching would merge two registered ids, both stay and it is flagged",
+      (_fin2[("0.10.0", "a")], _fin2[("0.10.0", "b")]) == (5, 7) and len(_rev2) == 1, str(_rev2))
+_fin3, _ = bridge.settle_ids({1: [("0.10.0", "a"), ("0.10.0", "c")]}, _reg,
+                            conflicts=lambda uid, m, holders: any(h[0] == m[0] for h in holders))
+check("a new field is not put on an id already used in its version",
+      _fin3[("0.10.0", "c")] not in (5, 7), str(_fin3))
+
+print("\n=== impact level bands are continuous ===")
+check("25.2% is Level II, as the tool prints (27 of 107)", C.impact_level(25.2) == 2)
+check("boundaries: 25 is I, 50 is II, 75 is III, 75.5 is IV",
+      [C.impact_level(x) for x in (25, 50, 75, 75.5)] == [1, 2, 3, 4])
+
 print("\n" + "=" * 60)
 if FAILURES:
     print(f"{len(FAILURES)} CHECK(S) FAILED: {', '.join(FAILURES)}")

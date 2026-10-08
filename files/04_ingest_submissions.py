@@ -98,7 +98,9 @@ def main():
         # stamped v0.9.1, printed v0.10.0, and scored Level 3 instead of 2 until
         # this check existed.
         companion = RAW_DIR / "pdf_json" / f"{path.stem}.pdf"
-        printed = pdf_header(pdf_text(companion, last_page=2)) if companion.exists() else {}
+        # The whole document is read: older layouts put the project details
+        # before Section 1, pushing the printed scores to page 3 or later.
+        printed = pdf_header(pdf_text(companion)) if companion.exists() else {}
         source = "json_stamped"
         target = stated
         if printed.get("stated_version") and printed["stated_version"] != stated:

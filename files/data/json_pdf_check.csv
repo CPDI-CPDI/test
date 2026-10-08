@@ -5,16 +5,16 @@
 123aefbb-c9cb-4243-9be3-7f901daf13f7__Original.json,123aefbb-c9cb-4243-9be3-7f901daf13f7,Original,0.10.0,0.10.0,0.10.0,Y,Y,31,31,25,25,31,31,1,1,match
 1257e5c1-243f-4ab8-be42-e7433c8ebe70__Original.json,1257e5c1-243f-4ab8-be42-e7433c8ebe70,Original,0.10.0,0.10.0,0.10.0,Y,Y,42,42,36,36,42,42,2,2,match
 240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378__Original.json,240f1dbc-a3b5-46b1-9b5f-d0d3cbec9378,Original,0.10.0,0.10.0,0.10.0,Y,Y,34,34,34,34,34,34,2,2,match
-24d2cab2-6a0d-4234-9239-b6ce102ebabd__Original.json,24d2cab2-6a0d-4234-9239-b6ce102ebabd,Original,0.9.1,0.9.1,0.9.1,Y,N,,27,,27,,27,,1,PDF header unreadable or inconsistent; computed scores kept
-380f8da2-a18e-4747-a29f-7775450b7283__Original.json,380f8da2-a18e-4747-a29f-7775450b7283,Original,0.10.0,0.10.0,0.10.0,Y,N,,30,31,31,30,30,1,1,PDF header unreadable or inconsistent; computed scores kept
+24d2cab2-6a0d-4234-9239-b6ce102ebabd__Original.json,24d2cab2-6a0d-4234-9239-b6ce102ebabd,Original,0.9.1,0.9.1,0.9.1,Y,Y,27,27,27,27,27,27,2,2,match
+380f8da2-a18e-4747-a29f-7775450b7283__Original.json,380f8da2-a18e-4747-a29f-7775450b7283,Original,0.10.0,0.10.0,0.10.0,Y,Y,30,30,31,31,30,30,1,1,match
 452e10be-383d-4d7a-9c7d-6484dc366a4a__Original.json,452e10be-383d-4d7a-9c7d-6484dc366a4a,Original,1.0.1,1.0.1,1.0.1,Y,Y,58,58,69,69,49,49,2,2,match
-52b8574d-5c95-463b-b375-8edd092cea30__Original.json,52b8574d-5c95-463b-b375-8edd092cea30,Original,0.10.0,0.10.0,0.10.0,Y,N,,33,,37,,28,,1,PDF header unreadable or inconsistent; computed scores kept
-6b429c8e-ee5b-451a-883f-b6180ada9286__Original.json,6b429c8e-ee5b-451a-883f-b6180ada9286,Original,0.10.0,0.10.0,0.10.0,Y,N,,35,,29,,35,,2,PDF header unreadable or inconsistent; computed scores kept
+52b8574d-5c95-463b-b375-8edd092cea30__Original.json,52b8574d-5c95-463b-b375-8edd092cea30,Original,0.10.0,0.10.0,0.10.0,Y,Y,33,33,37,37,28,28,1,1,match
+6b429c8e-ee5b-451a-883f-b6180ada9286__Original.json,6b429c8e-ee5b-451a-883f-b6180ada9286,Original,0.10.0,0.10.0,0.10.0,Y,Y,30,35,29,29,30,35,1,2,scores taken from PDF
 6ca819ed-dfde-4c4e-ac6b-831310825b03__Original.json,6ca819ed-dfde-4c4e-ac6b-831310825b03,Original,1.0.1,,1.0.1,N,N,,34,,60,,34,,1,no results PDF
 6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0__Original.json,6cba99b1-ea2c-4f8a-b954-3843ecd3a7f0,Original,0.9.1,0.9.1,0.9.1,Y,Y,40,40,36,36,34,34,2,2,match
 71b309a0-efd2-4e85-8124-37e935c23aef__Original.json,71b309a0-efd2-4e85-8124-37e935c23aef,Original,0.10.0,0.10.0,0.10.0,Y,Y,27,27,25,25,27,27,1,1,match
-92d7bc61-3724-44cd-9917-e2bf75023d4e__Original.json,92d7bc61-3724-44cd-9917-e2bf75023d4e,Original,0.10.0,0.10.0,0.10.0,Y,N,,28,25,25,28,28,1,1,PDF header unreadable or inconsistent; computed scores kept
-94d9dd91-803a-458c-a381-db6a22c9571a__Original.json,94d9dd91-803a-458c-a381-db6a22c9571a,Original,0.10.0,0.10.0,0.10.0,Y,N,,37,37,37,31,31,1,1,PDF header unreadable or inconsistent; computed scores kept
+92d7bc61-3724-44cd-9917-e2bf75023d4e__Original.json,92d7bc61-3724-44cd-9917-e2bf75023d4e,Original,0.10.0,0.10.0,0.10.0,Y,Y,28,28,25,25,28,28,1,1,match
+94d9dd91-803a-458c-a381-db6a22c9571a__Original.json,94d9dd91-803a-458c-a381-db6a22c9571a,Original,0.10.0,0.10.0,0.10.0,Y,Y,37,37,37,37,31,31,1,1,match
 9addf54a-7148-459f-b785-0e240414ef7f__Original.json,9addf54a-7148-459f-b785-0e240414ef7f,Original,0.9.1,0.9.1,0.9.1,Y,Y,48,48,27,27,48,48,2,2,match
 aafdfbcd-1cdb-4913-84d5-a03df727680c__Original.json,aafdfbcd-1cdb-4913-84d5-a03df727680c,Original,0.9.1,0.10.0,0.10.0,Y,Y,55,55,30,30,55,55,2,2,version corrected from PDF; scores now match
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2__Original.json,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,Original,0.9.1,0.9.1,0.9.1,Y,Y,49,49,35,35,49,49,2,2,match
@@ -26,10 +26,10 @@ c088f841-2d79-4c7e-9281-cc65cbae1b06__Original.json,c088f841-2d79-4c7e-9281-cc65
 cea9985f-5e0f-425e-9b7e-e1d122272c56__2021_Update.json,cea9985f-5e0f-425e-9b7e-e1d122272c56,2021 Update,0.8,0.8,0.8a1,Y,Y,39,39,36,36,33,33,2,2,match
 cea9985f-5e0f-425e-9b7e-e1d122272c56__2021_Update_2.json,cea9985f-5e0f-425e-9b7e-e1d122272c56,2021 Update 2,0.9,0.9,0.9,Y,Y,39,39,36,36,33,33,2,2,match
 cea9985f-5e0f-425e-9b7e-e1d122272c56__2022_Update.json,cea9985f-5e0f-425e-9b7e-e1d122272c56,2022 Update,0.9.1,0.9.1,0.9.1,Y,Y,39,39,36,36,33,33,2,2,match
-d24ae2dd-8399-4b49-8441-3e0318aaf69a__Original.json,d24ae2dd-8399-4b49-8441-3e0318aaf69a,Original,0.10.0,0.10.0,0.10.0,Y,N,,28,,36,,28,1,1,PDF header unreadable or inconsistent; computed scores kept
+d24ae2dd-8399-4b49-8441-3e0318aaf69a__Original.json,d24ae2dd-8399-4b49-8441-3e0318aaf69a,Original,0.10.0,0.10.0,0.10.0,Y,Y,28,28,36,36,28,28,1,1,match
 d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534__Original.json,d41f9ec2-bf01-4b2a-bd8d-1b3a8424f534,Original,0.9.1,0.9.1,0.9.1,Y,Y,43,43,31,31,43,43,2,2,match
 d5b89acc-5f2a-435d-b8f5-18002ba24c2a__Original.json,d5b89acc-5f2a-435d-b8f5-18002ba24c2a,Original,0.10.0,0.10.0,0.10.0,Y,Y,25,25,34,34,25,25,1,1,match
 daa9ca66-566f-4c2e-a285-d2e217c2a00f__Original.json,daa9ca66-566f-4c2e-a285-d2e217c2a00f,Original,0.10.0,0.10.0,0.10.0,Y,Y,37,37,37,37,31,31,1,1,match
-eaeb269c-6ac5-4429-a5aa-1fcc07c77933__Original.json,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,Original,0.10.0,0.10.0,0.10.0,Y,N,,63,,31,,63,,2,PDF header unreadable or inconsistent; computed scores kept
+eaeb269c-6ac5-4429-a5aa-1fcc07c77933__Original.json,eaeb269c-6ac5-4429-a5aa-1fcc07c77933,Original,0.10.0,0.10.0,0.10.0,Y,Y,63,63,31,31,63,63,2,2,match
 f028d40f-3c0e-4a36-8a38-fe18d7aaaa32__Original.json,f028d40f-3c0e-4a36-8a38-fe18d7aaaa32,Original,0.9.1,0.9.1,0.9.1,Y,Y,28,28,38,38,24,24,1,1,match
 f95dbd40-1236-428c-acd1-25b7559686be__Original.json,f95dbd40-1236-428c-acd1-25b7559686be,Original,0.10.0,0.10.0,0.10.0,Y,Y,52,52,37,37,44,44,2,2,match
