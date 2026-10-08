@@ -327,6 +327,91 @@ def load_option_lookup():
     return out
 
 
+# ---------------------------------------------------------------- PDF reading
+# Shared by step 7 (PDF-only assessments) and step 4 (the results PDF published
+# beside a JSON file, whose printed header is the tool's own word on version,
+# scores and level).
+import shutil as _shutil, subprocess as _subprocess
+
+RE_PDF_VERSION = re.compile(r"^\s*Version\s*:\s*v?\s*([0-9][0-9A-Za-z.]*)", re.M)
+RE_PDF_LEVEL = re.compile(r"Impact\s+Level\s*:\s*(\d+)", re.I)
+RE_PDF_CURRENT = re.compile(r"Current\s+Score\s*:\s*(-?\d+)", re.I)
+RE_PDF_RAW = re.compile(r"Raw\s+Impact\s+Score\s*:\s*(-?\d+)", re.I)
+RE_PDF_MITIGATION = re.compile(r"Mitigation\s+Score\s*:\s*(-?\d+)", re.I)
+
+
+def clean_text(text: str) -> str:
+    """
+    pdftotext marks each page break with a form feed glued to the start of the
+    next line. v1.0.1 starts every Section 3.x on a new page, so its headings
+    arrived as "\\fSection 3.2: ..." and the heading pattern, which allows only
+    spaces and tabs before "Section", never found them. A page break is a line
+    break here.
+    """
+    return text.replace("\r\n", "\n").replace("\f", "\n")
+
+
+def pdf_text(path, last_page: int | None = None) -> str:
+    """Text of a PDF, laid out. pdftotext first, pypdf as the fallback."""
+    if _shutil.which("pdftotext"):
+        try:
+            cmd = ["pdftotext", "-layout"]
+            if last_page:
+                cmd += ["-l", str(last_page)]
+            out = _subprocess.run(cmd + [str(path), "-"], capture_output=True, timeout=180)
+            if out.returncode == 0:
+                return clean_text(out.stdout.decode("utf-8", errors="replace"))
+        except Exception:
+            pass
+    try:
+        from pypdf import PdfReader
+        pages = PdfReader(str(path)).pages
+        if last_page:
+            pages = pages[:last_page]
+        return clean_text("\n".join((p.extract_text() or "") for p in pages))
+    except ImportError:
+        raise SystemExit("No PDF reader available. "
+                         "Install poppler-utils (pdftotext) or run: pip install pypdf")
+    except Exception as e:
+        log(f"    ! could not read {Path(path).name}: {e}")
+        return ""
+
+
+def pdf_header(text: str) -> dict:
+    """The version, scores and level printed at the top of a results PDF."""
+    def one(rx):
+        m = rx.search(text)
+        return m.group(1) if m else None
+    v = one(RE_PDF_VERSION)
+    num = lambda rx: int(one(rx)) if one(rx) else None
+    return {
+        "stated_version": clean_version(v) if v else "",
+        "stated_impact_level": num(RE_PDF_LEVEL),
+        "stated_current": num(RE_PDF_CURRENT),
+        "stated_raw": num(RE_PDF_RAW),
+        "stated_mitigation": num(RE_PDF_MITIGATION),
+    }
+
+
+def header_trusted(h: dict) -> bool:
+    """
+    Whether a printed header is complete and internally consistent enough to
+    overrule a computed score.
+
+    The current score is either the raw score or the raw score less 15%; a
+    header where it is neither has been misread (pypdf once read a printed 45
+    as 4), and is not allowed to overwrite anything.
+    """
+    raw, cur = h.get("stated_raw"), h.get("stated_current")
+    lvl, mit = h.get("stated_impact_level"), h.get("stated_mitigation")
+    if not h.get("stated_version") or None in (raw, cur, lvl, mit):
+        return False
+    if lvl not in (1, 2, 3, 4):
+        return False
+    reduced = raw * (1 - MITIGATION_REDUCTION)
+    return cur in {raw, round(reduced), int(reduced), int(reduced + 0.5)}
+
+
 # ---------------------------------------------------------------- branching
 # A question's visibleIf condition, evaluated against the answers a submission
 # holds. The catalogs use a small part of SurveyJS's expression language:

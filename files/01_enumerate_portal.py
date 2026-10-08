@@ -13,6 +13,7 @@ Outputs
     data/og_records.csv    one row per portal record
     data/og_resources.csv  one row per attached file
     raw/submissions/*.json downloaded AIA result files
+    raw/pdf_json/*.pdf     the English results PDF published beside each JSON
 """
 from __future__ import annotations
 import json, re, sys
@@ -129,6 +130,7 @@ def main():
 
     records, resources = [], []
     downloaded = skipped = 0
+    pdf_downloaded = pdf_skipped = 0
 
     for pkg in packages:
         rid = pkg["id"]
@@ -198,6 +200,35 @@ def main():
             except Exception as e:
                 log(f"  ! could not download {r['resource_name']}: {e}")
 
+        # ...and the English results PDF published beside each JSON. Its printed
+        # header is the tool's own record of version, scores and level, and step 4
+        # checks the JSON against it. Matched on the submission label, so a record
+        # holding several submissions pairs each JSON with its own PDF.
+        json_labels = {r["submission_label"] for r in res_rows
+                       if r["format"] == "JSON" and r["is_assessment_artifact"] == "Y"}
+        paired = set()
+        for r in res_rows:
+            if (r["format"] != "PDF" or r["is_assessment_artifact"] != "Y"
+                    or r["language"] != "en" or r["submission_label"] not in json_labels
+                    or r["submission_label"] in paired):
+                continue
+            paired.add(r["submission_label"])
+            safe = re.sub(r"[^A-Za-z0-9._-]+", "_", f"{rid}__{r['submission_label']}")[:120]
+            dest = RAW_DIR / "pdf_json" / f"{safe}.pdf"
+            if dest.exists():
+                pdf_skipped += 1
+                continue
+            try:
+                body = fetch(r["download_url"], binary=True)
+                if not body.startswith(b"%PDF"):
+                    raise ValueError("not a PDF")
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(body)
+                pdf_downloaded += 1
+                log(f"  downloaded results PDF {dest.name}")
+            except Exception as e:
+                log(f"  ! could not download {r['resource_name']}: {e}")
+
     write_csv("og_records.csv", records)
     write_csv("og_resources.csv", resources)
 
@@ -210,6 +241,8 @@ def main():
     log(f"  records with >1 submission    : {len(multi)}")
     log(f"  records publishing JSON       : {sum(1 for r in records if r['has_json']=='Y')}")
     log(f"  JSON files downloaded         : {downloaded} (already present: {skipped})")
+    log(f"  results PDFs beside the JSON  : {pdf_downloaded} downloaded "
+        f"(already present: {pdf_skipped})")
     if multi:
         log("\n  Records holding several submissions:")
         for r in sorted(multi, key=lambda x: -x["submission_count_estimate"]):

@@ -3730,93 +3730,93 @@ Unfavourable decision: Mental Health Benefits coverage will stay active until th
 
 si la décision est favorable, la couverture des avantages pour la santé mentale prendra fin, mais sera transférée au Programme d’avantages médicaux plus généreux d’ACC sans interruption et se poursuivra pour aussi longtemps que nécessaire; ou
 si la décision est défavorable, les avantages pour la santé mentale se poursuivront jusqu’à la fin de la période d’admissibilité de deux ans.",Y,submitted_translation,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsRespondent,1,none,0,Daniel Andrews,,Daniel Andrews,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsJob,2,none,0,Architect,,Architect,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsDepartment-NS,3,none,0,021,17,Veterans Affairs (Department of),Anciens Combattants (Ministère des),N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsBranch,4,none,0,Corporate Services,,Corporate Services,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsTitle,5,none,0,Automation Development to Support Disability Benefit Decision Making,,Automation Development to Support Disability Benefit Decision Making,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsID,57,none,0,PRJ-00002135,,PRJ-00002135,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsPhase,59,none,0,item1,0,Design,Conception,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsDescription,6,none,0,Project is to increase our use of automation technologies to improve throughput of disability decisions and reduce the overall backlog.,,Project is to increase our use of automation technologies to improve throughput of disability decisions and reduce the overall backlog.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,businessDrivers1,7,none,0,"[""item1"", ""item5"", ""item6""]",0;4;5,Existing backlog of work or cases;Use innovative approaches;Other (please specify),Arriéré de travail ou de cas existant;Utilisation d'approches novatrices;Autre (veuillez préciser),N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile1,60,raw,3,item1-3,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile2,61,raw,3,item1-3,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile3,62,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile4,63,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectAuthority1,64,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutSystem1,9,none,0,"[""item2"", ""item5"", ""item1"", ""item4""]",1;4;0;3,"Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging;Process optimization and workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows;Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.;Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts","Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage.;Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de données pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique.;Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet.;Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers.",N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutAlgorithm1,65,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutAlgorithm2,66,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,decisionSector1,11,raw,2,"[""item1-1"", ""item3-1""]",0;2,"Health related services;Social assistance (ei, disability claims, etc)","Services liés à la santé;Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)",N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact1,67,raw,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact2,68,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact3,55,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact5,15,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact6,16,raw,1,item1-1,0,Reversible,Réversible,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact7,17,raw,4,item4-4,3,Most impacts are perpetual,La plupart des incidences sont sans limite dans le temps.,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact8,18,raw,0,Determination of eligibility for disability benefits will have an impact on access to health services as well as the financial situation of the client.,,Determination of eligibility for disability benefits will have an impact on access to health services as well as the financial situation of the client.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact9,19,raw,1,item1-1,0,Little to no impact,Incidence faible ou nulle,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact10,20,raw,0,These are eligibility determinations with no impact on rights/freedoms.,,These are eligibility determinations with no impact on rights/freedoms.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact11,21,raw,3,item3-3,2,High impact,Incidence élevée,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact12,22,raw,0,Disability benefits impact overall wellness and possibly financial well-being.,,Disability benefits impact overall wellness and possibly financial well-being.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact13,23,raw,3,item3-3,2,High impact,Incidence élevée,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact14,24,raw,0,Disability awards will impact financial well-being.,,Disability awards will impact financial well-being.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact15,25,raw,1,item1-1,0,Little to no impact,Incidence faible ou nulle,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact16,26,raw,0,This is eligibility for individuals and does not relate to the environment.,,This is eligibility for individuals and does not relate to the environment.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource1,27,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource9,88,raw,0,item1-0,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource10,89,raw,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource11,90,raw,0,item1-0,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource2,28,raw,3,item4-3,3,Protected B / Protected C,Protégé B/Protégé C,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource3,29,raw,1,item2-1,1,Federal government,Gouvernement fédéral,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource4,30,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource5,31,raw,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource6,32,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource7,33,raw,1,item1-1,0,Your institution,Votre institution,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource8,34,raw,1,item1-1,0,Your institution,Votre institution,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataType1,35,raw,0,item1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataType2,36,raw,6,"[""item2-4"", ""item1-2""]",1;0,Images and videos;Audio and text files,Images et vidéos;Fichiers audio et textuels,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign1,69,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign3,71,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign1,73,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign3,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign4,74,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign5,39,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign6,75,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign7,40,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign8,41,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign9,76,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign10,42,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign1,43,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign2,44,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign3,45,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign4,46,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign5,47,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign6,48,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign7,49,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign8,50,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign9,51,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign10,52,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign11,53,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign12,54,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign13,83,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign14,84,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign15,85,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign16,86,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign17,87,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign1,81,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign2,82,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign3,93,mitigation,0,item2-0,1,No,Non,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign4,94,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,motivation-other,8,none,0,Reduction of cumbersome administrative tasks to free up more time for staff to dedicate to decision making. Contribute to consistency in decision making.,,Reduction of cumbersome administrative tasks to free up more time for staff to dedicate to decision making. Contribute to consistency in decision making.,,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign2,70,mitigation,0,"[""item2"", ""item4"", ""item5"", ""item6"", ""item7"", ""item8"", ""item9""]",0;2;3;4;5;6;7,Strategic Policy and Planning;Program Policy;Legal Services;Access to Information and Privacy Office;Communications;Client Experience / Client Relationship Management;Other (describe),Politique et planification stratégique;Politique du programme;Services légaux;Bureau de l'accès à l'information et de la protection des renseignements personnels;;Expérience client / Gestion de la relation client;Autre (décrire),N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign2-other,91,mitigation,0,"Training Unit
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsRespondent,1,none,0,Daniel Andrews,,Daniel Andrews,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsJob,2,none,0,Architect,,Architect,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsDepartment-NS,3,none,0,021,17,Veterans Affairs (Department of),Anciens Combattants (Ministère des),N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsBranch,4,none,0,Corporate Services,,Corporate Services,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsTitle,5,none,0,Automation Development to Support Disability Benefit Decision Making,,Automation Development to Support Disability Benefit Decision Making,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsID,57,none,0,PRJ-00002135,,PRJ-00002135,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsPhase,59,none,0,item1,0,Design,Conception,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsDescription,6,none,0,Project is to increase our use of automation technologies to improve throughput of disability decisions and reduce the overall backlog.,,Project is to increase our use of automation technologies to improve throughput of disability decisions and reduce the overall backlog.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers1,7,raw,0,"[""item1"", ""item5"", ""item6""]",0;4;5,Existing backlog of work or cases;Use innovative approaches;Other (please specify),Arriéré de travail ou de cas existant;Utilisation d'approches novatrices;Autre (veuillez préciser),N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile1,60,raw,3,item1-3,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile2,61,raw,3,item1-3,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile3,62,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile4,63,raw,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectAuthority1,64,raw,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutSystem1,9,none,0,"[""item2"", ""item5"", ""item1"", ""item4""]",1;4;0;3,"Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging;Process optimization and workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows;Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.;Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts","Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage.;Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de données pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique.;Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet.;Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers.",N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutAlgorithm1,65,raw,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutAlgorithm2,66,raw,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,decisionSector1,11,raw,2,"[""item1-1"", ""item3-1""]",0;2,"Health related services;Social assistance (employment insurance, disability claims)","Services liés à la santé;Aide sociales (assurance-emploi, demandes de prestations d'invalidité)",N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact1,,unknown,1,item1-1,,,,N,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact2,,unknown,0,item2-0,,,,N,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact3,55,raw,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact5,15,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact6,16,raw,1,item1-1,0,Reversible,Réversible,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact7,17,raw,4,item4-4,3,Most impacts are perpetual,La plupart des incidences sont sans limite dans le temps.,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact8,18,raw,0,Determination of eligibility for disability benefits will have an impact on access to health services as well as the financial situation of the client.,,Determination of eligibility for disability benefits will have an impact on access to health services as well as the financial situation of the client.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact9,19,raw,1,item1-1,0,Little to no impact,Incidence faible ou nulle,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact10,20,raw,0,These are eligibility determinations with no impact on rights/freedoms.,,These are eligibility determinations with no impact on rights/freedoms.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact11,21,raw,3,item3-3,2,High impact,Incidence élevée,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact12,24,raw,0,Disability benefits impact overall wellness and possibly financial well-being.,,Disability benefits impact overall wellness and possibly financial well-being.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact13,23,raw,3,item3-3,2,High impact,Incidence élevée,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact14,26,raw,0,Disability awards will impact financial well-being.,,Disability awards will impact financial well-being.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact15,25,raw,1,item1-1,0,Little to no impact,Incidence faible ou nulle,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact16,115,raw,0,This is eligibility for individuals and does not relate to the environment.,,This is eligibility for individuals and does not relate to the environment.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource1,27,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource9,88,raw,0,item1-0,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource10,89,raw,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource11,90,raw,0,item1-0,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource2,28,raw,3,item4-3,3,Protected B / Protected C,Protégé B/Protégé C,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource3,29,raw,1,item2-1,1,Federal government,Gouvernement fédéral,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource4,30,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource5,31,raw,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource6,32,raw,4,item1-4,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource7,33,raw,1,item1-1,0,Your institution,Votre institution,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource8,34,raw,1,item1-1,0,Your institution,Votre institution,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataType1,35,raw,0,item1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataType2,36,raw,6,"[""item2-4"", ""item1-2""]",1;0,Images and videos;Audio and text files,Images et vidéos;Fichiers audio et textuels,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign1,69,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign3,71,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign1,73,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign3,38,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign4,74,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign5,39,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign6,75,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign7,40,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign8,41,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign9,76,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign10,42,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign1,43,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign2,44,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign3,45,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign4,46,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign5,47,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign6,48,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign7,49,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign8,50,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign9,51,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign10,52,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign11,53,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign12,54,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign13,83,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign14,84,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign15,85,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign16,86,mitigation,2,item1-2,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign17,87,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign1,81,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign2,82,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign3,93,mitigation,0,item2-0,1,No,Non,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign4,94,mitigation,1,item1-1,0,Yes,Oui,N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,motivation-other,8,raw,0,Reduction of cumbersome administrative tasks to free up more time for staff to dedicate to decision making. Contribute to consistency in decision making.,,Reduction of cumbersome administrative tasks to free up more time for staff to dedicate to decision making. Contribute to consistency in decision making.,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign2,70,mitigation,0,"[""item2"", ""item4"", ""item5"", ""item6"", ""item7"", ""item8"", ""item9""]",0;2;3;4;5;6;15,Strategic Policy and Planning;Program Policy;Legal Services;Access to Information and Privacy Office;Communications services;Client Experience / Client Relationship Management;Other (describe),Politique et planification stratégique;Politique du programme;Services légaux;Bureau de l'accès à l'information et de la protection des renseignements personnels;Services des communications;Expérience client / Gestion de la relation client;Autre (décrire),N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign2-other,91,mitigation,0,"Training Unit
 Bureau of Pensions Advocates
 Office of the Veterans Ombudsman",,"Training Unit
 Bureau of Pensions Advocates
 Office of the Veterans Ombudsman",,Y,missing,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign4,72,mitigation,0,"[""item8"", ""item9""]",2;4,Industry;Other (describe),Industrie;Autre (décrire),N,catalog,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign4-other,92,mitigation,0,Veterans Review and Appeal Board,,Veterans Review and Appeal Board,,Y,missing,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign4,72,mitigation,0,"[""item8"", ""item9""]",2;8,Industry;Other (describe),Industrie;Autre (décrire),N,catalog,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign4-other,92,mitigation,0,Veterans Review and Appeal Board,,Veterans Review and Appeal Board,,Y,missing,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,projectDetailsRespondent,1,none,0,Various Stakeholders at IRCC,,Various Stakeholders at IRCC,Divers intervenants à IRCC,Y,submitted_translation,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,projectDetailsJob,2,none,0,n/a,,n/a,p/a,Y,submitted_translation,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,projectDetailsDepartment-NS,3,none,0,050,38,Citizenship and Immigration (Department of),Citoyenneté et de l'Immigration (Ministère de la),N,catalog,Y

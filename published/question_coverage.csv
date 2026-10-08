@@ -2800,131 +2800,159 @@ submission_id,og_record_id,catalog_version,field_name,qm_key,question_uid,point_
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,consultationDesign4-other,0.9.1|consultationDesign4-other,92,mitigation,Consultation,design,Y,N,N,other phase,N
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,consultationImplementation2-other,0.9.1|consultationImplementation2-other,91,mitigation,Consultation,implementation,Y,N,N,condition not met,N
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,consultationImplementation4-other,0.9.1|consultationImplementation4-other,92,mitigation,Consultation,implementation,Y,N,N,condition not met,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsRespondent,0.9.1|projectDetailsRespondent,1,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsJob,0.9.1|projectDetailsJob,2,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsDepartment-NS,0.9.1|projectDetailsDepartment-NS,3,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsBranch,0.9.1|projectDetailsBranch,4,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsTitle,0.9.1|projectDetailsTitle,5,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsID,0.9.1|projectDetailsID,57,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsProgram,0.9.1|projectDetailsProgram,58,none,,,N,N,Y,,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsPhase,0.9.1|projectDetailsPhase,59,none,,,N,Y,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectDetailsDescription,0.9.1|projectDetailsDescription,6,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,businessDrivers1,0.9.1|businessDrivers1,7,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile1,0.9.1|riskProfile1,60,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile2,0.9.1|riskProfile2,61,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile3,0.9.1|riskProfile3,62,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,riskProfile4,0.9.1|riskProfile4,63,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,projectAuthority1,0.9.1|projectAuthority1,64,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutSystem1,0.9.1|aboutSystem1,9,none,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutAlgorithm1,0.9.1|aboutAlgorithm1,65,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutAlgorithm2,0.9.1|aboutAlgorithm2,66,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,decisionSector1,0.9.1|decisionSector1,11,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact1,0.9.1|impact1,67,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact2,0.9.1|impact2,68,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact3,0.9.1|impact3,55,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact5,0.9.1|impact5,15,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact6,0.9.1|impact6,16,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact7,0.9.1|impact7,17,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact8,0.9.1|impact8,18,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact9,0.9.1|impact9,19,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact10,0.9.1|impact10,20,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact11,0.9.1|impact11,21,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact12,0.9.1|impact12,22,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact13,0.9.1|impact13,23,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact14,0.9.1|impact14,24,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact15,0.9.1|impact15,25,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact16,0.9.1|impact16,26,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource1,0.9.1|aboutDataSource1,27,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource2,0.9.1|aboutDataSource2,28,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource3,0.9.1|aboutDataSource3,29,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource4,0.9.1|aboutDataSource4,30,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource5,0.9.1|aboutDataSource5,31,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource6,0.9.1|aboutDataSource6,32,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource7,0.9.1|aboutDataSource7,33,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource8,0.9.1|aboutDataSource8,34,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataType1,0.9.1|aboutDataType1,35,raw,,,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign1,0.9.1|consultationDesign1,69,mitigation,Consultation,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign3,0.9.1|consultationDesign3,71,mitigation,Consultation,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationImplementation1,0.9.1|consultationImplementation1,69,mitigation,Consultation,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationImplementation3,0.9.1|consultationImplementation3,71,mitigation,Consultation,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign1,0.9.1|dataQualityDesign1,73,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign3,0.9.1|dataQualityDesign3,38,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign4,0.9.1|dataQualityDesign4,74,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign5,0.9.1|dataQualityDesign5,39,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign6,0.9.1|dataQualityDesign6,75,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign7,0.9.1|dataQualityDesign7,40,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign8,0.9.1|dataQualityDesign8,41,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign9,0.9.1|dataQualityDesign9,76,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign10,0.9.1|dataQualityDesign10,42,mitigation,Data quality,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation1,0.9.1|dataQualityImplementation1,78,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation2,0.9.1|dataQualityImplementation2,77,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation3,0.9.1|dataQualityImplementation3,38,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation4,0.9.1|dataQualityImplementation4,74,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation5,0.9.1|dataQualityImplementation5,39,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation6,0.9.1|dataQualityImplementation6,75,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation7,0.9.1|dataQualityImplementation7,40,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation8,0.9.1|dataQualityImplementation8,41,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation9,0.9.1|dataQualityImplementation9,76,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityImplementation10,0.9.1|dataQualityImplementation10,42,mitigation,Data quality,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign1,0.9.1|fairnessDesign1,43,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign2,0.9.1|fairnessDesign2,44,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign3,0.9.1|fairnessDesign3,45,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign4,0.9.1|fairnessDesign4,46,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign5,0.9.1|fairnessDesign5,47,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign6,0.9.1|fairnessDesign6,48,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign7,0.9.1|fairnessDesign7,49,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign8,0.9.1|fairnessDesign8,50,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign9,0.9.1|fairnessDesign9,51,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign10,0.9.1|fairnessDesign10,52,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign11,0.9.1|fairnessDesign11,53,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign12,0.9.1|fairnessDesign12,54,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign13,0.9.1|fairnessDesign13,83,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign14,0.9.1|fairnessDesign14,84,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign15,0.9.1|fairnessDesign15,85,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign16,0.9.1|fairnessDesign16,86,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessDesign17,0.9.1|fairnessDesign17,87,mitigation,Procedural fairness,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation1,0.9.1|fairnessImplementation1,79,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation2,0.9.1|fairnessImplementation2,44,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation3,0.9.1|fairnessImplementation3,45,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation4,0.9.1|fairnessImplementation4,46,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation5,0.9.1|fairnessImplementation5,47,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation6,0.9.1|fairnessImplementation6,48,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation7,0.9.1|fairnessImplementation7,49,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation8,0.9.1|fairnessImplementation8,50,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation9,0.9.1|fairnessImplementation9,51,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation10,0.9.1|fairnessImplementation10,52,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation11,0.9.1|fairnessImplementation11,53,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation12,0.9.1|fairnessImplementation12,54,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation13,0.9.1|fairnessImplementation13,83,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation14,0.9.1|fairnessImplementation14,84,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation15,0.9.1|fairnessImplementation15,85,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation16,0.9.1|fairnessImplementation16,86,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,fairnessImplementation17,0.9.1|fairnessImplementation17,87,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign1,0.9.1|privacyDesign1,81,mitigation,Privacy,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign2,0.9.1|privacyDesign2,82,mitigation,Privacy,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign3,0.9.1|privacyDesign3,93,mitigation,Privacy,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyDesign4,0.9.1|privacyDesign4,94,mitigation,Privacy,design,N,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyImplementation1,0.9.1|privacyImplementation1,81,mitigation,Privacy,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyImplementation2,0.9.1|privacyImplementation2,82,mitigation,Privacy,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyImplementation3,0.9.1|privacyImplementation3,93,mitigation,Privacy,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,privacyImplementation4,0.9.1|privacyImplementation4,94,mitigation,Privacy,implementation,N,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,motivation-other,0.9.1|motivation-other,8,none,,,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutSystem2,0.9.1|aboutSystem2,10,none,,,Y,N,N,condition not met,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,decisionSector2,0.9.1|decisionSector2,12,raw,,,Y,N,N,condition not met,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,impact4,0.9.1|impact4,56,raw,,,Y,N,N,condition not met,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource9,0.9.1|aboutDataSource9,88,raw,,,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource10,0.9.1|aboutDataSource10,89,raw,,,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataSource11,0.9.1|aboutDataSource11,90,raw,,,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,aboutDataType2,0.9.1|aboutDataType2,36,raw,,,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign2,0.9.1|consultationDesign2,70,mitigation,Consultation,design,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign4,0.9.1|consultationDesign4,72,mitigation,Consultation,design,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationImplementation2,0.9.1|consultationImplementation2,70,mitigation,Consultation,implementation,Y,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationImplementation4,0.9.1|consultationImplementation4,72,mitigation,Consultation,implementation,Y,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,dataQualityDesign2,0.9.1|dataQualityDesign2,80,mitigation,Data quality,design,Y,N,N,condition not met,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign2-other,0.9.1|consultationDesign2-other,91,mitigation,Consultation,design,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationDesign4-other,0.9.1|consultationDesign4-other,92,mitigation,Consultation,design,Y,N,Y,,Y
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationImplementation2-other,0.9.1|consultationImplementation2-other,91,mitigation,Consultation,implementation,Y,N,N,other phase,N
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,consultationImplementation4-other,0.9.1|consultationImplementation4-other,92,mitigation,Consultation,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsRespondent,0.10.0|projectDetailsRespondent,1,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsJob,0.10.0|projectDetailsJob,2,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsDepartment-NS,0.10.0|projectDetailsDepartment-NS,3,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsBranch,0.10.0|projectDetailsBranch,4,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsTitle,0.10.0|projectDetailsTitle,5,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsID,0.10.0|projectDetailsID,57,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsProgram,0.10.0|projectDetailsProgram,58,none,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsPhase,0.10.0|projectDetailsPhase,59,none,,,N,Y,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectDetailsDescription,0.10.0|projectDetailsDescription,6,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers1,0.10.0|businessDrivers1,7,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers3,0.10.0|businessDrivers3,95,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers4,0.10.0|businessDrivers4,96,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers5,0.10.0|businessDrivers5,97,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers6,0.10.0|businessDrivers6,98,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers7,0.10.0|businessDrivers7,99,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers8,0.10.0|businessDrivers8,100,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers9,0.10.0|businessDrivers9,101,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers11,0.10.0|businessDrivers11,103,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile1,0.10.0|riskProfile1,60,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile2,0.10.0|riskProfile2,61,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile3,0.10.0|riskProfile3,62,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile4,0.10.0|riskProfile4,63,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile5,0.10.0|riskProfile5,105,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,projectAuthority1,0.10.0|projectAuthority1,64,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutSystem1,0.10.0|aboutSystem1,9,none,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutAlgorithm1,0.10.0|aboutAlgorithm1,65,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutAlgorithm2,0.10.0|aboutAlgorithm2,66,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,decisionSector3,0.10.0|decisionSector3,107,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,decisionSector1,0.10.0|decisionSector1,11,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact30,0.10.0|impact30,108,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact31,0.10.0|impact31,109,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact3,0.10.0|impact3,55,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact20,0.10.0|impact20,110,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact21,0.10.0|impact21,111,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact22,0.10.0|impact22,112,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact5,0.10.0|impact5,15,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact6,0.10.0|impact6,16,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact7,0.10.0|impact7,17,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact8,0.10.0|impact8,18,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact9,0.10.0|impact9,19,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact10,0.10.0|impact10,20,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact24,0.10.0|impact24,114,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact25,0.10.0|impact25,22,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact11,0.10.0|impact11,21,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact12,0.10.0|impact12,24,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact13,0.10.0|impact13,23,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact14,0.10.0|impact14,26,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact15,0.10.0|impact15,25,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact16,0.10.0|impact16,115,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource1,0.10.0|aboutDataSource1,27,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource2,0.10.0|aboutDataSource2,28,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource3,0.10.0|aboutDataSource3,29,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource4,0.10.0|aboutDataSource4,30,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource5,0.10.0|aboutDataSource5,31,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource6,0.10.0|aboutDataSource6,32,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource7,0.10.0|aboutDataSource7,33,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource8,0.10.0|aboutDataSource8,34,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource13,0.10.0|aboutDataSource13,117,raw,,,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataType1,0.10.0|aboutDataType1,35,raw,,,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign1,0.10.0|consultationDesign1,69,mitigation,Consultation,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign3,0.10.0|consultationDesign3,71,mitigation,Consultation,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationImplementation1,0.10.0|consultationImplementation1,69,mitigation,Consultation,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationImplementation3,0.10.0|consultationImplementation3,71,mitigation,Consultation,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign1,0.10.0|dataQualityDesign1,73,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign3,0.10.0|dataQualityDesign3,38,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign4,0.10.0|dataQualityDesign4,74,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign5,0.10.0|dataQualityDesign5,39,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign6,0.10.0|dataQualityDesign6,75,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign7,0.10.0|dataQualityDesign7,40,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign8,0.10.0|dataQualityDesign8,41,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign9,0.10.0|dataQualityDesign9,76,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign10,0.10.0|dataQualityDesign10,42,mitigation,Data quality,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation1,0.10.0|dataQualityImplementation1,78,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation2,0.10.0|dataQualityImplementation2,77,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation3,0.10.0|dataQualityImplementation3,38,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation4,0.10.0|dataQualityImplementation4,74,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation5,0.10.0|dataQualityImplementation5,39,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation6,0.10.0|dataQualityImplementation6,75,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation7,0.10.0|dataQualityImplementation7,40,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation8,0.10.0|dataQualityImplementation8,41,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation9,0.10.0|dataQualityImplementation9,76,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityImplementation10,0.10.0|dataQualityImplementation10,42,mitigation,Data quality,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign1,0.10.0|fairnessDesign1,43,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign2,0.10.0|fairnessDesign2,44,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign3,0.10.0|fairnessDesign3,45,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign4,0.10.0|fairnessDesign4,46,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign5,0.10.0|fairnessDesign5,47,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign6,0.10.0|fairnessDesign6,48,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign7,0.10.0|fairnessDesign7,49,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign8,0.10.0|fairnessDesign8,50,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign9,0.10.0|fairnessDesign9,51,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign10,0.10.0|fairnessDesign10,52,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign11,0.10.0|fairnessDesign11,53,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign12,0.10.0|fairnessDesign12,54,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign13,0.10.0|fairnessDesign13,83,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign14,0.10.0|fairnessDesign14,84,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign15,0.10.0|fairnessDesign15,85,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign16,0.10.0|fairnessDesign16,86,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessDesign17,0.10.0|fairnessDesign17,87,mitigation,Procedural fairness,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation1,0.10.0|fairnessImplementation1,79,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation2,0.10.0|fairnessImplementation2,44,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation3,0.10.0|fairnessImplementation3,45,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation4,0.10.0|fairnessImplementation4,46,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation5,0.10.0|fairnessImplementation5,47,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation6,0.10.0|fairnessImplementation6,48,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation7,0.10.0|fairnessImplementation7,49,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation8,0.10.0|fairnessImplementation8,50,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation9,0.10.0|fairnessImplementation9,51,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation10,0.10.0|fairnessImplementation10,52,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation11,0.10.0|fairnessImplementation11,53,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation12,0.10.0|fairnessImplementation12,54,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation13,0.10.0|fairnessImplementation13,83,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation14,0.10.0|fairnessImplementation14,84,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation15,0.10.0|fairnessImplementation15,85,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation16,0.10.0|fairnessImplementation16,86,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,fairnessImplementation17,0.10.0|fairnessImplementation17,87,mitigation,Procedural fairness,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign1,0.10.0|privacyDesign1,81,mitigation,Privacy,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign2,0.10.0|privacyDesign2,82,mitigation,Privacy,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign3,0.10.0|privacyDesign3,93,mitigation,Privacy,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign4,0.10.0|privacyDesign4,94,mitigation,Privacy,design,N,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign7,0.10.0|privacyDesign7,120,mitigation,Privacy,design,N,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation1,0.10.0|privacyImplementation1,81,mitigation,Privacy,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation2,0.10.0|privacyImplementation2,82,mitigation,Privacy,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation3,0.10.0|privacyImplementation3,93,mitigation,Privacy,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation4,0.10.0|privacyImplementation4,94,mitigation,Privacy,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation7,0.10.0|privacyImplementation7,120,mitigation,Privacy,implementation,N,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,motivation-other,0.10.0|motivation-other,8,raw,,,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers10,0.10.0|businessDrivers10,102,raw,,,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,businessDrivers12,0.10.0|businessDrivers12,104,raw,,,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,riskProfile6,0.10.0|riskProfile6,106,raw,,,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutSystem2,0.10.0|aboutSystem2,10,none,,,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,decisionSector2,0.10.0|decisionSector2,12,raw,,,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,impact23,0.10.0|impact23,113,raw,,,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource9,0.10.0|aboutDataSource9,88,raw,,,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource10,0.10.0|aboutDataSource10,89,raw,,,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource11,0.10.0|aboutDataSource11,90,raw,,,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataType2,0.10.0|aboutDataType2,36,raw,,,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign2,0.10.0|consultationDesign2,70,mitigation,Consultation,design,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign4,0.10.0|consultationDesign4,72,mitigation,Consultation,design,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationImplementation2,0.10.0|consultationImplementation2,70,mitigation,Consultation,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationImplementation4,0.10.0|consultationImplementation4,72,mitigation,Consultation,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,dataQualityDesign2,0.10.0|dataQualityDesign2,80,mitigation,Data quality,design,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign5,0.10.0|privacyDesign5,118,mitigation,Privacy,design,Y,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign6,0.10.0|privacyDesign6,119,mitigation,Privacy,design,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyDesign8,0.10.0|privacyDesign8,121,mitigation,Privacy,design,Y,N,N,condition not met,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation5,0.10.0|privacyImplementation5,118,mitigation,Privacy,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation6,0.10.0|privacyImplementation6,119,mitigation,Privacy,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,privacyImplementation8,0.10.0|privacyImplementation8,121,mitigation,Privacy,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,aboutDataSource12,0.10.0|aboutDataSource12,116,raw,,,Y,N,Y,,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign2-other,0.10.0|consultationDesign2-other,91,mitigation,Consultation,design,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationDesign4-other,0.10.0|consultationDesign4-other,92,mitigation,Consultation,design,Y,N,Y,,Y
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationImplementation2-other,0.10.0|consultationImplementation2-other,91,mitigation,Consultation,implementation,Y,N,N,other phase,N
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,consultationImplementation4-other,0.10.0|consultationImplementation4-other,92,mitigation,Consultation,implementation,Y,N,N,other phase,N
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,projectDetailsRespondent,0.9.1|projectDetailsRespondent,1,none,,,N,N,Y,,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,projectDetailsJob,0.9.1|projectDetailsJob,2,none,,,N,N,Y,,Y
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,projectDetailsDepartment-NS,0.9.1|projectDetailsDepartment-NS,3,none,,,N,N,Y,,Y

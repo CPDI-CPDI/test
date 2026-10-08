@@ -67,10 +67,10 @@ submission_id,og_record_id,catalog_version,mitigation_phase,mitigation_area,poin
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Data quality,2,14,14.3
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Privacy,3,4,75.0
 9addf54a-7148-459f-b785-0e240414ef7f-1,9addf54a-7148-459f-b785-0e240414ef7f,0.9.1,implementation,Procedural fairness,20,25,80.0
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Consultation,2,2,100.0
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Data quality,2,14,14.3
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Privacy,3,4,75.0
-aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.9.1,design,Procedural fairness,23,25,92.0
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,design,Consultation,2,2,100.0
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,design,Data quality,2,14,14.3
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,design,Privacy,3,5,60.0
+aafdfbcd-1cdb-4913-84d5-a03df727680c-1,aafdfbcd-1cdb-4913-84d5-a03df727680c,0.10.0,design,Procedural fairness,23,25,92.0
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Consultation,2,2,100.0
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Data quality,8,14,57.1
 ad4be3b8-ac97-4dc1-8dd8-231239d018f2-1,ad4be3b8-ac97-4dc1-8dd8-231239d018f2,0.9.1,implementation,Privacy,1,4,25.0

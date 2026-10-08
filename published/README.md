@@ -16,7 +16,7 @@ with them. Anything reading them can rely on that.
 | `option_points` | 86 | 3 |
 | `option_set_items` | 333 | 4 |
 | `option_sets` | 61 | 3 |
-| `question_coverage` | 6494 | 14 |
+| `question_coverage` | 6522 | 14 |
 | `question_map` | 1419 | 31 |
 | `question_options` | 996 | 7 |
 | `questions` | 240 | 15 |

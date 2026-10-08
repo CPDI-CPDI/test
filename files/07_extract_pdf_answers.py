@@ -46,11 +46,9 @@ from common import (RAW_DIR, read_csv, write_csv, fetch, absolute_url, norm,
                     version_key, load_option_lookup, log, header)
 
 # ---------------------------------------------------------------- patterns
-RE_VERSION = re.compile(r"^\s*Version\s*:\s*v?\s*([0-9][0-9A-Za-z.]*)", re.M)
-RE_LEVEL = re.compile(r"Impact\s+Level\s*:\s*(\d+)", re.I)
-RE_CURRENT = re.compile(r"Current\s+Score\s*:\s*(-?\d+)", re.I)
-RE_RAW = re.compile(r"Raw\s+Impact\s+Score\s*:\s*(-?\d+)", re.I)
-RE_MITIGATION = re.compile(r"Mitigation\s+Score\s*:\s*(-?\d+)", re.I)
+# The header patterns, clean_text and the PDF reader live in common.py, shared
+# with step 4's check of the results PDF published beside each JSON file.
+from common import clean_text, pdf_text, pdf_header  # noqa: E402
 
 RE_PART = re.compile(r"^[ \t]*Section[ \t]+3\.(\d)[ \t]*:[ \t]*(.+?)[ \t]*$", re.M)
 RE_QUESTION = re.compile(r"^\s*(\d{1,3})\.\s+(\S.*)$")
@@ -91,49 +89,12 @@ def part_point_type(title: str) -> str:
 MAX_NUMBER_JUMP = 150
 
 
-def clean_text(text: str) -> str:
-    """
-    pdftotext marks each page break with a form feed glued to the start of the
-    next line. v1.0.1 starts every Section 3.x on a new page, so its headings
-    arrived as "\\fSection 3.2: ..." and the heading pattern, which allows only
-    spaces and tabs before "Section", never found them. The whole document was
-    then read as one unscored block. A page break is a line break here.
-    """
-    return text.replace("\r\n", "\n").replace("\f", "\n")
-
-
 def extract_text(path: Path) -> str:
-    if shutil.which("pdftotext"):
-        try:
-            out = subprocess.run(["pdftotext", "-layout", str(path), "-"],
-                                 capture_output=True, timeout=180)
-            if out.returncode == 0:
-                return clean_text(out.stdout.decode("utf-8", errors="replace"))
-        except Exception:
-            pass
-    try:
-        from pypdf import PdfReader
-        return clean_text("\n".join((p.extract_text() or "") for p in PdfReader(str(path)).pages))
-    except ImportError:
-        raise SystemExit("No PDF reader available. "
-                         "Install poppler-utils (pdftotext) or run: pip install pypdf")
-    except Exception as e:
-        log(f"    ! could not read {path.name}: {e}")
-        return ""
+    return pdf_text(path)
 
 
 def header_values(text: str) -> dict:
-    def one(rx):
-        m = rx.search(text)
-        return m.group(1) if m else None
-    v = one(RE_VERSION)
-    return {
-        "stated_version": clean_version(v) if v else "",
-        "stated_impact_level": int(one(RE_LEVEL)) if one(RE_LEVEL) else None,
-        "stated_current": int(one(RE_CURRENT)) if one(RE_CURRENT) else None,
-        "stated_raw": int(one(RE_RAW)) if one(RE_RAW) else None,
-        "stated_mitigation": int(one(RE_MITIGATION)) if one(RE_MITIGATION) else None,
-    }
+    return pdf_header(text)
 
 
 def split_parts(text: str) -> list[tuple[str, str, str]]:

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "generated_utc": "2026-10-02T19:21:24Z",
+  "generated_utc": "2026-10-08T17:37:21Z",
   "encoding": "utf-8",
   "byte_order_mark": false,
   "line_terminator": "\\n",
@@ -157,7 +157,7 @@
         "hidden_reason",
         "answered"
       ],
-      "row_count": 6494
+      "row_count": 6522
     },
     "question_map": {
       "columns": [

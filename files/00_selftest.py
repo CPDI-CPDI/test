@@ -1015,6 +1015,22 @@ check("the other phase's mitigation questions are not shown",
       (_cov["dqD1"]["shown"], _cov["dqD1"]["hidden_reason"]) == ("N", "other phase")
       and (_cov["dqI1"]["shown"], _cov["dqI1"]["answered"]) == ("Y", "Y"))
 
+print("\n=== the results PDF beside a JSON outranks the JSON ===")
+# VAC's disability benefit AIA: JSON stamped v0.9.1 (raw 56/107 = 52%, Level 3),
+# results PDF printed v0.10.0, raw 55, Level 2. The PDF is what was published.
+_vh = C.pdf_header("Algorithmic Impact Assessment Results\nVersion: 0.10.0\n\n"
+                   "Section 1: Impact Level : 2\nCurrent Score: 55\nRaw Impact Score: 55\n"
+                   "Mitigation Score: 30\n")
+check("the printed header is read", (_vh["stated_version"], _vh["stated_raw"],
+      _vh["stated_impact_level"]) == ("0.10.0", 55, 2), str(_vh))
+check("a complete, consistent header is trusted", C.header_trusted(_vh))
+check("a current score that is neither raw nor raw less 15% is not trusted",
+      not C.header_trusted(dict(_vh, stated_current=4)))
+check("the 15% reduction is accepted as consistent",
+      C.header_trusted(dict(_vh, stated_raw=60, stated_current=51)))
+check("a header missing a value is not trusted",
+      not C.header_trusted(dict(_vh, stated_mitigation=None)))
+
 print("\n" + "=" * 60)
 if FAILURES:
     print(f"{len(FAILURES)} CHECK(S) FAILED: {', '.join(FAILURES)}")

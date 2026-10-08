@@ -17,6 +17,7 @@ Outputs
     data/submissions.csv
     data/answers.csv
     data/ingest_issues.csv
+    data/json_pdf_check.csv   each JSON against its published results PDF
 """
 from __future__ import annotations
 import json, re
@@ -24,7 +25,7 @@ from collections import defaultdict
 from pathlib import Path
 from common import (RAW_DIR, read_csv, write_csv, answer_points, option_points,
                     impact_level, current_score, version_key, split_bilingual,
-                    load_option_lookup, log, header)
+                    load_option_lookup, pdf_text, pdf_header, header_trusted, log, header)
 
 SKIP_KEYS = {"currentPage", "version", "pageNo"}
 
@@ -77,7 +78,7 @@ def main():
     files = sorted((RAW_DIR / "submissions").glob("*.json"))
     log(f"  submission files to read : {len(files)}\n")
 
-    parsed, issues = [], []
+    parsed, issues, checks = [], [], []
     for path in files:
         try:
             doc = json.loads(path.read_text(encoding="utf-8"))
@@ -88,14 +89,30 @@ def main():
         rid = path.name.split("__")[0]
         label = path.stem.split("__")[-1].replace("_", " ")
         data = doc.get("data", doc)
-        stated = str(doc.get("version", "")).lstrip("v")
-        cat, how = nearest_version(stated, known)
+        stated = str(doc.get("version", "")).lstrip("v").lstrip(".")
+
+        # The results PDF published beside the JSON is the tool's own record of
+        # what was assessed, and its word is stronger than the JSON's. A JSON
+        # keeps the version it was started in; the PDF prints the version that
+        # produced the published result. VAC's disability benefit assessment is
+        # stamped v0.9.1, printed v0.10.0, and scored Level 3 instead of 2 until
+        # this check existed.
+        companion = RAW_DIR / "pdf_json" / f"{path.stem}.pdf"
+        printed = pdf_header(pdf_text(companion, last_page=2)) if companion.exists() else {}
+        source = "json_stamped"
+        target = stated
+        if printed.get("stated_version") and printed["stated_version"] != stated:
+            target, source = printed["stated_version"], "pdf_printed"
+            issues.append({"file": path.name,
+                           "issue": f"JSON stamped v{stated}; results PDF printed "
+                                    f"v{printed['stated_version']}; PDF version used"})
+        cat, how = nearest_version(target, known)
         if not cat:
             issues.append({"file": path.name, "issue": "no catalog available"})
             continue
         if how != "exact":
             issues.append({"file": path.name,
-                           "issue": f"file states v{stated}; scored against v{cat}"})
+                           "issue": f"file states v{target}; scored against v{cat}"})
 
         translations = doc.get("translationsOnResult", {}) or {}
         raw = mit = 0
@@ -152,15 +169,56 @@ def main():
         max_raw = float(vinfo["max_raw"] or 0)
         cur, reduced = current_score(raw, mit, max_mit)
         pct = round(cur / max_raw * 100, 1) if max_raw else None
+        level = impact_level(pct)
+
+        computed = {"raw": raw, "mit": mit, "cur": cur, "level": level}
+        trusted = header_trusted(printed) if printed else False
+        agrees = trusted and (printed["stated_raw"], printed["stated_mitigation"],
+                              printed["stated_current"], printed["stated_impact_level"]) \
+            == (raw, mit, cur, level)
+        if not companion.exists():
+            outcome = "no results PDF"
+        elif not trusted:
+            outcome = "PDF header unreadable or inconsistent; computed scores kept"
+        elif agrees:
+            outcome = ("version corrected from PDF; scores now match" if source == "pdf_printed"
+                       else "match")
+        else:
+            # Still different on the version the PDF names: the published figures
+            # stand. Answers keep their computed points, so the gap stays visible
+            # in json_pdf_check.csv rather than being papered over.
+            raw, mit, cur = (printed["stated_raw"], printed["stated_mitigation"],
+                             printed["stated_current"])
+            reduced = cur != raw
+            pct = round(cur / max_raw * 100, 1) if max_raw else None
+            level = printed["stated_impact_level"]
+            source = "pdf_printed"
+            outcome = "scores taken from PDF"
+            issues.append({"file": path.name,
+                           "issue": f"computed raw {computed['raw']}, mitigation {computed['mit']}, "
+                                    f"level {computed['level']} on v{cat}; PDF prints raw "
+                                    f"{raw}, mitigation {mit}, level {level}; PDF figures used"})
+        checks.append({
+            "file": path.name, "og_record_id": rid, "submission_label": label,
+            "stamped_version": stated, "printed_version": printed.get("stated_version", ""),
+            "scored_against": cat, "results_pdf": "Y" if companion.exists() else "N",
+            "header_trusted": "Y" if trusted else "N",
+            "printed_raw": printed.get("stated_raw", ""), "computed_raw": computed["raw"],
+            "printed_mitigation": printed.get("stated_mitigation", ""),
+            "computed_mitigation": computed["mit"],
+            "printed_current": printed.get("stated_current", ""), "computed_current": computed["cur"],
+            "printed_level": printed.get("stated_impact_level", ""), "computed_level": computed["level"],
+            "outcome": outcome,
+        })
 
         parsed.append({
             "og_record_id": rid, "file": path.name, "submission_label": label,
-            "catalog_version": cat, "stated_version": stated, "version_source": "json_stamped",
+            "catalog_version": cat, "stated_version": stated, "version_source": source,
             "raw_impact_score": raw, "mitigation_score": mit, "current_score": cur,
             "reduction_applied": "Y" if reduced else "N",
             "current_score_pct": pct,
             "mitigation_pct": round(mit / max_mit * 100, 1) if max_mit else None,
-            "impact_level": impact_level(pct),
+            "impact_level": level,
             "answer_count": len(rows), "unmapped_answers": unmapped,
             "rows": rows,
             "title": (data.get("projectDetailsTitle") or records.get(rid, {}).get("title_en", "")),
@@ -241,6 +299,7 @@ def main():
     write_csv("submissions.csv", submissions)
     write_csv("answers.csv", answers)
     write_csv("ingest_issues.csv", issues)
+    write_csv("json_pdf_check.csv", checks)
 
     header("SUMMARY")
     log(f"  systems      : {len(systems)}")
@@ -255,6 +314,16 @@ def main():
     if unmapped:
         log(f"\n  answers with no catalog match: {unmapped}")
         log("  A high count means step 2 is missing the version those files were answered under.")
+    from collections import Counter
+    log("\n  JSON checked against its published results PDF:")
+    for k, n in Counter(c["outcome"] for c in checks).most_common():
+        log(f"    {n:>3}  {k}")
+    for c in checks:
+        if c["outcome"] not in ("match", "no results PDF"):
+            log(f"    - {c['file'][:46]}: stamped v{c['stamped_version']}, printed "
+                f"v{c['printed_version'] or '?'}, level {c['computed_level']} -> "
+                f"{c['printed_level'] or '?'}  ({c['outcome']})")
+    log("  Details: json_pdf_check.csv")
     log("\nNext: python 05_build_workbook.py")
 
 
