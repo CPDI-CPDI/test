@@ -1,0 +1,121 @@
+# Weekly rebuild of the AIA master table and published tables.
+#
+# Runs the whole pipeline against the Open Government portal and the AIA tool's
+# repository, refuses to publish a run that looks broken (11_weekly_changes.py),
+# commits the result, and opens an issue listing new or changed submissions.
+# People who watch this repository's issues are emailed by GitHub.
+#
+# Settings (Settings > Secrets and variables > Actions > Variables):
+#   NOTIFY_GITHUB_USERS  optional, e.g. "@momin @colleague" — mentioned in the issue
+#   NOTIFY_EMAILS        optional, comma-separated addresses for a direct email;
+#                        needs the SMTP_* secrets below as well
+# Secrets (only for the direct email):
+#   SMTP_SERVER, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM
+
+name: Weekly AIA pipeline
+
+on:
+  schedule:
+    - cron: "0 12 * * 1"     # Mondays 12:00 UTC = 08:00 Ottawa in summer, 07:00 in winter
+  workflow_dispatch: {}       # "Run workflow" button for a run on demand
+
+permissions:
+  contents: write             # commit the refreshed tables
+  issues: write               # open the weekly notice
+
+concurrency:
+  group: aia-pipeline
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PDF reader and Python packages
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q poppler-utils
+          python -m pip install --quiet openpyxl pypdf
+
+      - name: Keep a copy of last week's published tables
+        run: |
+          mkdir -p "$RUNNER_TEMP/published_before"
+          if [ -d published ]; then cp -r published/. "$RUNNER_TEMP/published_before/"; fi
+
+      - name: Self-test
+        working-directory: files
+        run: python 00_selftest.py
+
+      - name: Run the pipeline
+        working-directory: files
+        env:
+          GITHUB_TOKEN: ${{ github.token }}   # step 2 lists questionnaire releases through the API
+        run: |
+          set -eo pipefail
+          mkdir -p logs
+          for step in 01_enumerate_portal 02_parse_catalogs 03_bridge_questions \
+                      04_ingest_submissions 06_pdf_only_triage 07_extract_pdf_answers \
+                      09_service_crosswalk 05_build_workbook 10_publish; do
+            echo "::group::$step"
+            python "$step.py" 2>&1 | tee "logs/$step.log"
+            echo "::endgroup::"
+          done
+
+      - name: Check the run and describe what changed
+        id: changes
+        env:
+          NOTIFY_GITHUB_USERS: ${{ vars.NOTIFY_GITHUB_USERS }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python files/11_weekly_changes.py "$RUNNER_TEMP/published_before" published "$RUNNER_TEMP/notice.md"
+
+      - name: Keep the logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-logs-${{ github.run_id }}
+          path: files/logs/
+          retention-days: 90
+
+      - name: Commit the refreshed tables
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A published files/data files/raw files/registry files/aia_master_table.xlsx
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Weekly pipeline: ${{ steps.changes.outputs.new_count }} new, ${{ steps.changes.outputs.changed_count }} changed submission(s)"
+            git push
+          fi
+
+      - name: Open an issue for the team
+        if: steps.changes.outputs.notify == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create new-submission --color 1d76db \
+             --description "Weekly pipeline: new or changed AIA submissions" --force
+          gh issue create --label new-submission \
+             --title "AIA submissions — week of $(date -u +%Y-%m-%d)" \
+             --body-file "$RUNNER_TEMP/notice.md"
+
+      - name: Email the notice directly (optional)
+        if: steps.changes.outputs.notify == 'true' && vars.NOTIFY_EMAILS != ''
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          from: ${{ secrets.SMTP_FROM }}
+          to: ${{ vars.NOTIFY_EMAILS }}
+          subject: "AIA submissions — new or changed this week"
+          html_body: file://${{ runner.temp }}/notice.md
+          convert_markdown: true

@@ -142,7 +142,14 @@ def fetch(url: str, *, binary: bool = False, retries: int = 3, pause: float = 1.
     last = None
     for attempt in range(1, retries + 1):
         try:
-            req = Request(url, headers={"User-Agent": USER_AGENT})
+            headers = {"User-Agent": USER_AGENT}
+            # In the scheduled workflow, GitHub's API is called with the run's
+            # token: shared runners hit the anonymous rate limit easily, and a
+            # failed tag listing would leave step 2 with the latest catalog only.
+            token = os.environ.get("GITHUB_TOKEN")
+            if token and url.startswith("https://api.github.com/"):
+                headers["Authorization"] = f"Bearer {token}"
+            req = Request(url, headers=headers)
             with urlopen(req, timeout=60) as r:
                 raw = r.read()
             return raw if binary else raw.decode("utf-8", errors="replace")
