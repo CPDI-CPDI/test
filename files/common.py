@@ -178,7 +178,11 @@ def norm(s) -> str:
 
 
 def similarity(a: str, b: str) -> float:
-    return difflib.SequenceMatcher(None, norm(a), norm(b)).ratio()
+    # autojunk off: by default difflib treats any character making up more than
+    # 1% of a 200+ character string as noise, which on a long question means
+    # most letters. Two near-identical long questions then scored 0.04 instead
+    # of 0.97, and step 3 treated them as different questions.
+    return difflib.SequenceMatcher(None, norm(a), norm(b), autojunk=False).ratio()
 
 
 def bilingual(node, lang="en"):

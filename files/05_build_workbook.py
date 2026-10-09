@@ -11,6 +11,8 @@ Outputs
 from __future__ import annotations
 from pathlib import Path
 import csv
+import re, zipfile
+from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -29,6 +31,7 @@ SHEETS = [
     ("answers",           "answers.csv",           "One row per question per submission."),
     ("mitigation_areas",  "submission_mitigation_areas.csv", "Mitigation points per area per submission, against that area's maximum for its version and phase."),
     ("question_coverage", "question_coverage.csv", "One row per question per submission: shown to the department, and answered."),
+    ("question_changes",  "question_changes.csv",  "Each question at each release against the previous version: added, removed, reworded, scoring changed, unchanged."),
     ("questions",         "questions.csv",         "DERIVED roll-up of question_map, one row per question. Convenience dimension; question_map is the source."),
     ("question_map",      "question_map.csv",      "One row per question per version: wording, guidance, branching, points, parent, and its question_uid."),
     ("question_options",  "question_options.csv",  "One row per question: which label set and scoring pattern it uses."),
@@ -121,6 +124,20 @@ def add_sheet(wb, name, rows, note=""):
     return ws, len(rows)
 
 
+def stable_zip(path):
+    """Rewrite the xlsx with a fixed timestamp on every entry inside it."""
+    with zipfile.ZipFile(path) as z:
+        entries = [(i, z.read(i.filename)) for i in z.infolist()]
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        for info, data in entries:
+            info.date_time = (1980, 1, 1, 0, 0, 0)
+            if info.filename == "docProps/core.xml":
+                # openpyxl stamps the save time here whatever the properties say
+                data = re.sub(rb"(<dcterms:modified[^>]*>)[^<]*(</dcterms:modified>)",
+                              rb"\g<1>2000-01-01T00:00:00Z\g<2>", data)
+            z.writestr(info, data)
+
+
 def main():
     header("STEP 5 — Building the master workbook")
     wb = Workbook()
@@ -195,7 +212,13 @@ def main():
         cell.alignment = Alignment(wrap_text=True, vertical="top")
 
     wb.move_sheet("contents", offset=-len(wb.sheetnames) + 1)
+    # Same data, same bytes: the workbook carries no save time, so a run that
+    # changes nothing commits nothing, and the repository only moves when the
+    # AIAs do.
+    fixed = datetime(2000, 1, 1)
+    wb.properties.created = wb.properties.modified = fixed
     wb.save(OUT)
+    stable_zip(OUT)
     log(f"\n  saved {OUT}")
 
 

@@ -20,18 +20,22 @@ Outputs
     registry/question_registry.csv   lasting question_uid per (version, field); commit it
     registry/section_registry.csv    lasting section_uid per (version, page); commit it
     data/registry_review.csv    where matching disagrees with the registry
+    data/question_changes.csv   each question at each release: added, removed,
+                                reworded, scoring changed or unchanged
     data/question_map.csv       field_name + version -> question_uid, with evidence
     data/bridge_review.csv      matches below the confidence threshold
 """
 from __future__ import annotations
 import re
 from collections import defaultdict
-import csv
-from common import (BASE, read_csv, write_csv, similarity, norm, version_key, log, header)
+import csv, sys
+from common import (BASE, read_csv, write_csv, similarity, norm, version_key,
+                    load_option_lookup, log, header)
 
 # Wording similarity required to treat two questions as the same question.
 STRONG = 0.92     # accepted silently
 WEAK = 0.78       # accepted but flagged for review
+REUSED_NAME = 0.30  # below this, a field name reused for a different question is not a rewording
 SECTION_MATCH = 0.80
 
 # A branching condition names the question it depends on:
@@ -268,6 +272,19 @@ def bridge_questions(fields, section_map, chains):
         taken = used.get((v, c["question_uid"]), [])
         return all(p and phase and p != phase for p in taken)
 
+    def latest(c):
+        return c.get("_latest_text") or c["canonical_text_en"]
+
+    def moved_elsewhere(c, v, name):
+        """The question c held still exists in version v under another field name."""
+        return any(g["field_name"] != name and similarity(latest(c), g["text_en"]) >= STRONG
+                   for g in by_ver[v])
+
+    def better_match(f, v, phase, current):
+        """Another free question matches this field's wording almost exactly."""
+        return any(d is not current and free(d, v, phase)
+                   and similarity(latest(d), f["text_en"]) >= STRONG for d in canon)
+
     for v in versions:
         for f in by_ver[v]:
             name = f["field_name"]
@@ -279,21 +296,33 @@ def bridge_questions(fields, section_map, chains):
             f_text, f_parent = signature(f, v)
             target, score, method = None, 0.0, ""
 
-            # pass 1 — same field name, and wording has not diverged
+            # pass 1 — same field name.
+            # A field name is not an identity: when the tool's developers insert
+            # a question they renumber the ones after it, so in v0.8a1
+            # fairnessDesign2 holds what fairnessDesign1 used to ask. Matching on
+            # the name alone chained unrelated questions under one uid. The name
+            # is trusted when the wording is still close; when it is not, it is
+            # only a rewording if the old question has not reappeared under
+            # another name and no other question matches this wording closely.
             for c in by_name.get(name, []):
                 if not free(c, v, phase):
                     continue
-                s = similarity(c["canonical_text_en"], f["text_en"])
-                if s >= WEAK or c["point_type"] == f["point_type"]:
+                s = similarity(latest(c), f["text_en"])
+                if s >= WEAK:
                     target, score, method = c, max(s, 0.95), "field_name"
                     break
+                if (s < REUSED_NAME or moved_elsewhere(c, v, name)
+                        or better_match(f, v, phase, c)):
+                    continue
+                target, score, method = c, s, "field_name_reworded"
+                break
 
             # pass 2 — same section, near-identical wording and parent
             if target is None:
                 for c in canon:
                     if c["section_uid"] != sec_uid or not free(c, v, phase):
                         continue
-                    s = compare(c["canonical_text_en"], c.get("_parent_text", ""),
+                    s = compare(latest(c), c.get("_parent_text", ""),
                                 f_text, f_parent)
                     if s > score:
                         target, score, method = c, s, "text_and_parent"
@@ -305,7 +334,7 @@ def bridge_questions(fields, section_map, chains):
                 for c in canon:
                     if not free(c, v, phase):
                         continue
-                    s = compare(c["canonical_text_en"], c.get("_parent_text", ""),
+                    s = compare(latest(c), c.get("_parent_text", ""),
                                 f_text, f_parent)
                     if s > score:
                         target, score, method = c, s, "text_global"
@@ -343,6 +372,7 @@ def bridge_questions(fields, section_map, chains):
                 if score < 1.0 and method != "field_name":
                     target["reworded"] = "Y"
 
+            target["_latest_text"] = f["text_en"]
             used[(v, target["question_uid"])].append(phase)
             target["version_count"] += 1
 
@@ -382,6 +412,7 @@ def bridge_questions(fields, section_map, chains):
         c["parent_question_uid"] = parent_uid.get(c["question_uid"], "")
         c["is_follow_up"] = "Y" if parent_uid.get(c["question_uid"]) else "N"
         c.pop("_parent_text", None)
+        c.pop("_latest_text", None)
     assign_mitigation_areas(canon, mapping)
     return canon, mapping, review
 
@@ -498,6 +529,41 @@ def settle_ids(groups, registry, conflicts=lambda uid, member, taken: False):
     return final, review
 
 
+def rebase_ids(groups, registry):
+    """
+    One deliberate correction of the registry, run by hand with --rebase-registry.
+
+    Matching is trusted for the grouping; the registry for the names. Each
+    registered id stays with the group holding most of its fields, so a
+    question that was right keeps its id; fields that were chained to the
+    wrong question move to the id of the question they belong to, or to a new
+    id above every one in use. Returns ({member: id}, [changes]).
+    """
+    counts = defaultdict(int)
+    for gid, members in groups.items():
+        for m in members:
+            if m in registry:
+                counts[(registry[m], gid)] += 1
+    owner = {}
+    for (rid, gid), n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0][0])):
+        owner.setdefault(rid, gid)
+    next_id = max(registry.values(), default=0) + 1
+    final, changes = {}, []
+    for gid, members in groups.items():
+        owned = sorted((rid for rid, g in owner.items() if g == gid),
+                       key=lambda rid: (-counts[(rid, gid)], rid))
+        if owned:
+            uid = owned[0]
+        else:
+            uid, next_id = next_id, next_id + 1
+        for m in members:
+            final[m] = uid
+            if m in registry and registry[m] != uid:
+                changes.append({"member": m, "registered_id": registry[m],
+                                "matching_suggests": uid})
+    return final, changes
+
+
 def rebuild_questions(mapping, versions):
     """The per-question table, rebuilt from the per-version rows after ids settle."""
     by_uid = defaultdict(list)
@@ -522,7 +588,8 @@ def rebuild_questions(mapping, versions):
             "last_seen_version": max((r["catalog_version"] for r in rows), key=version_key),
             "version_count": len(rows),
             "field_names": "; ".join(names),
-            "reworded": "Y" if any(r.get("match_method") in ("text_and_parent", "text_global")
+            "reworded": "Y" if any(r.get("match_method") in ("text_and_parent", "text_global",
+                                                              "field_name_reworded")
                                    and float(r.get("match_score") or 1) < 1 for r in rows) else "N",
         })
     for c in canon:
@@ -541,7 +608,7 @@ def phase_of(row) -> str:
         (p for p in ("implementation", "design") if p in page_key(row.get("page_name"))), "")
 
 
-def apply_registries(canon_sec, sec_map, q_map, versions):
+def apply_registries(canon_sec, sec_map, q_map, versions, rebase=False):
     """Replace proposed section and question ids with registered ones."""
     # sections: one id per page, stable across runs
     s_reg = read_registry(SECTION_REGISTRY, ("catalog_version", "page_name"), "section_uid")
@@ -573,7 +640,10 @@ def apply_registries(canon_sec, sec_map, q_map, versions):
     q_groups = defaultdict(list)
     for r in q_map:
         q_groups[r["question_uid"]].append((r["catalog_version"], r["field_name"]))
-    q_final, q_review = settle_ids(q_groups, q_reg, conflicts)
+    if rebase and q_reg:
+        q_final, q_review = rebase_ids(q_groups, q_reg)
+    else:
+        q_final, q_review = settle_ids(q_groups, q_reg, conflicts)
     for r in q_map:
         r["question_uid"] = q_final[(r["catalog_version"], r["field_name"])]
     uid_by_field = {(r["catalog_version"], r["field_name"]): r["question_uid"] for r in q_map}
@@ -595,9 +665,77 @@ def apply_registries(canon_sec, sec_map, q_map, versions):
                 "registered_id": x["registered_id"], "matching_suggests": x["matching_suggests"]}
                for x in s_review for m in [x["member"]]])
     return canon_sec, sec_map, canon_q, q_map, {
-        "seeded": not q_reg, "new_questions": new_q, "new_sections": new_s,
+        "seeded": not q_reg, "rebased": rebase and bool(q_reg),
+        "new_questions": new_q, "new_sections": new_s,
         "kept_questions": len(q_final) - new_q, "kept_sections": len(s_final) - new_s,
         "review": review}
+
+
+# --------------------------------------------------------------------------
+# What changed at each release
+# --------------------------------------------------------------------------
+def build_question_changes(q_map, versions) -> list[dict]:
+    """
+    One row per question per release, comparing each version with the one
+    before it, by question_uid:
+
+      added            in this version, not the previous one
+      removed          in the previous version, not this one
+      reworded         in both; the English wording differs (case and
+                       punctuation ignored, so a fixed typo in capitals or a
+                       comma does not count)
+      scoring changed  in both, same wording; the answer choices or their
+                       points differ
+      unchanged        in both, same wording and scoring
+
+    A design/implementation pair counts once. A field renamed in the code with
+    the same wording is unchanged: departments never see field names.
+    """
+    try:
+        options = load_option_lookup()
+    except SystemExit:
+        options = {}
+
+    def scoring(v, r):
+        return tuple((norm(o.get("text_en", "")), o.get("points"))
+                     for o in options.get((v, r["field_name"]), []))
+
+    by_version = defaultdict(dict)
+    for r in q_map:                                  # design copy first, as parsed
+        by_version[r["catalog_version"]].setdefault(r["question_uid"], r)
+
+    out = []
+    for prev, cur in zip(versions, versions[1:]):
+        a, b = by_version[prev], by_version[cur]
+        for uid in sorted(set(a) | set(b), key=int):
+            ra, rb = a.get(uid), b.get(uid)
+            if ra and not rb:
+                kind = "removed"
+            elif rb and not ra:
+                kind = "added"
+            elif norm(ra["text_en"]) != norm(rb["text_en"]):
+                kind = "reworded"
+            elif scoring(prev, ra) != scoring(cur, rb):
+                kind = "scoring changed"
+            else:
+                kind = "unchanged"
+            r = rb or ra
+            out.append({
+                "catalog_version": cur,
+                "previous_version": prev,
+                "question_uid": uid,
+                "change_type": kind,
+                "point_type": r.get("point_type", ""),
+                "mitigation_area": r.get("mitigation_area", ""),
+                "section_uid": r.get("section_uid", ""),
+                "field_name_before": ra["field_name"] if ra else "",
+                "field_name_after": rb["field_name"] if rb else "",
+                "text_before_en": ra["text_en"] if ra else "",
+                "text_after_en": rb["text_en"] if rb else "",
+                "similarity": (round(similarity(ra["text_en"], rb["text_en"]), 3)
+                               if ra and rb else ""),
+            })
+    return out
 
 
 def main():
@@ -620,17 +758,25 @@ def main():
     chains = build_chains({v: [f for f in fields if f["catalog_version"] == v]
                            for v in {f["catalog_version"] for f in fields}})
     canon_q, q_map, review = bridge_questions(fields, sec_map, chains)
-    canon_sec, sec_map, canon_q, q_map, reg = apply_registries(canon_sec, sec_map, q_map, versions)
+    rebase = "--rebase-registry" in sys.argv
+    canon_sec, sec_map, canon_q, q_map, reg = apply_registries(canon_sec, sec_map, q_map,
+                                                               versions, rebase=rebase)
     write_csv("registry_review.csv", reg["review"])
+    changes = build_question_changes(q_map, versions)
 
     write_csv("sections.csv", canon_sec)
     write_csv("section_versions.csv", sec_map)
     write_csv("questions.csv", canon_q)
     write_csv("question_map.csv", q_map)
     write_csv("bridge_review.csv", review)
+    write_csv("question_changes.csv", changes)
 
     header("SUMMARY")
-    if reg["seeded"]:
+    if reg["rebased"]:
+        log(f"  registry REBASED on purpose: {len(reg['review'])} field(s) moved to the id of "
+            f"the question they belong to -> registry_review.csv")
+        log(f"  review that list, then commit files/registry/ as one deliberate change")
+    elif reg["seeded"]:
         log(f"  registry created: {len(q_map)} fields and {len(sec_map)} section pages")
         log(f"    -> {QUESTION_REGISTRY}  (commit it; identifiers are fixed from here on)")
     else:

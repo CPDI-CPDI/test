@@ -17,7 +17,12 @@ name: Weekly AIA pipeline
 on:
   schedule:
     - cron: "0 12 * * 1"     # Mondays 12:00 UTC = 08:00 Ottawa in summer, 07:00 in winter
-  workflow_dispatch: {}       # "Run workflow" button for a run on demand
+  workflow_dispatch:           # "Run workflow" button for a run on demand
+    inputs:
+      test_notice:
+        description: "Open a test issue even if nothing changed (checks that emails arrive)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write             # commit the refreshed tables
@@ -96,14 +101,21 @@ jobs:
           fi
 
       - name: Open an issue for the team
-        if: steps.changes.outputs.notify == 'true'
+        if: steps.changes.outputs.notify == 'true' || inputs.test_notice
         env:
           GH_TOKEN: ${{ github.token }}
+          IS_TEST: ${{ inputs.test_notice && steps.changes.outputs.notify != 'true' }}
+          NOTIFY_GITHUB_USERS: ${{ vars.NOTIFY_GITHUB_USERS }}
         run: |
           gh label create new-submission --color 1d76db \
              --description "Weekly pipeline: new or changed AIA submissions" --force
-          gh issue create --label new-submission \
-             --title "AIA submissions — week of $(date -u +%Y-%m-%d)" \
+          title="AIA submissions — week of $(date -u +%Y-%m-%d)"
+          if [ "$IS_TEST" = "true" ]; then
+            title="[Test] $title"
+            printf "Test notice: nothing changed this week. If you received this by email, delivery works.\n\ncc %s\n" \
+                   "$NOTIFY_GITHUB_USERS" > "$RUNNER_TEMP/notice.md"
+          fi
+          gh issue create --label new-submission --title "$title" \
              --body-file "$RUNNER_TEMP/notice.md"
 
       - name: Email the notice directly (optional)

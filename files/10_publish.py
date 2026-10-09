@@ -137,7 +137,6 @@ def main():
 
     schema = {
         "schema_version": SCHEMA_VERSION,
-        "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "encoding": "utf-8",
         "byte_order_mark": False,
         "line_terminator": "\\n",
@@ -149,7 +148,11 @@ def main():
         "tables": {m["table"]: {"columns": m["columns"].split("|"),
                                 "row_count": m["row_count"]} for m in manifest},
     }
+    # No timestamp in here: _schema.json changes only when the schema does, so
+    # a diff on it means something. The run time lives in _last_run.txt.
     (OUT / "_schema.json").write_text(json.dumps(schema, indent=2), encoding="utf-8")
+    (OUT / "_last_run.txt").write_text(
+        datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") + "\n", encoding="utf-8")
 
     # ---------------------------------------------------------------- guidance
     (OUT / "README.md").write_text(GUIDE.format(

@@ -1055,6 +1055,51 @@ check("25.2% is Level II, as the tool prints (27 of 107)", C.impact_level(25.2) 
 check("boundaries: 25 is I, 50 is II, 75 is III, 75.5 is IV",
       [C.impact_level(x) for x in (25, 50, 75, 75.5)] == [1, 2, 3, 4])
 
+print("\n=== long questions compare properly; renumbered fields do not chain ===")
+_long_a = ("Have you documented processes in place to test datasets against biases and other "
+           "unexpected outcomes? This could include experience in applying frameworks, methods, "
+           "guidelines or other assessment tools.")
+_long_b = "Will you have" + _long_a[len("Have you"):]
+check("near-identical long questions score as near-identical (autojunk off)",
+      C.similarity(_long_a, _long_b) > 0.9, f"{C.similarity(_long_a, _long_b):.2f}")
+
+# v0.8a1 inserted a question, so every later fairness field shifted by one.
+_shift = []
+for _v, _qs in (("0.6", ["Will the system provide an audit trail that records all recommendations?",
+                         "Will you maintain a log of all changes made to the model?"]),
+                ("0.8a1", ["Will the audit trail identify the authority of the decision maker?",
+                           "Will the system provide an audit trail that records all recommendations?",
+                           "Will you maintain a log of all changes made to the model?"])):
+    for _i, _t in enumerate(_qs, start=1):
+        _shift.append({"catalog_version": _v, "field_name": f"fairnessDesign{_i}",
+                       "page_name": "fairnessDesign", "text_en": _t, "text_fr": "",
+                       "point_type": "mitigation", "answer_type": "radiogroup",
+                       "visible_if": "", "mitigation_phase": "design"})
+_ss = [{"catalog_version": v, "page_name": "fairnessDesign", "section_name_en": "x",
+        "section_name_fr": "", "display_order": 1, "point_type": "mitigation",
+        "mitigation_phase": "design", "max_raw_points": 0, "max_mitigation_points": 0}
+       for v in ("0.6", "0.8a1")]
+_c, _sm = bridge.bridge_sections(_ss)
+_q, _mm, _ = bridge.bridge_questions(_shift, _sm, {})
+_u = {(r["catalog_version"], r["field_name"]): r["question_uid"] for r in _mm}
+check("a question that moved to the next field name keeps its id",
+      _u[("0.6", "fairnessDesign1")] == _u[("0.8a1", "fairnessDesign2")]
+      and _u[("0.6", "fairnessDesign2")] == _u[("0.8a1", "fairnessDesign3")], str(_u))
+check("the inserted question gets its own id, not the old field's",
+      _u[("0.8a1", "fairnessDesign1")] not in (_u[("0.6", "fairnessDesign1")],
+                                                _u[("0.6", "fairnessDesign2")]))
+
+print("\n=== a deliberate registry correction moves only the wrong links ===")
+_reg = {("0.6", "f1"): 10, ("0.8a1", "f1"): 10, ("0.9", "f1"): 10, ("0.8a1", "f2"): 11}
+# matching now says 0.8a1/f1 is a new question and 0.8a1/f2 continues 0.6/f1
+_fin, _chg = bridge.rebase_ids({1: [("0.6", "f1"), ("0.8a1", "f2"), ("0.9", "f1")],
+                                2: [("0.8a1", "f1")]}, _reg)
+check("an id stays with the question holding most of its fields",
+      _fin[("0.6", "f1")] == 10 and _fin[("0.9", "f1")] == 10 and _fin[("0.8a1", "f2")] == 10)
+check("a wrongly chained field moves to a new id above every one in use",
+      _fin[("0.8a1", "f1")] == 12, str(_fin))
+check("every move is listed for review", len(_chg) == 2, str(_chg))
+
 print("\n" + "=" * 60)
 if FAILURES:
     print(f"{len(FAILURES)} CHECK(S) FAILED: {', '.join(FAILURES)}")
