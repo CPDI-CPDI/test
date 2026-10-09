@@ -16,10 +16,11 @@ with them. Anything reading them can rely on that.
 | `option_points` | 86 | 3 |
 | `option_set_items` | 333 | 4 |
 | `option_sets` | 61 | 3 |
+| `question_changes` | 1049 | 12 |
 | `question_coverage` | 6522 | 14 |
 | `question_map` | 1419 | 31 |
 | `question_options` | 996 | 7 |
-| `questions` | 240 | 15 |
+| `questions` | 241 | 15 |
 | `section_versions` | 150 | 13 |
 | `sections` | 21 | 12 |
 | `services` | 0 | 12 |

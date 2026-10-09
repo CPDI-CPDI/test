@@ -1,6 +1,5 @@
 {
   "schema_version": "2.0",
-  "generated_utc": "2026-10-09T14:20:33Z",
   "encoding": "utf-8",
   "byte_order_mark": false,
   "line_terminator": "\\n",
@@ -140,6 +139,23 @@
       ],
       "row_count": 61
     },
+    "question_changes": {
+      "columns": [
+        "catalog_version",
+        "previous_version",
+        "question_uid",
+        "change_type",
+        "point_type",
+        "mitigation_area",
+        "section_uid",
+        "field_name_before",
+        "field_name_after",
+        "text_before_en",
+        "text_after_en",
+        "similarity"
+      ],
+      "row_count": 1049
+    },
     "question_coverage": {
       "columns": [
         "submission_id",
@@ -225,7 +241,7 @@
         "is_follow_up",
         "mitigation_area"
       ],
-      "row_count": 240
+      "row_count": 241
     },
     "section_versions": {
       "columns": [
